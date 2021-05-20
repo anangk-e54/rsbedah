@@ -1,161 +1,140 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 
 <head>
-
+    <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="">
-    <meta name="author" content="">
-    <link href="https://fonts.googleapis.com/css?family=Raleway:100,300,400,500,700,900" rel="stylesheet">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
 
-    <title>RS Bedah Mitra Sehat Lamongan</title>
-    <!--
-Elegance Template
-https://templatemo.com/tm-528-elegance
--->
-    <!-- Additional CSS Files -->
-    <link rel="stylesheet" type="text/css" href="{{ asset('webpages/css/bootstrap.min.css') }}">
+    <!-- Bootstrap CSS -->
+    <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous"> -->
 
-    <link rel="stylesheet" type="text/css" href="{{ asset('webpages/css/font-awesome.css') }}">
+    <title>@yield('tittle')</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" type="image/png" href="{{ asset('assets/images/icon/favicon.ico') }}">
+    <link rel="stylesheet" href="{{ asset('assets/css/bootstrap.min.css') }}">
+    <link rel="stylesheet" href="{{ asset('assets/css/font-awesome.min.css') }}">
+    <link rel="stylesheet" href="{{ asset('assets/css/themify-icons.css') }}">
+    <link rel="stylesheet" href="{{ asset('assets/css/metisMenu.css') }}">
+    <link rel="stylesheet" href="{{ asset('assets/css/owl.carousel.min.css') }}">
+    <link rel="stylesheet" href="{{ asset('assets/css/slicknav.min.css') }}">
+    <!-- amchart css -->
+    <link rel="stylesheet" href="https://www.amcharts.com/lib/3/plugins/export/export.css" type="text/css"
+        media="all" />
 
-    <link rel="stylesheet" type="text/css" href="{{ asset('webpages/css/fullpage.min.css') }}">
+    @yield('stylecss')
 
-    <link rel="stylesheet" type="text/css" href="{{ asset('webpages/css/owl.carousel.css') }}">
-
-    <link rel="stylesheet" href="{{ asset('webpages/css/animate.css') }}">
-
-    <link rel="stylesheet" href="{{ asset('webpages/css/templatemo-style.css') }}">
-
-    <link rel="stylesheet" href="{{ asset('webpages/css/responsive.css') }}">
-
+    <!-- others css -->
+    <link rel="stylesheet" href="{{ asset('assets/css/typography.css') }}">
+    <link rel="stylesheet" href="{{ asset('assets/css/default-css.css') }}">
+    <link rel="stylesheet" href="{{ asset('assets/css/styles.css') }}">
+    <link rel="stylesheet" href="{{ asset('assets/css/responsive.css') }}">
+    <!-- modernizr css -->
+    <script src="{{ asset('assets/js/vendor/modernizr-2.8.3.min.js') }}"></script>
 </head>
 
 <body>
 
 
-    <div id="video">
-        <div class="preloader">
-            <div class="preloader-bounce">
-                <span></span>
-                <span></span>
-                <span></span>
-            </div>
-        </div>
+    <!--[if lt IE 8]>
+            <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+    <!-- preloader area start -->
+    <div id="preloader">
+        <div class="loader"></div>
+    </div>
+    <!-- preloader area end -->
+    <!-- page container area start -->
+    <div class="page-container">
+        <!-- Navbar start here -->
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo03"
+                aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <a class="navbar-brand" href="#">RS Bedah Mitra Sehat Lamongan</a>
 
-        <header id="header">
-            <div class="container-fluid">
-                <div class="navbar">
-                    <a href="#" id="logo" title="Elegance by TemplateMo">
-                        RS BEDAH MITRA SEHAT
-                    </a>
-                    <div class="navigation-row">
-                        <nav id="navigation">
-                            <button type="button" class="navbar-toggle"> <i class="fa fa-bars"></i> </button>
-                            <div class="nav-box navbar-collapse">
-                                <ul class="navigation-menu nav navbar-nav navbars" id="nav">
-                                    <li data-menuanchor="slide01" class="active"><a href="#slide01">Beranda</a></li>
-                                    <li data-menuanchor="slide02"><a href="#slide02">Tentang</a></li>
-                                    <li data-menuanchor="slide03"><a href="#slide03">Layanan</a></li>
-                                    <li data-menuanchor="slide04"><a href="#slide04">Jadwal Dokter</a></li>
-                                    <!-- <li data-menuanchor="slide05"><a href="#slide05">My Work</a></li> -->
-                                    <li data-menuanchor="slide07"><a href="#slide07">Kontak</a></li>
-                                    <li data-menuanchor="slide06"><a href="#slide06">Masuk</a></li>
-                                </ul>
-                            </div>
-                        </nav>
-                    </div>
-                </div>
-            </div>
-        </header>
+            <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
+                <ul class="navbar-nav ml-auto mt-2 mt-lg-0">
+                    <li class="nav-item active">
+                        <a class="nav-link text-uppercase" href="{{ url('/')}}">Beranda <span
+                                class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-uppercase" href="#">Profil</a>
+                    </li>
 
-        <video autoplay muted loop id="myVideo">
-            <source src="images/video-bg.mp4" type="video/mp4">
-        </video>
-
-        <div id="fullpage" class="fullpage-default">
-
-            @yield('content')
-
-            <div class="section animated-row" data-section="slide07">
-                <div class="section-inner">
-                    <div class="row justify-content-center">
-                        <div class="col-md-7 wide-col-laptop">
-                            <div class="title-block animate" data-animate="fadeInUp">
-                                <span>Contact</span>
-                                <h2>Get In Touch!</h2>
-                            </div>
-                            <div class="contact-section">
-                                <div class="row">
-                                    <div class="col-md-6 animate" data-animate="fadeInUp">
-                                        <div class="contact-box">
-                                            <div class="contact-row">
-                                                <i class="fa fa-map-marker"></i> 123 New Street Here, Wonderful City
-                                                10220
-                                            </div>
-                                            <div class="contact-row">
-                                                <i class="fa fa-phone"></i> 090 080 0210
-                                            </div>
-                                            <div class="contact-row">
-                                                <i class="fa fa-envelope"></i> info@company.co
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-md-6 animate" data-animate="fadeInUp">
-                                        <form id="ajax-contact" method="post" action="#">
-                                            <div class="input-field">
-                                                <input type="text" class="form-control" name="name" id="name" required
-                                                    placeholder="Name">
-                                            </div>
-                                            <div class="input-field">
-                                                <input type="email" class="form-control" name="email" id="email"
-                                                    required placeholder="Email">
-                                            </div>
-                                            <div class="input-field">
-                                                <textarea class="form-control" name="message" id="message" required
-                                                    placeholder="Message"></textarea>
-                                            </div>
-                                            <button class="btn" type="submit">Submit</button>
-                                        </form>
-                                        <div id="form-messages" class="mt-3"></div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div id="social-icons">
-            <div class="text-right">
-                <ul class="social-icons">
-                    <li><a href="#" title="Facebook"><i class="fa fa-facebook"></i></a></li>
-                    <li><a href="#" title="Twitter"><i class="fa fa-twitter"></i></a></li>
-                    <li><a href="#" title="Linkedin"><i class="fa fa-linkedin"></i></a></li>
-                    <li><a href="#" title="Instagram"><i class="fa fa-behance"></i></a></li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle text-uppercase" href="#" id="navbarScrollingDropdown"
+                            role="button" data-toggle="dropdown" aria-expanded="false">
+                            Layanan
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarScrollingDropdown">
+                            <li><a class="dropdown-item" href="#">Umum</a></li>
+                            <li><a class="dropdown-item" href="#">Spesialis</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="#">UGD</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link disabled text-uppercase" href="{{ url('/jadwaldokter')}}" tabindex="-1"
+                            aria-disabled="true">Jadwal
+                            Praktek</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="btn btn btn-outline-secondary btn-sm nav-link " href="#">Login</a>
+                    </li>
                 </ul>
             </div>
-        </div>
+        </nav>
+        <!-- Navbar end here -->
+
+        @yield('content')
+
+        <!-- footer area start-->
+        <footer>
+            <div class="footer-area ">
+                <p>© Copyright 2020. All right reserved. Created by <a
+                        href="https://poroskolektif.com/">PorosNexgen</a>.</p>
+            </div>
+        </footer>
+        <!-- footer area end-->
     </div>
+    <!-- page container area end -->
 
 
 
-    <script src="{{ asset('webpages/js/jquery.js') }}"></script>
+    <!-- jquery latest version -->
 
-    <script src="{{ asset('webpages/js/bootstrap.min.js') }}"></script>
+    <!-- Origin started -->
+    <!-- <script src="{{ asset('assets/js/vendor/jquery-2.2.4.min.js') }}"></script> -->
 
-    <script src="{{ asset('webpages/js/fullpage.min.js') }}"></script>
+    <!-- New Version in2020 -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <!-- bootstrap 4 js -->
+    <script src="{{ asset('assets/js/popper.min.js') }}"></script>
+    <script src="{{ asset('assets/js/bootstrap.min.js') }}"></script>
+    <script src="{{ asset('assets/js/owl.carousel.min.js') }}"></script>
+    <script src="{{ asset('assets/js/metisMenu.min.js') }}"></script>
+    <script src="{{ asset('assets/js/jquery.slimscroll.min.js') }}"></script>
+    <script src="{{ asset('assets/js/jquery.slicknav.min.js') }}"></script>
 
-    <script src="{{ asset('webpages/js/scrolloverflow.js') }}"></script>
+    @yield('stylejs')
 
-    <script src="{{ asset('webpages/js/owl.carousel.min.js') }}"></script>
 
-    <script src="{{ asset('webpages/js/jquery.inview.min.js') }}"></script>
+    <!-- others plugins -->
+    <script src="{{ asset('assets/js/plugins.js') }}"></script>
+    <script src="{{ asset('assets/js/scripts.js') }}"></script>
 
-    <script src="{{ asset('webpages/js/form.js') }}"></script>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
 
-    <script src="{{ asset('webpages/js/custom.js') }}"></script>
-
+    <!-- <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script> -->
 
 </body>
 

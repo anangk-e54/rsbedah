@@ -14,12 +14,15 @@
     <link rel="stylesheet" href="<?= BASEURL; ?>/assets/css/owl.carousel.min.css">
     <link rel="stylesheet" href="<?= BASEURL; ?>/assets/css/slicknav.min.css">
     <!-- amcharts css -->
-    <link rel="stylesheet" href="https://www.amcharts.com/lib/3/plugins/export/export.css" type="text/css" media="all" />
+    <link rel="stylesheet" href="https://www.amcharts.com/lib/3/plugins/export/export.css" type="text/css"
+        media="all" />
     <!-- Start datatable css -->
     <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.19/css/jquery.dataTables.css">
     <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.18/css/dataTables.bootstrap4.min.css">
-    <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/responsive/2.2.3/css/responsive.bootstrap.min.css">
-    <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/responsive/2.2.3/css/responsive.jqueryui.min.css">
+    <link rel="stylesheet" type="text/css"
+        href="https://cdn.datatables.net/responsive/2.2.3/css/responsive.bootstrap.min.css">
+    <link rel="stylesheet" type="text/css"
+        href="https://cdn.datatables.net/responsive/2.2.3/css/responsive.jqueryui.min.css">
     <!-- style css -->
     <link rel="stylesheet" href="<?= BASEURL; ?>/assets/css/typography.css">
     <link rel="stylesheet" href="<?= BASEURL; ?>/assets/css/default-css.css">
@@ -44,7 +47,8 @@
         <div class="sidebar-menu">
             <div class="sidebar-header">
                 <div class="logo">
-                    <a href="<?= BASEURL; ?>/dashboard"><img src="<?= BASEURL; ?>/assets/images/icon/logogreen.png" alt="logo">erp.poroskolektif.com</a>
+                    <a href="<?= BASEURL; ?>/dashboard"><img src="<?= BASEURL; ?>/assets/images/icon/logogreen.png"
+                            alt="logo">erp.poroskolektif.com</a>
                 </div>
             </div>
             <div class="main-menu">
@@ -52,16 +56,21 @@
                     <nav>
                         <ul class="metismenu" id="menu">
                             <li>
-                                <a href="javascript:void(0)" aria-expanded="true"><i class="ti-dashboard"></i><span>dashboard</span></a>
+                                <a href="javascript:void(0)" aria-expanded="true"><i
+                                        class="ti-dashboard"></i><span>dashboard</span></a>
                                 <ul class="collapse">
-                                    <li><a href="<?= BASEURL; ?>/dashboard"><i class="fa fa-exclamation-triangle"></i>Summary</a></li>
-                                    <li><a href="<?= BASEURL; ?>/dashboard/salesreport"><i class="fa fa-exclamation-triangle"></i>Sales Report</a></li>
-                                    <li><a href="<?= BASEURL; ?>/dashboard/stockreport"><i class="fa fa-exclamation-triangle"></i>Stock Report</a></li>
+                                    <li><a href="<?= BASEURL; ?>/dashboard"><i
+                                                class="fa fa-exclamation-triangle"></i>Summary</a></li>
+                                    <li><a href="<?= BASEURL; ?>/dashboard/salesreport"><i
+                                                class="fa fa-exclamation-triangle"></i>Sales Report</a></li>
+                                    <li><a href="<?= BASEURL; ?>/dashboard/stockreport"><i
+                                                class="fa fa-exclamation-triangle"></i>Stock Report</a></li>
                                     <li><a href="<?= BASEURL; ?>/dashboard/financereport">Finance Report</a></li>
                                 </ul>
                             </li>
                             <li>
-                                <a href="javascript:void(0)" aria-expanded="true"><i class="ti-announcement"></i><span>Sales
+                                <a href="javascript:void(0)" aria-expanded="true"><i
+                                        class="ti-announcement"></i><span>Sales
                                     </span></a>
                                 <ul class="collapse">
                                     <li><a href="<?= BASEURL; ?>/salescustomer">Customers</a></li>
@@ -71,7 +80,8 @@
                                 </ul>
                             </li>
                             <li>
-                                <a href="javascript:void(0)" aria-expanded="true"><i class="ti-shopping-cart-full"></i><span>Purchase</span></a>
+                                <a href="javascript:void(0)" aria-expanded="true"><i
+                                        class="ti-shopping-cart-full"></i><span>Purchase</span></a>
                                 <ul class="collapse">
                                     <li><a href="<?= BASEURL; ?>/purchaseorder">Purchase Orders</a></li>
                                     <li><a href="<?= BASEURL; ?>/vendor">Vendors</a></li>
@@ -79,12 +89,14 @@
                                 </ul>
                             </li>
                             <li>
-                                <a href="javascript:void(0)" aria-expanded="true"><i class="ti-wallet"></i><span>Finance</span></a>
+                                <a href="javascript:void(0)" aria-expanded="true"><i
+                                        class="ti-wallet"></i><span>Finance</span></a>
                                 <ul class="collapse">
                                     <li><a href="<?= BASEURL; ?>/fncjournal">financial journal</a></li>
                                     <li><a href="<?= BASEURL; ?>/fncprofitandlost">Profit and Lost</a></li>
                                     <li><a href="<?= BASEURL; ?>/fncbalancesheet">Balance Sheet</a></li>
-                                    <li><a href="#"><i class="fa fa-exclamation-triangle"></i>Cost of goods sold</a></li>
+                                    <li><a href="#"><i class="fa fa-exclamation-triangle"></i>Cost of goods sold</a>
+                                    </li>
                                     <li><a href="<?= BASEURL; ?>/fnccapitalaccount">Capital Account</a></li>
                                     <li><a href="<?= BASEURL; ?>/fncfinancialaccount">Financial Account</a></li>
                                     <div class="dropdown-divider"></div>
@@ -106,7 +118,8 @@
                                 </ul>
                             </li>
                             <li>
-                                <a href="javascript:void(0)" aria-expanded="true"><i class="fa fa-exclamation-triangle"></i>
+                                <a href="javascript:void(0)" aria-expanded="true"><i
+                                        class="fa fa-exclamation-triangle"></i>
                                     <span>Payroll</span></a>
                                 <ul class="collapse">
                                     <li><a href="#">Operator List</a></li>
@@ -148,38 +161,38 @@
                                             <li><a href="<?= BASEURL; ?>/whproduct">Product Inventory</a></li>
                                         </ul>
                                     </li>
-                                    </li>
-                                    <li><a href="#" aria-expanded="true">inventory</a>
-                                        <ul class="collapse">
-                                            <li><a href="<?= BASEURL; ?>/whinventory/stockin">Stock In</a></li>
-                                            <li><a href="<?= BASEURL; ?>/whinventory/wasted">Wasted Stock</a></li>
-                                            <li><a href="<?= BASEURL; ?>/whinventory/stockout">Stock Out</a></li>
-                                            <li><a href="<?= BASEURL; ?>/whinventory/opname">Stock Opname</a></li>
-                                            <li><a href="<?= BASEURL; ?>/whinventory">Product Inventory</a></li>
-                                        </ul>
-                                    </li>
-                                    <li><a href="#" aria-expanded="true">Delivery Orders</a>
-                                        <ul class="collapse">
-                                            <li><a href="<?= BASEURL; ?>/whdelivery/request">Delivery Request</a></li>
-                                            <li><a href="<?= BASEURL; ?>/whdelivery/">Shipping List</a></li>
-                                        </ul>
-                                    </li>
-                                    <div class="dropdown-divider"></div>
-                                    <li><a href="#"><i class="fa fa-exclamation-triangle"></i>List of Items</a></li>
-                                    <li><a href="#"><i class="fa fa-exclamation-triangle"></i>Formula</a></li>
-                                    <li><a href="<?= BASEURL; ?>/whproductcategory">Product Category</a></li>
-                                </ul>
                             </li>
-                            <li class="">
-                                <a href="javascript:void(0)" aria-expanded="true"><i class="ti-settings"></i>
-                                    <span>Store Management</span></a>
+                            <li><a href="#" aria-expanded="true">inventory</a>
                                 <ul class="collapse">
-                                    <li><a href="<?= BASEURL; ?>/smoperator">Operators</a></li>
-                                    <li><a href="#"><i class="fa fa-exclamation-triangle"></i>Authority</a></li>
-                                    <li><a href="#"><i class="fa fa-exclamation-triangle"></i>Branch</a></li>
-                                    <li><a href="#"><i class="fa fa-exclamation-triangle"></i>Service</a></li>
+                                    <li><a href="<?= BASEURL; ?>/whinventory/stockin">Stock In</a></li>
+                                    <li><a href="<?= BASEURL; ?>/whinventory/wasted">Wasted Stock</a></li>
+                                    <li><a href="<?= BASEURL; ?>/whinventory/stockout">Stock Out</a></li>
+                                    <li><a href="<?= BASEURL; ?>/whinventory/opname">Stock Opname</a></li>
+                                    <li><a href="<?= BASEURL; ?>/whinventory">Product Inventory</a></li>
                                 </ul>
                             </li>
+                            <li><a href="#" aria-expanded="true">Delivery Orders</a>
+                                <ul class="collapse">
+                                    <li><a href="<?= BASEURL; ?>/whdelivery/request">Delivery Request</a></li>
+                                    <li><a href="<?= BASEURL; ?>/whdelivery/">Shipping List</a></li>
+                                </ul>
+                            </li>
+                            <div class="dropdown-divider"></div>
+                            <li><a href="#"><i class="fa fa-exclamation-triangle"></i>List of Items</a></li>
+                            <li><a href="#"><i class="fa fa-exclamation-triangle"></i>Formula</a></li>
+                            <li><a href="<?= BASEURL; ?>/whproductcategory">Product Category</a></li>
+                        </ul>
+                        </li>
+                        <li class="">
+                            <a href="javascript:void(0)" aria-expanded="true"><i class="ti-settings"></i>
+                                <span>Store Management</span></a>
+                            <ul class="collapse">
+                                <li><a href="<?= BASEURL; ?>/smoperator">Operators</a></li>
+                                <li><a href="#"><i class="fa fa-exclamation-triangle"></i>Authority</a></li>
+                                <li><a href="#"><i class="fa fa-exclamation-triangle"></i>Branch</a></li>
+                                <li><a href="#"><i class="fa fa-exclamation-triangle"></i>Service</a></li>
+                            </ul>
+                        </li>
                         </ul>
                     </nav>
                 </div>
@@ -206,7 +219,7 @@
                             </ul>
                         </div>
                     </div>
-                    
+
                     <!-- profile info & task notification -->
                     <div class="col-md-6 col-sm-4 clearfix">
                         <ul class="notification-area pull-right">
@@ -217,7 +230,8 @@
                                     <span>2</span>
                                 </i>
                                 <div class="dropdown-menu bell-notify-box notify-box">
-                                    <span class="notify-title">You have 3 new notifications <a href="#">view all</a></span>
+                                    <span class="notify-title">You have 3 new notifications <a href="#">view
+                                            all</a></span>
                                     <div class="nofity-list">
                                         <a href="#" class="notify-item">
                                             <div class="notify-thumb"><i class="ti-key btn-danger"></i></div>
@@ -274,11 +288,13 @@
                             <li class="dropdown">
                                 <i class="fa fa-envelope-o dropdown-toggle" data-toggle="dropdown"><span>3</span></i>
                                 <div class="dropdown-menu notify-box nt-enveloper-box">
-                                    <span class="notify-title">You have 3 new notifications <a href="#">view all</a></span>
+                                    <span class="notify-title">You have 3 new notifications <a href="#">view
+                                            all</a></span>
                                     <div class="nofity-list">
                                         <a href="#" class="notify-item">
                                             <div class="notify-thumb">
-                                                <img src="<?= BASEURL; ?>/assets/images/author/author-img1.jpg" alt="image">
+                                                <img src="<?= BASEURL; ?>/assets/images/author/author-img1.jpg"
+                                                    alt="image">
                                             </div>
                                             <div class="notify-text">
                                                 <p>Aglae Mayer</p>
@@ -288,7 +304,8 @@
                                         </a>
                                         <a href="#" class="notify-item">
                                             <div class="notify-thumb">
-                                                <img src="<?= BASEURL; ?>/assets/images/author/author-img2.jpg" alt="image">
+                                                <img src="<?= BASEURL; ?>/assets/images/author/author-img2.jpg"
+                                                    alt="image">
                                             </div>
                                             <div class="notify-text">
                                                 <p>Aglae Mayer</p>
@@ -298,7 +315,8 @@
                                         </a>
                                         <a href="#" class="notify-item">
                                             <div class="notify-thumb">
-                                                <img src="<?= BASEURL; ?>/assets/images/author/author-img3.jpg" alt="image">
+                                                <img src="<?= BASEURL; ?>/assets/images/author/author-img3.jpg"
+                                                    alt="image">
                                             </div>
                                             <div class="notify-text">
                                                 <p>Aglae Mayer</p>
@@ -308,7 +326,8 @@
                                         </a>
                                         <a href="#" class="notify-item">
                                             <div class="notify-thumb">
-                                                <img src="<?= BASEURL; ?>/assets/images/author/author-img4.jpg" alt="image">
+                                                <img src="<?= BASEURL; ?>/assets/images/author/author-img4.jpg"
+                                                    alt="image">
                                             </div>
                                             <div class="notify-text">
                                                 <p>Aglae Mayer</p>
@@ -318,7 +337,8 @@
                                         </a>
                                         <a href="#" class="notify-item">
                                             <div class="notify-thumb">
-                                                <img src="<?= BASEURL; ?>/assets/images/author/author-img2.jpg" alt="image">
+                                                <img src="<?= BASEURL; ?>/assets/images/author/author-img2.jpg"
+                                                    alt="image">
                                             </div>
                                             <div class="notify-text">
                                                 <p>Aglae Mayer</p>
@@ -328,7 +348,8 @@
                                         </a>
                                         <a href="#" class="notify-item">
                                             <div class="notify-thumb">
-                                                <img src="<?= BASEURL; ?>/assets/images/author/author-img1.jpg" alt="image">
+                                                <img src="<?= BASEURL; ?>/assets/images/author/author-img1.jpg"
+                                                    alt="image">
                                             </div>
                                             <div class="notify-text">
                                                 <p>Aglae Mayer</p>
@@ -338,7 +359,8 @@
                                         </a>
                                         <a href="#" class="notify-item">
                                             <div class="notify-thumb">
-                                                <img src="<?= BASEURL; ?>/assets/images/author/author-img3.jpg" alt="image">
+                                                <img src="<?= BASEURL; ?>/assets/images/author/author-img3.jpg"
+                                                    alt="image">
                                             </div>
                                             <div class="notify-text">
                                                 <p>Aglae Mayer</p>
@@ -364,24 +386,26 @@
                                 </div>
                             </div> -->
                         </ul>
-                            
+
                     </div>
-                    
+
                     <div class="col-md-2 col-sm-2 clearfix">
-                            <div class="clearfix d-md-inline-block d-block">
-                                <div class="user-profile ">
-                                <img class="avatar user-thumb" src="<?= BASEURL; ?>/assets/images/author/anang.jpg" alt="avatar">
-                                <h4 class="user-name dropdown-toggle" data-toggle="dropdown">AnangK Trial<i class="fa fa-angle-down"></i></h4>
+                        <div class="clearfix d-md-inline-block d-block">
+                            <div class="user-profile ">
+                                <img class="avatar user-thumb" src="<?= BASEURL; ?>/assets/images/author/anang.jpg"
+                                    alt="avatar">
+                                <h4 class="user-name dropdown-toggle" data-toggle="dropdown">AnangK Trial<i
+                                        class="fa fa-angle-down"></i></h4>
                                 <div class="dropdown-menu">
                                     <a class="dropdown-item" href="<?= BASEURL; ?>/smprofile">Profile</a>
                                     <a class="dropdown-item" href="#">Settings</a>
                                     <a class="dropdown-item" href="<?= BASEURL; ?>/home/login">Log Out</a>
-                                </div> 
                                 </div>
                             </div>
+                        </div>
                     </div>
-                    
-                    
+
+
                 </div>
             </div>
             <!-- header area end -->

@@ -19,3 +19,5 @@ use App\Http\Controllers\PagesController;
 // });
 
 Route::get('/',[PagesController::class, 'index']);
+Route::view('/jadwaldokter','jadwal-dokter/index');
+Route::view('/count','count');
