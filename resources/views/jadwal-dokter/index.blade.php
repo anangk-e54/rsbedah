@@ -1,4 +1,4 @@
-@extends ('layout/webpage')
+@extends ('layout/horizontalnav')
 
 @section ('content')
 

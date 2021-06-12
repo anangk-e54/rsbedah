@@ -153,6 +153,10 @@ btn-tranparent {
     padding: 1.6rem;
 }
 
+.card-img-top {
+    padding: 0.6rem;
+}
+
 .h-full {
     height: 100%;
 }
@@ -1266,7 +1270,7 @@ table.dbkit-table tr td {
     text-align: center;
     padding: 23px 0 19px;
     /* background: #216353; */
-    background: #ac6b0b;
+    background: #ff449f;
 }
 
 .footer-area p {
