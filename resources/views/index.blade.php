@@ -36,15 +36,42 @@
 <div class="container-fluid">
     <div class="row mt-5">
         <div class="col-sm-3">
-            <div class="card text-center bg-dark text-white">
+            <div class="card text-center bg-dark text-black">
                 <img src="{{ asset('assets/images/card/card-img1.jpg') }}" class="card-img" alt="...">
                 <div class="card-img-overlay">
-                    <h5 class="card-title">Layanan 1</h5>
-                    <p class="card-text">Deskripsi </p>
+                    <h5 class="card-title">Dokter Spesialis</h5>
+                    <a href="{{ url('/jadwaldokter')}}" class="btn btn-primary">Lihat Jadwal Dokter</a>
                 </div>
             </div>
         </div>
         <div class="col-sm-3">
+            <div class="card text-center bg-dark text-black">
+                <img src="{{ asset('assets/images/card/card-img1.jpg') }}" class="card-img" alt="...">
+                <div class="card-img-overlay">
+                    <h5 class="card-title">Instalasi Gawat Darurat</h5>
+                    <p class="card-text"></p>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-3">
+            <div class="card text-center bg-dark text-black">
+                <img src="{{ asset('assets/images/card/card-img1.jpg') }}" class="card-img" alt="...">
+                <div class="card-img-overlay">
+                    <h5 class="card-title">Konsultasi Medis</h5>
+                    <a href="{{ url('/jadwaldokter')}}" class="btn btn-primary">Lihat Jadwal Dokter</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-3">
+            <div class="card text-center bg-dark text-black">
+                <img src="{{ asset('assets/images/card/card-img1.jpg') }}" class="card-img" alt="...">
+                <div class="card-img-overlay">
+                    <h5 class="card-title">Layanan 24/7</h5>
+                    <p class="card-text"></p>
+                </div>
+            </div>
+        </div>
+        <!-- <div class="col-sm-3">
             <div class="card text-center">
                 <div class="card-body">
                     <h5 class="card-title">Special title treatment</h5>
@@ -52,25 +79,7 @@
                     <a href="#" class="btn btn-primary">Go somewhere</a>
                 </div>
             </div>
-        </div>
-        <div class="col-sm-3">
-            <div class="card text-center bg-dark text-white">
-                <img src="{{ asset('assets/images/card/card-img1.jpg') }}" class="card-img" alt="...">
-                <div class="card-img-overlay">
-                    <h5 class="card-title">Layanan 1</h5>
-                    <p class="card-text">Deskripsi </p>
-                </div>
-            </div>
-        </div>
-        <div class="col-sm-3">
-            <div class="card text-center">
-                <div class="card-body">
-                    <h5 class="card-title">Special title treatment</h5>
-                    <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-                    <a href="#" class="btn btn-primary">Go somewhere</a>
-                </div>
-            </div>
-        </div>
+        </div> -->
     </div>
 </div>
 
@@ -111,17 +120,27 @@
                         </a>
                     </div>
                     <div class="card-img-overlay">
-                        <h5 class="card-title">Layanan 1</h5>
-                        <p class="card-text">Deskripsi </p>
+                        <!-- <h5 class="card-title">Layanan 1</h5>
+                        <p class="card-text">Deskripsi </p> -->
                     </div>
                 </div>
             </div>
             <div class="col-sm-6">
-                <div class="card text-center">
+                <div class="card text-left">
                     <div class="card-body">
-                        <h5 class="card-title">Special title treatment</h5>
-                        <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                        <h5 class="card-title text-center">Special title treatment</h5>
+                        <p class="card-text text-justify">Rumah Sakit Bedah Mitra Sehat Lamongan merupakan salah satu
+                            Rumah
+                            Sakit
+                            Khusus Bedah swasta yang ada di kota Lamongan. Rumah sakit ini didirikan oleh Yayasan Rumah
+                            Sakit Mitra Sehat yang beralamat di Jl. Raya Lamongan-Babat Km 5, Ds. Karanglangit Lamongan.
+                            Rumah sakit ini didirikan berdasarkan Akte Notaris Pendirian Yayasan Nomor: 7, tanggal 28
+                            April 2008 yang disahkan oleh Notaris di Lamongan, Juanita Sari Dewi, SH. Yang saat ini
+                            telah berganti nama menjadi Yayasan Mitra Sehat Lamongan Nomor : 10/KET.CUTI-MPPN/VIII/2019
+                            tanggal 24 Agustus 2019 yang di sahkan oleh Notaris di Lamongan, Guntur Mahdar, SE, SH, MKn.
+                            Rumah Sakit Bedah Mitra Sehat Lamongan mulai berdiri dan beroperasi pada tanggal 25 Mei
+                            2012. </p>
+                        <a href="#Sejarah" class="btn btn-primary">Baca selengkapnya...</a>
                     </div>
                 </div>
             </div>
@@ -134,28 +153,57 @@
 <div class="container">
     <div class="row">
         <!-- seo fact area start -->
-        <div class="col-lg-8">
+        <div class="col-lg-12">
             <div class="row">
-                <div class="col-md-6 mt-5 mb-3">
+                <div class="col-md-12 mt-5 mb-3">
                     <div class="card">
                         <div class="seo-fact sbg1">
                             <div class="p-4 d-flex justify-content-between align-items-center">
-                                <div class="seofct-icon"><i class="ti-thumb-up"></i> Likes</div>
-                                <h2>2,315</h2>
+                                <div class="seofct-icon"><i class="ti-thumb-up"></i><a href="{{ url('/jadwaldokter')}}"
+                                        class="btn btn-outline-light">Lihat Jadwal Dokter</a></div>
+                                <h2>Our Team</h2>
                             </div>
-                            <canvas id="seolinechart1" height="50"></canvas>
+                            <div class="row mt-5 mb-5 ml-3">
+                                <div class="col-sm-3">
+                                    <div class="card bg-light">
+                                        <img src="{{asset('assets/images/team/doctor-man.jpg')}}" class="card-img-top"
+                                            alt="...">
+                                        <div class="card-body  text-center">
+                                            <h5>Bidang Spesialis</h5>
+                                            <p class="card-text">dr. Dewa Arimasen</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-sm-3">
+                                    <div class="card bg-light">
+                                        <img src="{{asset('assets/images/team/doctor-woman.jpg')}}" class="card-img-top"
+                                            alt="...">
+                                        <div class="card-body text-center">
+                                            <h5>Bidang Spesialis</h5>
+                                            <p class="card-text">dr. Fulana Ikimasho</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- <canvas id="seolinechart1" height="50"></canvas> -->
                         </div>
                     </div>
                 </div>
-                <div class="col-md-6 mt-md-5 mb-3">
+                <div class="col-md-12 mt-md-5 mb-3">
                     <div class="card">
-                        <div class="seo-fact sbg2">
+                        <div class="center-content">
+                            <iframe width="100%" height="720" src="https://www.youtube.com/embed/T4oVGgCFAJk"
+                                title="YouTube video player" frameborder="0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                allowfullscreen></iframe>
+                        </div>
+                        <!-- <div class="seo-fact sbg2">
                             <div class="p-4 d-flex justify-content-between align-items-center">
                                 <div class="seofct-icon"><i class="ti-share"></i> Share</div>
                                 <h2>3,984</h2>
                             </div>
                             <canvas id="seolinechart2" height="50"></canvas>
-                        </div>
+                        </div> -->
                     </div>
                 </div>
                 <div class="col-md-6 mb-3 mb-lg-0">
