@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\PagesController;
+use App\Http\Controllers\DoctorsController;
 
 /*
 |--------------------------------------------------------------------------
@@ -20,4 +21,7 @@ use App\Http\Controllers\PagesController;
 
 Route::get('/',[PagesController::class, 'index']);
 Route::view('/jadwaldokter','jadwal-dokter/index');
+Route::get('/doctor',[DoctorsController::class, 'index'])->name('doctorlist');
+Route::get('/doctor/create',[DoctorsController::class, 'create']);
+Route::post('/doctor/store',[DoctorsController::class, 'store']);
 Route::view('/count','count');
