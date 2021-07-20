@@ -18,6 +18,12 @@ class DoctorsController extends Controller
         return view('doctor/index', compact('doctors'));
     }
 
+    public function view()
+    {
+        $doctors = Doctor::all();
+        return view('homepage/tim-dokter', compact('doctors'));
+    }
+
     /**
      * Show the form for creating a new resource.
      *
@@ -46,7 +52,15 @@ class DoctorsController extends Controller
         $doctor->doctornik = $request->doctornik;
         $doctor->doctorphone = $request->doctorphone;
         $doctor->doctoremail = $request->doctoremail;
+        $doctor->doctorspecialist = $request->doctorspecialist;
         $doctor->doctorphoto = $request->doctorphoto;
+
+        if($request->hasFile('doctorphoto')){
+            $request->file('doctorphoto')->move('assets/images/team/',$request->file('doctorphoto')->getClientOriginalName());
+            $doctor->doctorphoto = $request->file('doctorphoto')->getClientOriginalName();
+            $doctor->save();
+        }
+        
         $doctor->save();
 
         return redirect()->route('doctorlist');
@@ -60,7 +74,7 @@ class DoctorsController extends Controller
      */
     public function show(Doctor $doctor)
     {
-        //
+        return view('doctor.show', compact('doctor'));
     }
 
     /**
@@ -83,7 +97,18 @@ class DoctorsController extends Controller
      */
     public function update(Request $request, Doctor $doctor)
     {
-        //
+        // return $doctor;
+        Doctor::where('id', $doctor->id)
+        ->update([
+            'doctorname' => $doctor->doctorname,
+            'doctornik' => $request->doctornik,
+            'doctorphone' => $request->doctorphone,
+            'doctoremail' => $request->doctoremail,
+            'doctorspecialist' => $request->doctorspecialist,
+            'doctorphoto' => $doctor->doctorphoto
+
+        ]);
+        return redirect()->route('doctorshow', [$doctor->id]);
     }
 
     /**
@@ -94,6 +119,7 @@ class DoctorsController extends Controller
      */
     public function destroy(Doctor $doctor)
     {
-        //
+        Doctor::destroy($doctor->id);
+        return redirect()->route('doctorlist');
     }
 }

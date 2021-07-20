@@ -96,7 +96,7 @@
                                 <a href="javascript:void(0)" aria-expanded="true"><i class="ti-user "></i><span>User
                                         Management</span></a>
                                 <ul class="collapse">
-                                    <li class=""><a href="{{ url('/authors')}}">Account</a></li>
+                                    <li class=""><a href="{{ url('/doctor')}}">Doctor Account</a></li>
                                     <li><a href="{{ url('/contacts')}}">Contact Support</a></li>
                                 </ul>
                             </li>

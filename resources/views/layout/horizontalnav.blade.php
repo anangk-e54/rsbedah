@@ -75,17 +75,19 @@
                                 <ul id="nav_menu">
                                     <li><a href="{{ url('/')}}"><i class="ti-home"></i> <span>Beranda</span></a></li>
                                     <li>
-                                        <a href="javascript:void(0)"><i class="ti-support"></i><span>tentang
+                                        <a href="javascript:void(0)"><i class="ti-layout-sidebar-left"></i><span>tentang
                                                 kami</span></a>
                                         <ul class="submenu text-left">
                                             <li><a href="index.html"><i class="ti-shield"></i> Profil RS</a></li>
+                                            <li><a href="{{ url('/tim-dokter')}}"><i class="ti-user"></i> Tim Dokter</a>
+                                            </li>
                                             <li><a href="index2.html"><i class="ti-layers-alt"></i>Fasilitas RS</a></li>
                                             <li><a href="index3.html"><i class="ti-location-pin"></i>Lokasi</a>
                                             </li>
                                         </ul>
                                     </li>
                                     <li class="mega-menu">
-                                        <a href="javascript:void(0)"><i class="ti-layout-sidebar-left"></i><span>
+                                        <a href="javascript:void(0)"><i class="ti-support"></i><span>
                                                 Layanan</span></a>
                                         <ul class="submenu text-left">
                                             <li><a href="accordion.html">Layanan 1</a></li>

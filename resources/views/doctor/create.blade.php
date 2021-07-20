@@ -1,4 +1,4 @@
-@extends ('layout/horizontalnav')
+@extends ('layout/main')
 
 @section ('content')
 
@@ -11,7 +11,7 @@
                         <h4 class="header-tittle">New Doctor</h4>
                         <p cals="text-muted font-14 mb-3"> Please complete all field in this form </p>
                     </div>
-                    <form method="post" action="/doctor/store">
+                    <form method="post" action="/doctor/store" enctype="multipart/form-data">
                         @csrf
                         <section>
                             <div class="mt-1">
@@ -68,6 +68,34 @@
                                                         class="form-control form-control-sm @error ('doctoremail') is-invalid @enderror"
                                                         id="doctoremail" value="{{ old('doctoremail')}}">
                                                     @error ('doctoremail')
+                                                    <div class="alert alert-danger invalid-feedback">Mohon isi Jenis
+                                                        Kendaraan terlebih dahulu | {{ $message}}</div>
+                                                    @enderror
+                                                </div>
+                                            </div>
+                                            <div class="row  mt-2">
+                                                <div class="col-xs-4 col-md-2 ">
+                                                    <label for="doctorspecialist" class="">Email</label>
+                                                </div>
+                                                <div class="col-xs-4 col-md-9">
+                                                    <input type="text" name="doctorspecialist"
+                                                        class="form-control form-control-sm @error ('doctorspecialist') is-invalid @enderror"
+                                                        id="doctorspecialist" value="{{ old('doctorspecialist')}}">
+                                                    @error ('doctorspecialist')
+                                                    <div class="alert alert-danger invalid-feedback">Mohon isi Jenis
+                                                        Bidang Spesialis dari Dokter ini ! | {{ $message}}</div>
+                                                    @enderror
+                                                </div>
+                                            </div>
+                                            <div class="row  mt-2">
+                                                <div class="col-xs-4 col-md-2 ">
+                                                    <label for="doctorphoto" class="">Profile Picture</label>
+                                                </div>
+                                                <div class="col-xs-4 col-md-9">
+                                                    <input type="file" name="doctorphoto"
+                                                        class="form-control form-control-sm @error ('doctorphoto') is-invalid @enderror"
+                                                        id="doctorphoto" value="{{ old('doctorphoto')}}">
+                                                    @error ('doctorphoto')
                                                     <div class="alert alert-danger invalid-feedback">Mohon isi Jenis
                                                         Kendaraan terlebih dahulu | {{ $message}}</div>
                                                     @enderror
