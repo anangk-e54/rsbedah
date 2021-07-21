@@ -3,6 +3,7 @@
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\PagesController;
 use App\Http\Controllers\DoctorsController;
+use App\Http\Controllers\SchedulesController;
 
 /*
 |--------------------------------------------------------------------------
@@ -28,4 +29,5 @@ Route::post('/doctor/store',[DoctorsController::class, 'store']);
 Route::get('/doctor/{doctor}',[DoctorsController::class, 'show'])->name('doctorshow');
 Route::post('/doctor/{doctor}',[DoctorsController::class, 'update']);
 Route::delete('/doctor/{doctor}',[DoctorsController::class, 'destroy']);
+Route::post('/schedule/store',[SchedulesController::class, 'store']);
 Route::view('/count','count');

@@ -98,16 +98,44 @@ class DoctorsController extends Controller
     public function update(Request $request, Doctor $doctor)
     {
         // return $doctor;
-        Doctor::where('id', $doctor->id)
-        ->update([
+        // Doctor::where('id', $doctor->id)
+        // ->update([
+        //     'doctorname' => $doctor->doctorname,
+        //     'doctornik' => $request->doctornik,
+        //     'doctorphone' => $request->doctorphone,
+        //     'doctoremail' => $request->doctoremail,
+        //     'doctorspecialist' => $request->doctorspecialist,
+        //     'doctorphoto' => $doctor->doctorphoto
+
+        // ]);
+
+        $datas = [
+            
             'doctorname' => $doctor->doctorname,
             'doctornik' => $request->doctornik,
             'doctorphone' => $request->doctorphone,
             'doctoremail' => $request->doctoremail,
             'doctorspecialist' => $request->doctorspecialist,
             'doctorphoto' => $doctor->doctorphoto
-
-        ]);
+           ];
+           $datas2 = [
+               
+            'doctorname' => $doctor->doctorname,
+            'doctornik' => $request->doctornik,
+            'doctorphone' => $request->doctorphone,
+            'doctoremail' => $request->doctoremail,
+            'doctorspecialist' => $request->doctorspecialist
+              ];
+   
+           $doctor::where('id', $doctor->id)
+              ->update(
+              $request->hasFile('doctorphoto')?  $datas : $datas2
+           );
+           if($request->hasFile('doctorphoto')){
+               $request->file('doctorphoto')->move('assets/images/team/',$request->file('doctorphoto')->getClientOriginalName());
+               $doctor->doctorphoto = $request->file('doctorphoto')->getClientOriginalName();
+               $doctor->save();
+           }
         return redirect()->route('doctorshow', [$doctor->id]);
     }
 

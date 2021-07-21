@@ -73,7 +73,8 @@
                                                     data-dismiss="modal"><span>&times;</span></button>
                                             </div>
                                             <div class="modal-body">
-                                                <form method="post" action="/doctor/{{$doctor->id}}">
+                                                <form method="post" action="/doctor/{{$doctor->id}}"
+                                                    enctype="multipart/form-data">
                                                     @csrf
                                                     <div class="form-group">
                                                         <input type="text" name="doctorname" class="form-control mt-2"
@@ -92,6 +93,9 @@
                                                             class="form-control mt-2"
                                                             value="{{ $doctor->doctorspecialist}}"
                                                             placeholder="jenis kendaraan">
+                                                        <input type="file" name="doctorphoto"
+                                                            class="form-control form-control-sm " id="doctorphoto"
+                                                            value="{{ $doctor->doctorphoto}}">
                                                     </div>
 
                                             </div>
@@ -113,8 +117,9 @@
                         <div class="data-tables mt-5">
                             <table id="dataTable" class="text-center">
                                 <h5>Data Ritase Armada</h5>
-                                <!-- <button type="button" class="btn btn-outline-info btn-xs" data-toggle="modal" data-target=".addmaintenance">
-                                        <i class="ti-plus"> Tambah Ritase Armada </i></button> -->
+                                <button type="button" class="btn btn-outline-info btn-xs" data-toggle="modal"
+                                    data-target=".addmaintenance">
+                                    <i class="ti-plus"> Tambah Ritase Armada </i></button>
                                 @if (session('status'))
                                 <div class="alert alert-success">
                                     {{ session('status') }}
@@ -168,20 +173,21 @@
                 <button type="button" class="close" data-dismiss="modal"><span>&times;</span></button>
             </div>
             <div class="modal-body">
-                <form method="post" action="/maintenances">
+                <form method="post" action="/schedule/store">
                     @csrf
                     <div class="form-group">
-                        <input type="hidden" name="transport_id" class="form-control mt-2" value="{{ $doctor->id }}"
-                            placeholder="nomor transaksi">
-                        <input type="date" name="mntdate" class="form-control mt-2" placeholder="Tanggal">
-                        <input type="text" name="mntorder" class="form-control mt-2" placeholder="Order" required>
-                        <input type="text" name="mntvendor" class="form-control mt-2" placeholder="Vendor">
-                        <input type="text" name="mntprice" class="form-control mt-2 mntprice" placeholder="Harga">
-                        <input type="text" name="mntacomodation" class="form-control mt-2 mntacomodation"
-                            placeholder="Akomodasi">
-                        <input type="text" name="mntrepair" class="form-control mt-2 mntrepair"
-                            placeholder="Biaya Perbaikan Kerusakan">
-                        <input type="text" name="mntresidual" class="form-control mt-2 mntresidual" placeholder="Sisa">
+                        <input type="hidden" name="doctor_id" class="form-control mt-2" value="{{ $doctor->id }}"
+                            placeholder="">
+                        <select name="day">
+                            <option value="senin">Senin</option>
+                            <option value="selasa">Selasa</option>
+                            <option value="rabu">Rabu</option>
+                            <option value="kamis">Kamis</option>
+                            <option value="jum'at">Jum'at</option>
+                            <option value="sabtu">Sabtu</option>
+                            <option value="minggu">Minggu</option>
+                        </select>
+                        <input type="time" name="time" min="07:00" max="20:00" required>
                     </div>
 
             </div>
