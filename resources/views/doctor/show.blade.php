@@ -128,26 +128,41 @@
                                 <thead>
                                     <tr class="text-capitalize">
                                         <th class="text-center" style="width: 3%;">#</th>
-                                        <th class="text-center">Tanggal</th>
-                                        <th class="text-left">Orderan</th>
-                                        <th class="text-left">Vendor</th>
-                                        <th class="">Harga</th>
-                                        <th class="">Akomodasi</th>
-                                        <th class="">Kerusakan</th>
-                                        <th class="">Sisa</th>
+                                        <th class="text-center">Hari</th>
+                                        <th class="text-left">Mulai</th>
+                                        <th class="text-left">Selesai</th>
                                         <th class="">
                                         </th>
                                     </tr>
                                 </thead>
                                 <tbody>
+                                    @foreach($doctor->schedule as $schedule)
+                                    <tr>
+                                        <th scope="row" class="text-center" style="width: 3%;">{{ $loop->iteration}}
+                                        </th>
+                                        <td class="text-center">{{ $schedule->day}}</td>
+                                        <td class="text-left" style="width: 10%;">{{ $schedule->starttime }}</td>
+                                        <td class="text-left" style="width: 10%;">{{ $schedule->endtime }}</td>
+                                        <td class="">
+                                            <a href="/maintenances/{{ $schedule->id }}/edit"
+                                                class="btn btn-outline-warning btn-xs "><i
+                                                    class="ti-pencil-alt"></i></a>
+                                            <!-- <form action="/maintenances/{{ $schedule->id }}" method="post" class="d-inline">
+                                                        @method('delete')
+                                                        @csrf
+                                                        <button type="submit" class="btn btn-outline-danger btn-xs" onclick="return confirm('Are you sure Delete this Data?')"><i class="ti-trash"></i></button>
+                                                        </form> -->
+                                        </td>
+                                    </tr>
+                                    @endforeach
                                 </tbody>
                             </table>
                             <table class="table table-bordered table-hover text-right">
                                 <tfoot>
-
                                     <tr class="btn-info">
 
                                     </tr>
+
                                 </tfoot>
                             </table>
                         </div>
@@ -187,7 +202,8 @@
                             <option value="sabtu">Sabtu</option>
                             <option value="minggu">Minggu</option>
                         </select>
-                        <input type="time" name="time" min="07:00" max="20:00" required>
+                        <input type="time" name="starttime" min="07:00" max="20:00" required>
+                        <input type="time" name="endtime" min="07:00" max="20:00" required>
                     </div>
 
             </div>

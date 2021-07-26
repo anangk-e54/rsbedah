@@ -19,7 +19,8 @@ class CreateSchedulesTable extends Migration
             ->constrained()
             ->onDelete('cascade');
             $table->string('day');
-            $table->time('time');
+            $table->time('starttime');
+            $table->time('endtime');
             $table->timestamps();
             $table->softDeletes();
         });

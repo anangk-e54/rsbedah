@@ -52,7 +52,7 @@
             <div class="sidebar-header">
                 <div class="logo">
                     <a href="#"><img src="{{ asset('assets/images/icon/logo.png') }}" alt="logo"></a>
-                    <p>PT. GALEH PUTRI TRANS</p>
+                    <p>RSB Mitra Sehat Lamongan</p>
                 </div>
             </div>
             <div class="main-menu">
@@ -68,14 +68,9 @@
                                     <li><a href="{{ url('/profiles')}}">Profile Author</a></li>
                                 </ul>
                             </li>
-
-                            <!-- Trial with DB -->
-                            <!-- <li><a href="{{ url('/tugasakhir')}}"><i class="ti-github"></i><span>Trial Tugas Akhir </span></a></li> -->
-                            <!-- <li><a href="{{ url('/student')}}"><i class="ti-palette"></i><span>UI Tugas Akhir</span></a></li> -->
-
-                            <li><a href="{{ url('/orders')}}"><i class="ti-package"></i><span>Delivery Order</span></a>
+                            <li><a href="{{ url('/doctor')}}"><i class="ti-user"></i><span>Doctor</span></a>
                             </li>
-                            <li><a href="{{ url('/invoices')}}"><i class="ti-write"></i><span>Invoice</span></a></li>
+                            <li><a href="{{ url('/article')}}"><i class="ti-write"></i><span>Article</span></a></li>
                             <li class="">
                                 <a href="javascript:void(0)" aria-expanded="true"><i
                                         class="ti-truck"></i><span>Maintenance</span></a>
@@ -202,8 +197,8 @@
         <!-- footer area start-->
         <footer>
             <div class="footer-area ">
-                <p>© Copyright 2020. All right reserved. Created by <a
-                        href="https://poroskolektif.com/">PorosNexgen</a>.</p>
+                <p>© Copyright 2021. All right reserved. Created by <a href="https://www.instagram.com/boxout.studios/"
+                        target="_blank">NexgenInnovate</a>.</p>
             </div>
         </footer>
         <!-- footer area end-->

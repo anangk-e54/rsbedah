@@ -38,7 +38,8 @@ class SchedulesController extends Controller
         $schedule = new Schedule;
         $schedule->doctor_id = $request->doctor_id;
         $schedule->day = $request->day;
-        $schedule->time = $request->time;
+        $schedule->starttime = $request->starttime;
+        $schedule->endtime = $request->endtime;
         $schedule->save();
 
         return redirect()->route('doctorshow', [$request->doctor_id]);

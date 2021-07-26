@@ -4,6 +4,7 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\PagesController;
 use App\Http\Controllers\DoctorsController;
 use App\Http\Controllers\SchedulesController;
+use App\Http\Controllers\ArticlesController;
 
 /*
 |--------------------------------------------------------------------------
@@ -21,6 +22,7 @@ use App\Http\Controllers\SchedulesController;
 // });
 
 Route::get('/',[PagesController::class, 'index']);
+
 Route::view('/jadwaldokter','jadwal-dokter/index');
 Route::get('/doctor',[DoctorsController::class, 'index'])->name('doctorlist');
 Route::get('/tim-dokter',[DoctorsController::class, 'view']);
@@ -30,4 +32,11 @@ Route::get('/doctor/{doctor}',[DoctorsController::class, 'show'])->name('doctors
 Route::post('/doctor/{doctor}',[DoctorsController::class, 'update']);
 Route::delete('/doctor/{doctor}',[DoctorsController::class, 'destroy']);
 Route::post('/schedule/store',[SchedulesController::class, 'store']);
+
+
+Route::get('/article',[ArticlesController::class, 'index'])->name('articlelist');
+Route::get('/article/create',[ArticlesController::class, 'create']);
+Route::post('/article/store',[ArticlesController::class, 'store']);
+Route::get('/article/{article}',[ArticlesController::class, 'edit'])->name('editarticle');
+
 Route::view('/count','count');

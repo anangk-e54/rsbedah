@@ -9,6 +9,10 @@ class Doctor extends Model
 {
     use HasFactory;
 
+    public function Schedule(){
+        return $this->hasMany(Schedule::class);
+    }
+
     public function getDoctorphoto(){
         if(!$this->doctorphoto){
             return asset('assets/images/team/doctor-woman.jpg');
