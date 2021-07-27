@@ -59,6 +59,30 @@ class ArticlesController extends Controller
             $article->headline_img = $request->file('headline_img')->getClientOriginalName();
             $article->save();
         }
+
+        if($request->hasFile('firstparagraph_img')){
+            $request->file('firstparagraph_img')->move('assets/images/team/',$request->file('firstparagraph_img')->getClientOriginalName());
+            $article->firstparagraph_img = $request->file('firstparagraph_img')->getClientOriginalName();
+            $article->save();
+        }
+
+        if($request->hasFile('secondparagraph_img')){
+            $request->file('secondparagraph_img')->move('assets/images/team/',$request->file('secondparagraph_img')->getClientOriginalName());
+            $article->secondparagraph_img = $request->file('secondparagraph_img')->getClientOriginalName();
+            $article->save();
+        }
+
+        if($request->hasFile('thirdparagraph_img')){
+            $request->file('thirdparagraph_img')->move('assets/images/team/',$request->file('thirdparagraph_img')->getClientOriginalName());
+            $article->thirdparagraph_img = $request->file('thirdparagraph_img')->getClientOriginalName();
+            $article->save();
+        }
+
+        if($request->hasFile('fourthparagraph_img')){
+            $request->file('fourthparagraph_img')->move('assets/images/team/',$request->file('fourthparagraph_img')->getClientOriginalName());
+            $article->fourthparagraph_img = $request->file('fourthparagraph_img')->getClientOriginalName();
+            $article->save();
+        }
         
         $article->save();
 
@@ -96,7 +120,72 @@ class ArticlesController extends Controller
      */
     public function update(Request $request, Article $article)
     {
-        //
+        $datas = [
+            
+            'tittle' => $request->tittle,
+        'author' => $request->author,
+        'editor' => $request->doctorphone,
+        'resource' => $request->resource,
+        'headline' => $request->headline,
+        'headline_img' => $request->headline_img,
+        'firstparagraph' => $request->firstparagraph,
+        'firstparagraph_img' => $request->firstparagraph_img,
+        'secondparagraph' => $request->secondparagraph,
+        'secondparagraph_img' => $request->secondparagraph_img,
+        'thirdparagraph' => $request->thirdparagraph,
+        'thirdparagraph_img' => $request->thirdparagraph_img,
+        'fourthparagraph' => $request->fourthparagraph,
+        'fourthparagraph_img' => $request->fourthparagraph_img,
+        'footline' => $request->footline
+           ];
+           $datas2 = [
+               
+            'tittle' => $request->tittle,
+        'author' => $request->author,
+        'editor' => $request->doctorphone,
+        'resource' => $request->resource,
+        'headline' => $request->headline,
+        'firstparagraph' => $request->firstparagraph,
+        'secondparagraph' => $request->secondparagraph,
+        'thirdparagraph' => $request->thirdparagraph,
+        'fourthparagraph' => $request->fourthparagraph,
+        'footline' => $request->footline
+              ];
+   
+           $article::where('id', $article->id)
+              ->update(
+              $request->hasFile('doctorphoto')?  $datas : $datas2
+           );
+           if($request->hasFile('headline_img')){
+            $request->file('headline_img')->move('assets/images/team/',$request->file('headline_img')->getClientOriginalName());
+            $article->headline_img = $request->file('headline_img')->getClientOriginalName();
+            $article->save();
+        }
+
+        if($request->hasFile('firstparagraph_img')){
+            $request->file('firstparagraph_img')->move('assets/images/team/',$request->file('firstparagraph_img')->getClientOriginalName());
+            $article->firstparagraph_img = $request->file('firstparagraph_img')->getClientOriginalName();
+            $article->save();
+        }
+
+        if($request->hasFile('secondparagraph_img')){
+            $request->file('secondparagraph_img')->move('assets/images/team/',$request->file('secondparagraph_img')->getClientOriginalName());
+            $article->secondparagraph_img = $request->file('secondparagraph_img')->getClientOriginalName();
+            $article->save();
+        }
+
+        if($request->hasFile('thirdparagraph_img')){
+            $request->file('thirdparagraph_img')->move('assets/images/team/',$request->file('thirdparagraph_img')->getClientOriginalName());
+            $article->thirdparagraph_img = $request->file('thirdparagraph_img')->getClientOriginalName();
+            $article->save();
+        }
+
+        if($request->hasFile('fourthparagraph_img')){
+            $request->file('fourthparagraph_img')->move('assets/images/team/',$request->file('fourthparagraph_img')->getClientOriginalName());
+            $article->fourthparagraph_img = $request->file('fourthparagraph_img')->getClientOriginalName();
+            $article->save();
+        }
+        return redirect()->route('editarticle', [$article->id]);
     }
 
     /**
@@ -107,6 +196,7 @@ class ArticlesController extends Controller
      */
     public function destroy(Article $article)
     {
-        //
+        Article::destroy($article->id);
+        return redirect()->route('articlelist');
     }
 }

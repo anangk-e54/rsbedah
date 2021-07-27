@@ -31,12 +31,16 @@ Route::post('/doctor/store',[DoctorsController::class, 'store']);
 Route::get('/doctor/{doctor}',[DoctorsController::class, 'show'])->name('doctorshow');
 Route::post('/doctor/{doctor}',[DoctorsController::class, 'update']);
 Route::delete('/doctor/{doctor}',[DoctorsController::class, 'destroy']);
+
 Route::post('/schedule/store',[SchedulesController::class, 'store']);
+Route::post('/schedule/{schedule}',[SchedulesController::class, 'update']);
 
 
 Route::get('/article',[ArticlesController::class, 'index'])->name('articlelist');
 Route::get('/article/create',[ArticlesController::class, 'create']);
 Route::post('/article/store',[ArticlesController::class, 'store']);
 Route::get('/article/{article}',[ArticlesController::class, 'edit'])->name('editarticle');
+Route::post('/article/{article}',[ArticlesController::class, 'update']);
+Route::delete('/article/{article}',[ArticlesController::class, 'destroy']);
 
 Route::view('/count','count');

@@ -144,10 +144,10 @@
                                         <td class="text-left" style="width: 10%;">{{ $schedule->starttime }}</td>
                                         <td class="text-left" style="width: 10%;">{{ $schedule->endtime }}</td>
                                         <td class="">
-                                            <a href="/maintenances/{{ $schedule->id }}/edit"
+                                            <a href="/schedule/{{ $schedule->id }}/edit"
                                                 class="btn btn-outline-warning btn-xs "><i
                                                     class="ti-pencil-alt"></i></a>
-                                            <!-- <form action="/maintenances/{{ $schedule->id }}" method="post" class="d-inline">
+                                            <!-- <form action="/schedule/{{ $schedule->id }}" method="post" class="d-inline">
                                                         @method('delete')
                                                         @csrf
                                                         <button type="submit" class="btn btn-outline-danger btn-xs" onclick="return confirm('Are you sure Delete this Data?')"><i class="ti-trash"></i></button>

@@ -11,7 +11,7 @@
                         <h4 class="header-tittle">New Article</h4>
                         <p cals="text-muted font-14 mb-3"> Please write headline max 225 character </p>
                     </div>
-                    <form method="post" action="/article/store" enctype="multipart/form-data">
+                    <form method="post" action="/article/{{$article->id}}" enctype="multipart/form-data">
                         @csrf
                         <section>
                             <div class="mt-1">
@@ -93,6 +93,8 @@
                                                     <label for="headline_img" class="">Headline Image</label>
                                                 </div>
                                                 <div class="col-xs-4 col-md-9">
+                                                    <img src="{{  $article->getHeadline() }}" class="card-img-top"
+                                                        alt="...">
                                                     <input type="file" name="headline_img"
                                                         class="form-control form-control-sm @error ('headline_img') is-invalid @enderror"
                                                         id="headline_img" value="{{ $article->headline_img }}">
@@ -123,6 +125,8 @@
                                                         Image</label>
                                                 </div>
                                                 <div class="col-xs-4 col-md-9">
+                                                    <img src="{{  $article->getFirstparagraph() }}" class="card-img-top"
+                                                        alt="Image for First Paragraph">
                                                     <input type="file" name="firstparagraph_img"
                                                         class="form-control form-control-sm @error ('firstparagraph_img') is-invalid @enderror"
                                                         id="firstparagraph_img"
@@ -154,6 +158,8 @@
                                                         Image</label>
                                                 </div>
                                                 <div class="col-xs-4 col-md-9">
+                                                    <img src="{{  $article->getSecondparagraph() }}"
+                                                        class="card-img-top" alt="Image for Second Paragraph">
                                                     <input type="file" name="secondparagraph_img"
                                                         class="form-control form-control-sm @error ('secondparagraph_img') is-invalid @enderror"
                                                         id="secondparagraph_img"
@@ -185,6 +191,8 @@
                                                         Image</label>
                                                 </div>
                                                 <div class="col-xs-4 col-md-9">
+                                                    <img src="{{  $article->getThirdparagraph() }}" class="card-img-top"
+                                                        alt="Image for Third Paragraph">
                                                     <input type="file" name="thirdparagraph_img"
                                                         class="form-control form-control-sm @error ('thirdparagraph_img') is-invalid @enderror"
                                                         id="thirdparagraph_img"
@@ -216,6 +224,9 @@
                                                         Image</label>
                                                 </div>
                                                 <div class="col-xs-4 col-md-9">
+
+                                                    <img src="{{  $article->getFourthparagraph() }}"
+                                                        class="card-img-top" alt="Image for Fourth Paragraph">
                                                     <input type="file" name="fourthparagraph_img"
                                                         class="form-control form-control-sm @error ('fourthparagraph_img') is-invalid @enderror"
                                                         id="fourthparagraph_img"

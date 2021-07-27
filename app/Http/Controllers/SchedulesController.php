@@ -76,7 +76,15 @@ class SchedulesController extends Controller
      */
     public function update(Request $request, Schedule $schedule)
     {
-        //
+        Doctor::where('id', $article->id)
+        ->update([
+            'doctor_id' => $article->doctor_id,
+            'day' => $request->day,
+            'starttime' => $request->starttime,
+            'endtime' => $request->endtime
+
+        ]);
+        return redirect()->route('doctorshow', [$request->doctor_id]);
     }
 
     /**
