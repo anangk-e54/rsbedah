@@ -119,7 +119,7 @@
                                 <h5>Data Ritase Armada</h5>
                                 <button type="button" class="btn btn-outline-info btn-xs" data-toggle="modal"
                                     data-target=".addmaintenance">
-                                    <i class="ti-plus"> Tambah Ritase Armada </i></button>
+                                    <i class="ti-plus"> Tambah Hari </i></button>
                                 @if (session('status'))
                                 <div class="alert alert-success">
                                     {{ session('status') }}
@@ -129,8 +129,10 @@
                                     <tr class="text-capitalize">
                                         <th class="text-center" style="width: 3%;">#</th>
                                         <th class="text-center">Hari</th>
+                                        <th class="text-center"></th>
                                         <th class="text-left">Mulai</th>
                                         <th class="text-left">Selesai</th>
+                                        <th class="text-left">Update</th>
                                         <th class="">
                                         </th>
                                     </tr>
@@ -140,18 +142,41 @@
                                     <tr>
                                         <th scope="row" class="text-center" style="width: 3%;">{{ $loop->iteration}}
                                         </th>
-                                        <td class="text-center">{{ $schedule->day}}</td>
-                                        <td class="text-left" style="width: 10%;">{{ $schedule->starttime }}</td>
-                                        <td class="text-left" style="width: 10%;">{{ $schedule->endtime }}</td>
+                                        <form method="post" action="/schedule/{{$schedule->id}}">
+                                            @csrf
+                                            <td class="text-center">
+                                                <h6>{{ $schedule->day}}</h6>
+                                            </td>
+                                            <td class="text-center"><select name="day" class="form-control">
+                                                    <option value=" {{ $schedule->day}}">Ganti Hari</option>
+                                                    <option value="senin">Senin</option>
+                                                    <option value="selasa">Selasa</option>
+                                                    <option value="rabu">Rabu</option>
+                                                    <option value="kamis">Kamis</option>
+                                                    <option value="jum'at">Jum'at</option>
+                                                    <option value="sabtu">Sabtu</option>
+                                                    <option value="minggu">Minggu</option>
+                                                </select></td>
+                                            <td class="text-left" style="width: 15%;"><input type="time"
+                                                    name="starttime" class="form-control"
+                                                    value="{{ $schedule->starttime }}" placeholder="nomor kendaraan">
+                                            </td>
+                                            <td class="text-left" style="width: 15%;"><input type="time" name="endtime"
+                                                    class="form-control" value="{{ $schedule->endtime }}"
+                                                    placeholder="nomor kendaraan"></td>
+                                            <td class="text-left"><button type="submit"
+                                                    class="btn btn-primary form-control">Update</button></td>
+                                        </form>
                                         <td class="">
-                                            <a href="/schedule/{{ $schedule->id }}/edit"
-                                                class="btn btn-outline-warning btn-xs "><i
+                                            <a href="/schedule/edit" class="btn btn-outline-warning btn-xs "><i
                                                     class="ti-pencil-alt"></i></a>
-                                            <!-- <form action="/schedule/{{ $schedule->id }}" method="post" class="d-inline">
-                                                        @method('delete')
-                                                        @csrf
-                                                        <button type="submit" class="btn btn-outline-danger btn-xs" onclick="return confirm('Are you sure Delete this Data?')"><i class="ti-trash"></i></button>
-                                                        </form> -->
+                                            <form action="/schedule/{{ $schedule->id }}" method="post" class="d-inline">
+                                                @method('delete')
+                                                @csrf
+                                                <button type="submit" class="btn btn-outline-danger btn-xs"
+                                                    onclick="return confirm('Are you sure Delete this Data?')"><i
+                                                        class="ti-trash"></i></button>
+                                            </form>
                                         </td>
                                     </tr>
                                     @endforeach
@@ -193,7 +218,7 @@
                     <div class="form-group">
                         <input type="hidden" name="doctor_id" class="form-control mt-2" value="{{ $doctor->id }}"
                             placeholder="">
-                        <select name="day">
+                        <select name="day" value="senin">
                             <option value="senin">Senin</option>
                             <option value="selasa">Selasa</option>
                             <option value="rabu">Rabu</option>

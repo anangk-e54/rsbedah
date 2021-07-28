@@ -34,6 +34,8 @@ Route::delete('/doctor/{doctor}',[DoctorsController::class, 'destroy']);
 
 Route::post('/schedule/store',[SchedulesController::class, 'store']);
 Route::post('/schedule/{schedule}',[SchedulesController::class, 'update']);
+Route::delete('/schedule/{schedule}',[SchedulesController::class, 'destroy']);
+
 
 
 Route::get('/article',[ArticlesController::class, 'index'])->name('articlelist');

@@ -76,15 +76,15 @@ class SchedulesController extends Controller
      */
     public function update(Request $request, Schedule $schedule)
     {
-        Doctor::where('id', $article->id)
+        Schedule::where('id', $schedule->id)
         ->update([
-            'doctor_id' => $article->doctor_id,
+            'doctor_id' => $schedule->doctor_id,
             'day' => $request->day,
             'starttime' => $request->starttime,
             'endtime' => $request->endtime
 
         ]);
-        return redirect()->route('doctorshow', [$request->doctor_id]);
+        return redirect()->route('doctorshow', [$schedule->doctor_id]);
     }
 
     /**
@@ -95,6 +95,7 @@ class SchedulesController extends Controller
      */
     public function destroy(Schedule $schedule)
     {
-        //
+        Schedule::destroy($schedule->id);
+        return redirect()->route('doctorshow', [$schedule->doctor_id]);
     }
 }
