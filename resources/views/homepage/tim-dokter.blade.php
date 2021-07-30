@@ -12,7 +12,7 @@
                 <div class="card-body  text-center">
                     <h5>{{ $doctor->doctorspecialist }}</h5>
                     <p class="card-text">{{ $doctor->doctorname }}</p>
-                    <a href="{{ url('/jadwaldokter')}}" class="btn btn-xs btn-primary">Lihat Jadwal</a>
+                    <a href="/profil-dokter/{{ $doctor->id }}" class="btn btn-xs btn-primary">Lihat Jadwal</a>
                 </div>
             </div>
         </div>

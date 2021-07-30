@@ -8,7 +8,7 @@ use Illuminate\Database\Eloquent\Model;
 class Schedule extends Model
 {
     use HasFactory;
-    public function Cash(){
-        return $this->belongsTo(Cash::class);
+    public function Doctor(){
+        return $this->belongsTo(Doctor::class);
     }
 }

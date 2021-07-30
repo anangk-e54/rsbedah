@@ -14,7 +14,8 @@ class SchedulesController extends Controller
      */
     public function index()
     {
-        //
+        $schedules = Schedule::all();
+        return view('homepage/jadwal-dokter', compact('schedules'));
     }
 
     /**

@@ -77,6 +77,11 @@ class DoctorsController extends Controller
         return view('doctor.show', compact('doctor'));
     }
 
+    public function detail(Doctor $doctor)
+    {
+        return view('homepage/profil-dokter', compact('doctor'));
+    }
+
     /**
      * Show the form for editing the specified resource.
      *

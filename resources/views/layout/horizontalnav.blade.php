@@ -16,6 +16,9 @@
     <!-- amchart css -->
     <link rel="stylesheet" href="https://www.amcharts.com/lib/3/plugins/export/export.css" type="text/css"
         media="all" />
+
+    @yield('stylecss')
+
     <!-- others css -->
     <link rel="stylesheet" href="{{ asset('assets/css/typography.css') }}">
     <link rel="stylesheet" href="{{ asset('assets/css/default-css.css') }}">
@@ -79,7 +82,8 @@
                                                 kami</span></a>
                                         <ul class="submenu text-left">
                                             <li><a href="index.html"><i class="ti-shield"></i> Profil RS</a></li>
-                                            <li><a href="{{ url('/tim-dokter')}}"><i class="ti-user"></i> Tim Dokter</a>
+                                            <li><a href="{{ url('/tim-dokter')}}"><i class="ti-id-badge"></i> Tim
+                                                    Dokter</a>
                                             </li>
                                             <li><a href="index2.html"><i class="ti-layers-alt"></i>Fasilitas RS</a></li>
                                             <li><a href="index3.html"><i class="ti-location-pin"></i>Lokasi</a>
@@ -109,8 +113,10 @@
                                             <li><a href="grid.html">Layanan 17</a></li>
                                         </ul>
                                     </li>
-                                    <li><a href="{{ url('/jadwaldokter')}}"><i class="ti-agenda"></i> <span>Jadwal
+                                    <li><a href="/jadwal-dokter"><i class="ti-agenda"></i> <span>Jadwal
                                                 Dokter</span></a>
+                                    </li>
+                                    <li><a href="/artikel"><i class="ti-comment-alt"></i> <span>Artikel</span></a>
                                     </li>
                                     <li><a href="login"><i class="ti-user"></i> <span>login</span></a>
                                         <!-- </li>
@@ -405,6 +411,9 @@
     <script src="{{ asset('assets/js/bar-chart.js') }}"></script>
     <!-- all map chart -->
     <script src="{{ asset('assets/js/maps.js') }}"></script>
+
+    @yield('stylejs')
+
     <!-- others plugins -->
     <script src="{{ asset('assets/js/plugins.js') }}"></script>
     <script src="{{ asset('assets/js/scripts.js') }}"></script>

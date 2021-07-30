@@ -18,6 +18,12 @@ class ArticlesController extends Controller
         return view('article/index', compact('articles')); 
     }
 
+    public function view()
+    {
+        $articles = Article::all();
+        return view('homepage/artikel', compact('articles')); 
+    }
+
     /**
      * Show the form for creating a new resource.
      *
@@ -40,7 +46,7 @@ class ArticlesController extends Controller
         $article = new Article;
         $article->tittle = $request->tittle;
         $article->author = $request->author;
-        $article->editor = $request->doctorphone;
+        $article->editor = $request->editor;
         $article->resource = $request->resource;
         $article->headline = $request->headline;
         $article->headline_img = $request->headline_img;

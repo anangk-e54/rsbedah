@@ -1967,6 +1967,10 @@ p.card-text {
     line-height: 27px;
 }
 
+.media-headline-tumbnail {
+    max-width: 20vw;
+}
+
 
 /*-------------------- END List Group ------------------- */
 

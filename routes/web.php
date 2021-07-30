@@ -24,6 +24,10 @@ use App\Http\Controllers\ArticlesController;
 Route::get('/',[PagesController::class, 'index']);
 
 Route::view('/jadwaldokter','jadwal-dokter/index');
+Route::get('/profil-dokter/{doctor}',[DoctorsController::class, 'detail'])->name('detaildokter');
+Route::get('/jadwal-dokter',[SchedulesController::class, 'index']);
+Route::get('/artikel',[ArticlesController::class, 'view']);
+
 Route::get('/doctor',[DoctorsController::class, 'index'])->name('doctorlist');
 Route::get('/tim-dokter',[DoctorsController::class, 'view']);
 Route::get('/doctor/create',[DoctorsController::class, 'create']);
