@@ -54,13 +54,13 @@
 /*------------------------- 0. Custom AnangK -------------------*/
 
 /* Background Banding Poros Kolektif Nusantara */
-.bg-poros-solid {
+.bg-rsb-blue {
     /* background-color: #1DB954; */
-    background-color: #216353;
+    background-color: #005963;
 }
 
-.bg-poros-st {
-    background-color: rgba(29, 185, 84, 0.678);
+.bg-rsb-yellow {
+    background-color: #FFD600;
     color: white;
 }
 
@@ -315,7 +315,8 @@ btn-tranparent {
 /*-------------------- 2.1.1 Horizontal Menu -------------------*/
 
 .body-bg {
-    background: #F3F8FB;
+    /* background: #F3F8FB; */
+    background: #FFFFFF;
 }
 
 .horizontal-main-wrapper {
@@ -342,7 +343,7 @@ btn-tranparent {
 }
 
 .mainheader-area {
-    background: #fff;
+    background: #FFFFFF;
     border-bottom: 1px solid #f3f8fb;
     padding-left: 15px;
     position: relative;
@@ -366,7 +367,8 @@ btn-tranparent {
     display: block;
     font-size: 13px;
     padding: 10px 20px;
-    color: #000000;
+    /* color: #000000; */
+    color: #FFFFFF;
     text-transform: capitalize;
 }
 
@@ -389,7 +391,8 @@ btn-tranparent {
     top: 100%;
     z-index: 99;
     width: 200px;
-    background: #fff;
+    /* background: #fff; */
+    background: #005963;
     opacity: 0;
     visibility: hidden;
     border-top: 4px solid #007BFF;
@@ -480,8 +483,9 @@ btn-tranparent {
 
 .header-area {
     padding: 15px 30px;
-    background: #fff;
-    border-bottom: 1px solid #d8e3e7;
+    /* background: #fff; */
+    background: #005963;
+    border-bottom: 1px solid #64C9CF;
 }
 
 .nav-btn {

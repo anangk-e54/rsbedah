@@ -8,18 +8,18 @@
     <ol class="carousel-indicators">
         <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
         <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-        <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+        <!-- <li data-target="#carouselExampleIndicators" data-slide-to="2"></li> -->
     </ol>
-    <div class="carousel-inner">
+    <div class="carousel-inner" style="height:960px;">
         <div class="carousel-item active">
-            <img src="{{ asset('assets/images/bg/bg-medical.jpg') }}" class="d-block w-100" alt="...">
+            <img src="{{ asset('assets/images/bg/IMG_7788.jpg') }}" class="d-block w-100" alt="...">
         </div>
         <div class="carousel-item">
-            <img src="{{ asset('assets/images/bg/sigin-bg.jpg') }}" class="d-block w-100" alt="...">
+            <img src="{{ asset('assets/images/bg/IMG_7786.jpg') }}" class="d-block w-100" alt="...">
         </div>
-        <div class="carousel-item">
+        <!-- <div class="carousel-item">
             <img src="{{ asset('assets/images/bg/bg-medical.jpg') }}" class="d-block w-100" alt="...">
-        </div>
+        </div> -->
     </div>
     <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
         <span class="carousel-control-prev-icon" aria-hidden="true"></span>
@@ -93,20 +93,19 @@
                         <ol class="carousel-indicators">
                             <li data-target="#carouselDescriptionIndicators" data-slide-to="0" class="active"></li>
                             <li data-target="#carouselDescriptionIndicators" data-slide-to="1"></li>
-                            <li data-target="#carouselDescriptionIndicators" data-slide-to="2"></li>
+                            <!-- <li data-target="#carouselDescriptionIndicators" data-slide-to="2"></li> -->
                         </ol>
                         <div class="carousel-inner">
                             <div class="carousel-item active">
-                                <img src="{{ asset('assets/images/bg/bg-medical.jpg') }}" class="d-block w-100"
-                                    alt="...">
+                                <img src="{{ asset('assets/images/bg/IMG_7788.jpg') }}" class="d-block w-100" alt="...">
                             </div>
                             <div class="carousel-item">
-                                <img src="{{ asset('assets/images/bg/sigin-bg.jpg') }}" class="d-block w-100" alt="...">
+                                <img src="{{ asset('assets/images/bg/IMG_7786.jpg') }}" class="d-block w-100" alt="...">
                             </div>
-                            <div class="carousel-item">
+                            <!-- <div class="carousel-item">
                                 <img src="{{ asset('assets/images/bg/bg-medical.jpg') }}" class="d-block w-100"
                                     alt="...">
-                            </div>
+                            </div> -->
                         </div>
                         <a class="carousel-control-prev" href="#carouselDescriptionIndicators" role="button"
                             data-slide="prev">
@@ -128,7 +127,7 @@
             <div class="col-sm-6">
                 <div class="card text-left">
                     <div class="card-body">
-                        <h5 class="card-title text-center">Special title treatment</h5>
+                        <h5 class="card-title text-center">Rumah Sakit Bedah Mitra Sehat Lamongan</h5>
                         <p class="card-text text-justify">Rumah Sakit Bedah Mitra Sehat Lamongan merupakan salah satu
                             Rumah
                             Sakit
@@ -148,6 +147,62 @@
     </div>
 </div>
 <!-- Profile end here -->
+
+<!-- Tim Dokter Start here -->
+<div class="bg-rsb-blue mt-5">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6 mt-5 text-white">
+                <h3> Tim Dokter</h3>
+            </div>
+            <div class="col-md-6 text-right mt-5 text-white">
+                <a class="btn btn-xs btn-outline-info">Lihat semua dokter</a>
+            </div>
+        </div>
+        <div class="row">
+            <div class="row mt-5 mb-5 ml-3">
+                <div class="col-sm-3">
+                    <div class="card bg-light">
+                        <img src="{{asset('assets/images/team/doctor-man.jpg')}}" class="card-img-top" alt="...">
+                        <div class="card-body  text-center">
+                            <h5>Bidang Spesialis</h5>
+                            <p class="card-text">dr. Dewa Arimasen</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-3">
+                    <div class="card bg-light">
+                        <img src="{{asset('assets/images/team/doctor-woman.jpg')}}" class="card-img-top" alt="...">
+                        <div class="card-body text-center">
+                            <h5>Bidang Spesialis</h5>
+                            <p class="card-text">dr. Fulana Ikimasho</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-3">
+                    <div class="card bg-light">
+                        <img src="{{asset('assets/images/team/doctor-man.jpg')}}" class="card-img-top" alt="...">
+                        <div class="card-body  text-center">
+                            <h5>Bidang Spesialis</h5>
+                            <p class="card-text">dr. Dewa Arimasen</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-3">
+                    <div class="card bg-light">
+                        <img src="{{asset('assets/images/team/doctor-woman.jpg')}}" class="card-img-top" alt="...">
+                        <div class="card-body text-center">
+                            <h5>Bidang Spesialis</h5>
+                            <p class="card-text">dr. Fulana Ikimasho</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- <canvas id="seolinechart1" height="50"></canvas> -->
+        </div>
+    </div>
+</div>
+<!-- Tim Dokter End Here-->
 
 <!-- List Doctor start here -->
 <div class="container">
