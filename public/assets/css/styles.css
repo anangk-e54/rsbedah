@@ -64,6 +64,13 @@
     color: white;
 }
 
+.bg-rsb-img1 {
+    background-image: url('assets/images/bg/IMG_7788.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+}
+
 .pull-text-right p {
     text-align: right;
 }
@@ -1274,7 +1281,8 @@ table.dbkit-table tr td {
     text-align: center;
     padding: 23px 0 19px;
     /* background: #216353; */
-    background: #ff449f;
+    /* background: #ff449f; */
+    background: #005963;
 }
 
 .footer-area p {

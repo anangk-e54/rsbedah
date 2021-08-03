@@ -32,63 +32,13 @@
 </div>
 <!-- Banner Carusel end here -->
 
-<!-- Top Menu start here -->
-<div class="container-fluid">
-    <div class="row mt-5">
-        <div class="col-sm-3">
-            <div class="card text-center bg-dark text-black">
-                <img src="{{ asset('assets/images/card/card-img1.jpg') }}" class="card-img" alt="...">
-                <div class="card-img-overlay">
-                    <h5 class="card-title">Dokter Spesialis</h5>
-                    <a href="{{ url('/jadwaldokter')}}" class="btn btn-primary">Lihat Jadwal Dokter</a>
-                </div>
-            </div>
-        </div>
-        <div class="col-sm-3">
-            <div class="card text-center bg-dark text-black">
-                <img src="{{ asset('assets/images/card/card-img1.jpg') }}" class="card-img" alt="...">
-                <div class="card-img-overlay">
-                    <h5 class="card-title">Instalasi Gawat Darurat</h5>
-                    <p class="card-text"></p>
-                </div>
-            </div>
-        </div>
-        <div class="col-sm-3">
-            <div class="card text-center bg-dark text-black">
-                <img src="{{ asset('assets/images/card/card-img1.jpg') }}" class="card-img" alt="...">
-                <div class="card-img-overlay">
-                    <h5 class="card-title">Konsultasi Medis</h5>
-                    <a href="{{ url('/jadwaldokter')}}" class="btn btn-primary">Lihat Jadwal Dokter</a>
-                </div>
-            </div>
-        </div>
-        <div class="col-sm-3">
-            <div class="card text-center bg-dark text-black">
-                <img src="{{ asset('assets/images/card/card-img1.jpg') }}" class="card-img" alt="...">
-                <div class="card-img-overlay">
-                    <h5 class="card-title">Layanan 24/7</h5>
-                    <p class="card-text"></p>
-                </div>
-            </div>
-        </div>
-        <!-- <div class="col-sm-3">
-            <div class="card text-center">
-                <div class="card-body">
-                    <h5 class="card-title">Special title treatment</h5>
-                    <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-                    <a href="#" class="btn btn-primary">Go somewhere</a>
-                </div>
-            </div>
-        </div> -->
-    </div>
-</div>
 
 <!-- Profile start here -->
 <div class="container">
     <div class="card  mt-5">
         <div class="row">
-            <div class="col-sm-6">
-                <div class="card text-center bg-dark text-white">
+            <div class="col-sm-6 mt-5">
+                <div class="card text-center bg-dark text-white mt-5">
                     <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
                         <ol class="carousel-indicators">
                             <li data-target="#carouselDescriptionIndicators" data-slide-to="0" class="active"></li>
@@ -129,17 +79,32 @@
                     <div class="card-body">
                         <h5 class="card-title text-center">Rumah Sakit Bedah Mitra Sehat Lamongan</h5>
                         <p class="card-text text-justify">Rumah Sakit Bedah Mitra Sehat Lamongan merupakan salah satu
-                            Rumah
-                            Sakit
-                            Khusus Bedah swasta yang ada di kota Lamongan. Rumah sakit ini didirikan oleh Yayasan Rumah
-                            Sakit Mitra Sehat yang beralamat di Jl. Raya Lamongan-Babat Km 5, Ds. Karanglangit Lamongan.
-                            Rumah sakit ini didirikan berdasarkan Akte Notaris Pendirian Yayasan Nomor: 7, tanggal 28
-                            April 2008 yang disahkan oleh Notaris di Lamongan, Juanita Sari Dewi, SH. Yang saat ini
-                            telah berganti nama menjadi Yayasan Mitra Sehat Lamongan Nomor : 10/KET.CUTI-MPPN/VIII/2019
-                            tanggal 24 Agustus 2019 yang di sahkan oleh Notaris di Lamongan, Guntur Mahdar, SE, SH, MKn.
-                            Rumah Sakit Bedah Mitra Sehat Lamongan mulai berdiri dan beroperasi pada tanggal 25 Mei
-                            2012. </p>
-                        <a href="#Sejarah" class="btn btn-primary">Baca selengkapnya...</a>
+                            Rumah Sakit Khusus Bedah swasta yang ada di kota Lamongan. Rumah sakit ini didirikan oleh
+                            Yayasan Rumah Sakit Mitra Sehat yang beralamat di Jl. Raya Lamongan-Babat Km 5, Ds.
+                            Karanglangit Lamongan. Rumah sakit ini didirikan berdasarkan Akte Notaris Pendirian Yayasan
+                            Nomor: 7, tanggal 28 April 2008 yang disahkan oleh Notaris di Lamongan, Juanita Sari Dewi,
+                            SH. Yang saat ini telah berganti nama menjadi Yayasan Mitra Sehat Lamongan Nomor :
+                            10/KET.CUTI-MPPN/VIII/2019 tanggal 24 Agustus 2019 yang di sahkan oleh Notaris di Lamongan,
+                            Guntur Mahdar, SE, SH, MKn. Rumah Sakit Bedah Mitra Sehat Lamongan mulai berdiri dan
+                            beroperasi pada tanggal 25 Mei 2012. </p>
+                        <p class="card-text text-justify">
+                            Dalam melaksanakan aktivitas usahanya perusahaan berkantor pusat di Jln. Raya Lamongan –
+                            Babat Km 5 Desa Karanglangit Kecamatan Turi Kabupaten Lamongan, pada tahun 2012 ijin rumah
+                            sakit telah dilengkapi dengan prakrtek Dokter Spesialis, Instalasi Farmasi, Laboratorium,
+                            Radiology, Kamar Operasi dan Rawat Inap dengan jumlah tempat tidur 51 bed.
+                            Maka diharapkan dengan dibangunnya sebuah rumah sakit dengan fasilitas yang cukup lengkap
+                            dan disertai tenaga medis handal akan menjawab sebagian tuntutan masyarakat untuk
+                            mendapatkan penanganan kesehatan terbaik. Untuk menjawab permintaan tersebut maka, Yayasan
+                            Rumah Sakit Mitra Sehat mencoba untuk memberikan pelayanan kesehatan dengan membangun rumah
+                            sakit dengan nama Rumah Sakit Bedah Mitra Sehat. </p>
+                        <p class="card-text text-justify">
+                            Pembangunan Rumah Sakit Bedah Mitra Sehat ini ditujukan untuk masyarakat Lamongan dan
+                            sekitarnya, dengan kelas menengah keatas. Namun, selain itu, tidak menutup kemungkinan
+                            masyarakat ekonomi menengah ke bawah untuk berobat ke Rumah Sakit Bedah Mitra Sehat ini.
+                            Pada akhirnya diharapkan Rumah Sakit Bedah Mitra Sehat dapat memberikan pelayanan yang
+                            maksimal kepada seluruh masyarakat dengan memanfaatkan teknologi yang tersedia sehingga pada
+                            akhirnya dapat meningkatkan derajat kesehatan masyarakat Lamongan khususnya dan masyarakat
+                            sekitar pada umumnya. </p>
                     </div>
                 </div>
             </div>
@@ -152,48 +117,39 @@
 <div class="bg-rsb-blue mt-5">
     <div class="container">
         <div class="row">
-            <div class="col-md-6 mt-5 text-white">
-                <h3> Tim Dokter</h3>
-            </div>
-            <div class="col-md-6 text-right mt-5 text-white">
-                <a href="{{ url('/tim-dokter')}}" class="btn btn-xs btn-outline-info">Lihat semua dokter</a>
+            <div class="col-md-12 mt-5 ">
+                <h3 class="text-white text-center">Rumah Sakit Bedah Mitra Sehat lamongan</h3>
             </div>
         </div>
         <div class="row">
             <div class="row mt-5 mb-5 ml-3">
-                <div class="col-sm-3">
+                <div class="col-lg-3">
                     <div class="card bg-light">
-                        <img src="{{asset('assets/images/team/anang.jpg')}}" class="card-img-top" alt="...">
                         <div class="card-body  text-center">
-                            <h5>Bidang Spesialis</h5>
-                            <p class="card-text">dr. Dewa Arimasen</p>
+                            <h5>Visi</h5>
+                            <p class="card-text">Memberikan pelayanan kesehatan secara menyeluruh yang baik dan bermutu
+                                bagi masyarakat.</p>
                         </div>
                     </div>
                 </div>
-                <div class="col-sm-3">
+                <div class="col-lg-6 ">
                     <div class="card bg-light">
-                        <img src="{{asset('assets/images/team/alfin-2021-biru.jpg')}}" class="card-img-top" alt="...">
                         <div class="card-body text-center">
-                            <h5>Bidang Spesialis</h5>
-                            <p class="card-text">dr. Fulana Ikimasho</p>
+                            <h5>Misi</h5>
+                            <p class="card-text text-left">1. Memberikan pelayanan kesehatan secara utuh.</p>
+                            <p class="card-text text-left">
+                                2. Membangun kebudayaan pelayanan yang sempurna dalam penampilan, handal, tanggap, peka
+                                dan tulus.</p>
+                            <p class="card-text text-left">
+                                3. Menjadi Rumah Sakit Khusus Swasta kelas Madya.</p>
                         </div>
                     </div>
                 </div>
-                <div class="col-sm-3">
+                <div class="col-lg-3">
                     <div class="card bg-light">
-                        <img src="{{asset('assets/images/team/doctor-man.jpg')}}" class="card-img-top" alt="...">
-                        <div class="card-body  text-center">
-                            <h5>Bidang Spesialis</h5>
-                            <p class="card-text">dr. Dewa Arimasen</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-sm-3">
-                    <div class="card bg-light">
-                        <img src="{{asset('assets/images/team/doctor-woman.jpg')}}" class="card-img-top" alt="...">
                         <div class="card-body text-center">
-                            <h5>Bidang Spesialis</h5>
-                            <p class="card-text">dr. Fulana Ikimasho</p>
+                            <h5>Moto</h5>
+                            <p class="card-text">Melayani dengan Senyum, Cepat, Ekonomis dan Mutu</p>
                         </div>
                     </div>
                 </div>

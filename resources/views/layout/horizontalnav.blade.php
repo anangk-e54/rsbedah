@@ -81,7 +81,8 @@
                                         <a href="javascript:void(0)"><i class="ti-layout-sidebar-left"></i><span>tentang
                                                 kami</span></a>
                                         <ul class="submenu text-left">
-                                            <li><a href="index.html"><i class="ti-shield"></i> Profil RS</a></li>
+                                            <li><a href="{{ url('/profil')}}"><i class="ti-shield"></i> Profil RS</a>
+                                            </li>
                                             <li><a href="{{ url('/tim-dokter')}}"><i class="ti-id-badge"></i> Tim
                                                     Dokter</a>
                                             </li>

@@ -24,6 +24,7 @@ use App\Http\Controllers\ArticlesController;
 Route::get('/',[PagesController::class, 'index']);
 
 Route::view('/jadwaldokter','jadwal-dokter/index');
+Route::view('/profil','homepage/profil');
 Route::get('/profil-dokter/{doctor}',[DoctorsController::class, 'detail'])->name('detaildokter');
 Route::get('/jadwal-dokter',[SchedulesController::class, 'index']);
 Route::get('/artikel',[ArticlesController::class, 'view']);
