@@ -36,9 +36,10 @@
 <!-- Profile start here -->
 <div class="container">
     <div class="card  mt-5">
+        <h3 class="card-title text-center">IDENTITAS PEMRAKARSA RUMAH SAKIT BEDAH MITRA SEHAT LAMONGAN </h3>
         <div class="row">
             <div class="col-sm-6 mt-5">
-                <div class="card text-center bg-dark text-white mt-5">
+                <div class="card text-center bg-dark text-white">
                     <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
                         <ol class="carousel-indicators">
                             <li data-target="#carouselDescriptionIndicators" data-slide-to="0" class="active"></li>
@@ -74,10 +75,147 @@
                     </div>
                 </div>
             </div>
+            <!-- Identitas Rumah Sakit Start Here -->
             <div class="col-sm-6">
+                <div class="card-body">
+                    <div class="row">
+                        <div class="col-sm-4">
+                            <p class="card-text text-justify"> Nama Rumah Sakit </p>
+                        </div>
+                        <div class="col-sm-8">
+                            <p class="card-text text-justify"> : Rumah Sakit Bedah Mitra Sehat Lamongan </p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-4">
+                            <p class="card-text text-justify">Alamat </p>
+                        </div>
+                        <div class="col-sm-8">
+                            <p class="card-text text-justify"> : Jalan Raya Lamongan-Babat Km. 5 Desa Karanglangit
+                                Kabupaten Lamongan 62251 </p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-4">
+                            <p class="card-text text-justify"> Telepon/Fax </p>
+                        </div>
+                        <div class="col-sm-8">
+                            <p class="card-text text-justify"> : (0322) 317997, Fax. (0322) 317998 </p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-4">
+                            <p class="card-text text-justify"> Email </p>
+                        </div>
+                        <div class="col-sm-8">
+                            <p class="card-text text-justify"> : rsbms_lamongan@yahoo.co.id </p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-4">
+                            <p class="card-text text-justify"> Tanggal Pendirian </p>
+                        </div>
+                        <div class="col-sm-8">
+                            <p class="card-text text-justify"> : 25 Mei 2012 </p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-4">
+                            <p class="card-text text-justify"> Status Kepemilikan </p>
+                        </div>
+                        <div class="col-sm-8">
+                            <p class="card-text text-justify"> : Yayasan Mitra Sehat Lamongan </p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-4">
+                            <p class="card-text text-justify"> Nama Pemilik </p>
+                        </div>
+                        <div class="col-sm-8">
+                            <p class="card-text text-justify"> : Trilina Kadarwati, MM.Kes. </p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-4">
+                            <p class="card-text text-justify"> Nama Direktur </p>
+                        </div>
+                        <div class="col-sm-8">
+                            <p class="card-text text-justify"> :dr. Bambang Pramono, MM. </p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-4">
+                            <p class="card-text text-justify"> Nomor Registrasi RS </p>
+                        </div>
+                        <div class="col-sm-8">
+                            <p class="card-text text-justify"> : 3524043 </p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-4">
+                            <p class="card-text text-justify"> No. &Tgl. Ijin Operasional RS </p>
+                        </div>
+                        <div class="col-sm-8">
+                            <p class="card-text text-justify"> : 445/1437/RS/413.111/2020 </p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-4">
+                            <p class="card-text text-justify"> Masa Berlaku </p>
+                        </div>
+                        <div class="col-sm-8">
+                            <p class="card-text text-justify"> : 25 Juli 2025 </p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-4">
+                            <p class="card-text text-justify"> Akreditasi </p>
+                        </div>
+                        <div class="col-sm-8">
+                            <p class="card-text text-justify"> : Lulus Tingkat PERDANA </p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-4">
+                            <p class="card-text text-justify"> Nomor Akreditasi </p>
+                        </div>
+                        <div class="col-sm-8">
+                            <p class="card-text text-justify"> : KARS-SERT/1009/VII/2020 </p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-4">
+                            <p class="card-text text-justify"> Luas Lahan </p>
+                        </div>
+                        <div class="col-sm-8">
+                            <p class="card-text text-justify"> : 2.245 m2 </p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-4">
+                            <p class="card-text text-justify"> Luas Bangunan </p>
+                        </div>
+                        <div class="col-sm-8">
+                            <p class="card-text text-justify"> : 4200 m2 <br> &nbsp; Lantai 1 : 2100 m2
+                                m2 <br> &nbsp; Lantai 2 : 2100 m2</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Profile end here -->
+
+<!-- Sejarah Start here -->
+<div class="bg-rsb-blue mt-5">
+    <div class="container">
+        <div class="row ml-3">
+            <!-- Sejarah Start Here -->
+            <div class="col-lg-8 mt-5 mb-5 ">
                 <div class="card text-left">
                     <div class="card-body">
-                        <h5 class="card-title text-center">Rumah Sakit Bedah Mitra Sehat Lamongan</h5>
+                        <h5 class="card-title text-center">Sejarah</h5>
                         <p class="card-text text-justify">Rumah Sakit Bedah Mitra Sehat Lamongan merupakan salah satu
                             Rumah Sakit Khusus Bedah swasta yang ada di kota Lamongan. Rumah sakit ini didirikan oleh
                             Yayasan Rumah Sakit Mitra Sehat yang beralamat di Jl. Raya Lamongan-Babat Km 5, Ds.
@@ -108,57 +246,59 @@
                     </div>
                 </div>
             </div>
-        </div>
-    </div>
-</div>
-<!-- Profile end here -->
+            <!-- Sejarah End Here -->
 
-<!-- Tim Dokter Start here -->
-<div class="bg-rsb-blue mt-5">
-    <div class="container">
-        <div class="row">
-            <div class="col-md-12 mt-5 ">
-                <h3 class="text-white text-center">Rumah Sakit Bedah Mitra Sehat lamongan</h3>
+            <!-- Visi MisiMoto Start Here -->
+            <div class="col-xl-4 col-lg-4 mt-5 mb-5 ">
+                <div class="card">
+                    <div class="card-body">
+                        <h4 class="header-title">Informasi Kontak RSB Mitra Sehat Lamongan</h4>
+                        <div class="timeline-area">
+                            <div class="timeline-task">
+                                <div class="icon bg2">
+                                    <i class="fa fa-map-signs"></i>
+                                </div>
+                                <div class="tm-title">
+                                    <h4>Visi</h4>
+                                </div>
+                                <p>Memberikan pelayanan kesehatan secara menyeluruh yang baik dan bermutu bagi
+                                    masyarakat.
+                                </p>
+                            </div>
+                            <div class="timeline-task">
+                                <div class="icon bg3">
+                                    <i class="ti-time"></i>
+                                </div>
+                                <div class="tm-title">
+                                    <h4>Misi</h4>
+                                </div>
+                                <ol>
+                                    <li>Memberikan pelayanan kesehatan secara utuh.</li>
+                                    <li>Membangun kebudayaan pelayanan yang sempurna dalam penampilan, handal, tanggap,
+                                        peka dan tulus.</li>
+                                    <li>Menjadi Rumah Sakit Khusus Swasta kelas Madya.</li>
+                                </ol>
+                            </div>
+                            <div class="timeline-task">
+                                <div class="icon bg1">
+                                    <i class="fa fa-envelope"></i>
+                                </div>
+                                <div class="tm-title">
+                                    <h4>Motto</h4>
+                                </div>
+                                <p>Melayani dengan Senyum, Cepat, Ekonomis dan Mutu
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
+            <!-- Visi Misi Moto area end -->
         </div>
-        <div class="row">
-            <div class="row mt-5 mb-5 ml-3">
-                <div class="col-lg-3">
-                    <div class="card bg-light">
-                        <div class="card-body  text-center">
-                            <h5>Visi</h5>
-                            <p class="card-text">Memberikan pelayanan kesehatan secara menyeluruh yang baik dan bermutu
-                                bagi masyarakat.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-6 ">
-                    <div class="card bg-light">
-                        <div class="card-body text-center">
-                            <h5>Misi</h5>
-                            <p class="card-text text-left">1. Memberikan pelayanan kesehatan secara utuh.</p>
-                            <p class="card-text text-left">
-                                2. Membangun kebudayaan pelayanan yang sempurna dalam penampilan, handal, tanggap, peka
-                                dan tulus.</p>
-                            <p class="card-text text-left">
-                                3. Menjadi Rumah Sakit Khusus Swasta kelas Madya.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-3">
-                    <div class="card bg-light">
-                        <div class="card-body text-center">
-                            <h5>Moto</h5>
-                            <p class="card-text">Melayani dengan Senyum, Cepat, Ekonomis dan Mutu</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <!-- <canvas id="seolinechart1" height="50"></canvas> -->
-        </div>
+        <!-- <canvas id="seolinechart1" height="50"></canvas> -->
     </div>
 </div>
-<!-- Tim Dokter End Here-->
+<!-- Sejarah End Here-->
 
 <!-- Youtube Start Here -->
 <section>
@@ -191,7 +331,7 @@
     <div class="container">
         <div class="row">
             <!-- map area start -->
-            <div class="col-xl-6 col-lg-6 mt-5 mb-3">
+            <div class="col-xl-12 col-lg-12 mt-5 mb-3">
                 <div class="card">
                     <div class="card-body">
                         <h4 class="header-title">Lokasi RSB Mitra Sehat Lamongan</h4>
@@ -206,66 +346,6 @@
                 </div>
             </div>
             <!-- map area end -->
-            <!-- timeline area start -->
-            <div class="col-xl-6 col-lg-6 mt-5 mb-3">
-                <div class="card">
-                    <div class="card-body">
-                        <h4 class="header-title">Informasi Kontak RSB Mitra Sehat Lamongan</h4>
-                        <div class="timeline-area">
-                            <div class="timeline-task">
-                                <div class="icon bg2">
-                                    <i class="fa fa-map-signs"></i>
-                                </div>
-                                <div class="tm-title">
-                                    <h4>Jl. Raya Lamongan-Babat Km.5 Desa Karanglangit Lamongan</h4>
-                                </div>
-                                <p>Jawa Timur - Indonesia ,62251
-                                </p>
-                            </div>
-                            <div class="timeline-task">
-                                <div class="icon bg3">
-                                    <i class="ti-time"></i>
-                                </div>
-                                <div class="tm-title">
-                                    <h4>Jam Operasional</h4>
-                                    <span class="time"><i class="ti-time"></i>09:35 - 20.30</span>
-                                </div>
-                            </div>
-                            <div class="timeline-task">
-                                <div class="icon bg1">
-                                    <i class="fa fa-envelope"></i>
-                                </div>
-                                <div class="tm-title">
-                                    <h4>Alamat Email</h4>
-                                </div>
-                                <p>rsbms_lamongan@yahoo.co.id
-                                </p>
-                            </div>
-                            <div class="timeline-task">
-                                <div class="icon bg3">
-                                    <i class="fa fa-phone"></i>
-                                </div>
-                                <div class="tm-title">
-                                    <h4>Telepon</h4>
-                                </div>
-                                <p>(0322) 317997
-                                </p>
-                            </div>
-                            <div class="timeline-task">
-                                <div class="icon bg2">
-                                    <i class="fa fa-fax"></i>
-                                </div>
-                                <div class="tm-title">
-                                    <h4>Alamat Fax</h4>
-                                </div>
-                                <p>(0322) 317998
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <!-- timeline area end -->
         </div>
     </div>
     <!-- Maps & Information End Here -->
