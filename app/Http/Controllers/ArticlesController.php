@@ -103,7 +103,8 @@ class ArticlesController extends Controller
      */
     public function show(Article $article)
     {
-        //
+        // return $article;
+        return view('homepage/artikel-berita', compact('article'));
     }
 
     /**

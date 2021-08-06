@@ -16,6 +16,11 @@ class PagesController extends Controller
         return view('index');
     }
 
+    public function layanan()
+    {
+        return view('homepage/layanan');
+    }
+
     /**
      * Show the form for creating a new resource.
      *

@@ -172,7 +172,7 @@
                 </div>
                 <div class="col-sm-3">
                     <div class="card bg-light">
-                        <img src="{{asset('assets/images/team/alfin-2021-biru.jpg')}}" class="card-img-top" alt="...">
+                        <img src="{{asset('assets/images/team/doctor-man.jpg')}}" class="card-img-top" alt="...">
                         <div class="card-body text-center">
                             <h5>Bidang Spesialis</h5>
                             <p class="card-text">dr. Fulana Ikimasho</p>
@@ -181,7 +181,7 @@
                 </div>
                 <div class="col-sm-3">
                     <div class="card bg-light">
-                        <img src="{{asset('assets/images/team/doctor-man.jpg')}}" class="card-img-top" alt="...">
+                        <img src="{{asset('assets/images/team/anang.jpg')}}" class="card-img-top" alt="...">
                         <div class="card-body  text-center">
                             <h5>Bidang Spesialis</h5>
                             <p class="card-text">dr. Dewa Arimasen</p>

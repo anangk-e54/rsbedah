@@ -95,7 +95,7 @@
                                         <a href="javascript:void(0)"><i class="ti-support"></i><span>
                                                 Layanan</span></a>
                                         <ul class="submenu text-left">
-                                            <li><a href="accordion.html">Layanan 1</a></li>
+                                            <li><a href="{{ url('/layanan')}}">Layanan 1</a></li>
                                             <li><a href="alert.html">Layanan 2</a></li>
                                             <li><a href="badge.html">Layanan 3</a></li>
                                             <li><a href="button.html">Layanan 4</a></li>

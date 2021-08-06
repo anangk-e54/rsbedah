@@ -1,6 +1,6 @@
 @extends ('layout/horizontalnav')
 
-@section ('tittle', 'Transport')
+@section ('tittle', 'Jadwal Dokter')
 
 @section ('stylecss')
 

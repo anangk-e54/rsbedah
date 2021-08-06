@@ -28,6 +28,9 @@ Route::view('/profil','homepage/profil');
 Route::get('/profil-dokter/{doctor}',[DoctorsController::class, 'detail'])->name('detaildokter');
 Route::get('/jadwal-dokter',[SchedulesController::class, 'index']);
 Route::get('/artikel',[ArticlesController::class, 'view']);
+Route::get('/artikel-berita/{article}',[ArticlesController::class, 'show']);
+
+Route::get('/layanan',[PagesController::class, 'layanan']);
 
 Route::get('/doctor',[DoctorsController::class, 'index'])->name('doctorlist');
 Route::get('/tim-dokter',[DoctorsController::class, 'view']);
