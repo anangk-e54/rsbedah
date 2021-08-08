@@ -1,1350 +1,1774 @@
-@extends ('layout/horizontalnav')
+@extends ('layout/webpage')
 
-@section ('tittle', 'Jadwal Dokter')
+@section ('tittle', 'RSB Mitra Sehat Lamongan')
 
 @section ('stylecss')
-
-<!-- Start Homepage CSS -->
-<link rel="stylesheet" href="{{ asset('assets/css/css-page/style-page.css" type="text/css') }}" />
-<link rel="stylesheet" href="{{ asset('assets/css/css-page/no-ui-slider/jquery.nouislider.css" type="text/css') }}" />
-
-<!-- Skin Color -->
-<link rel="stylesheet" href="{{ asset('assets/css/css-page/colors/green.css') }}" id="color-skins" />
+<!-- CSS Start Here -->
 @endsection
 
 @section ('content')
 
+<!-- Start Slider  -->
+<section id="home" class="home">
+    <div class="slider-overlay"></div>
+    <div class="flexslider">
+        <ul class="slides scroll">
+            <li class="first">
+                <div class="slider-text-wrapper">
+                    <div class="container">
+                        <div class="big">Free Responsive Template </div>
+                        <div class="small">Are you ready to buy this theme</div>
+                        <a href="#works" class="middle btn btn-white">VIEW PORTFOLIO</a>
+                    </div>
+                </div>
+                <img src="images/slider/1.jpg" alt="">
+            </li>
 
-<!-- Start Header -->
-<header>
-    <nav class="navbar navbar-default navbar-alt" role="navigation">
-        <div class="container">
-            <!-- Brand and toggle get grouped for better mobile display -->
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#main-nav">
-                    <span class="sr-only">Toggle navigation</span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-                <a class="navbar-brand to-top" rel="home" href="#">
-                    <img src="img/assets/logo-white.png" alt="Visual" class="logo-big">
-                    <img src="img/assets/logo-dark.png" alt="Visual" class="logo-small">
-                </a>
-            </div>
+            <li class="secondary">
+                <div class="slider-text-wrapper">
+                    <div class="container">
+                        <div class="big">Free Responsive Template </div>
+                        <div class="small">Are you ready to buy this theme</div>
+                        <a href="#works" class=" middle btn btn-white">VIEW PORTFOLIO</a>
+                    </div>
+                </div>
+                <img src="images/slider/2.jpg" alt="">
+            </li>
 
-            <!-- Collect the nav links, forms, and other content for toggling -->
-            <div class="collapse navbar-collapse" id="main-nav">
-                <ul class="nav navbar-nav  navbar-right">
-                    <li>
-                        <a class="to-top">
-                            Home
-                        </a>
-                    </li>
-                    <li class="to-section">
-                        <a href="#about">
-                            About Us
-                        </a>
-                    </li>
-                    <li class="to-section">
-                        <a href="#team">
-                            Team
-                        </a>
-                    </li>
-                    <li class="to-section">
-                        <a href="#portfolio">
-                            Portfolio
-                        </a>
-                    </li>
-                    <li class="to-section">
-                        <a href="#contact">
-                            Contact
-                        </a>
-                    </li>
-                </ul>
-            </div>
-            <!-- /.navbar-collapse -->
-        </div>
-        <!-- /.container -->
-    </nav>
-</header>
-<!-- End Header -->
+            <li class="third">
+                <div class="slider-text-wrapper">
+                    <div class="container">
+                        <div class="big">Free Responsive Template </div>
+                        <div class="small">Are you ready to buy this theme</div>
+                        <a href="#works" class="middle btn btn-white">VIEW PORTFOLIO</a>
+                    </div>
+                </div>
+                <img src="images/slider/3.jpg" alt="">
+            </li>
+        </ul>
+    </div>
+</section>
+<!-- End Slider  -->
 
-<!-- Start Home Revolution Slider Parallax Section -->
-<section id="home-revolution-slider">
-    <div class="hero">
-        <div class="tp-banner-container">
-            <div class="tp-banner">
-                <ul>
-                    <!-- SLIDE 1 -->
-                    <li data-transition="fade" data-slotamount="7" data-masterspeed="2000"
-                        data-thumb="img/backgrounds/bg.jpg" data-delay="10000" data-saveperformance="on"
-                        data-title="We Are Visual">
-                        <img src="img/backgrounds/bg.jpg" alt="slidebg1" data-bgposition="center top" data-bgfit="cover"
-                            data-bgrepeat="no-repeat">
 
-                        <!-- Home Heading -->
-                        <div class="tp-caption sft" data-x="center" data-y="260" data-speed="1200" data-start="1100"
-                            data-easing="Power3.easeInOut" data-splitin="none" data-splitout="none"
-                            data-elementdelay="0.1" data-endelementdelay="0.1" data-endspeed="300"
-                            style="z-index: 4; max-width: auto; max-height: auto; white-space:normal;">
-                            <h2 class="home-heading op-1">We Are Visual</h2>
-                        </div>
-                        <!-- Home Subheading -->
-                        <div class="tp-caption home-subheading sft " data-x="center" data-y="360" data-speed="1200"
-                            data-start="1350" data-easing="Power3.easeInOut" data-splitin="none" data-splitout="none"
-                            data-elementdelay="0.1" data-endelementdelay="0.1" data-endspeed="300"
-                            style="z-index: 4; max-width: auto; max-height: auto; white-space:normal;">
-                            <div class="op-1">Beautiful & Elegant One page Parallax Template</div>
-                        </div>
-                        <!-- Home Button -->
-                        <div class="tp-caption home-button sft fadeout" data-x="center" data-y="400" data-speed="1200"
-                            data-start="1550" data-easing="Power3.easeInOut" data-splitin="none" data-splitout="none"
-                            data-elementdelay="0.1" data-endelementdelay="0.1" data-endspeed="300"
-                            style="z-index: 4; max-width: auto; max-height: auto; white-space:normal;">
-                            <div class="op-1">
-                                <a href="#features" class="btn btn-primary btn-scroll">
-                                    WE'RE CREATIVE
-                                </a>
-                            </div>
-                        </div>
-                    </li>
+<!--Start Features-->
+<section id="about" class="section">
+    <div class="container">
+        <div class="row">
 
-                    <!-- SLIDE 2 -->
-                    <li data-transition="fade" data-slotamount="7" data-masterspeed="2000"
-                        data-thumb="img/backgrounds/bg-1.jpg" data-delay="10000" data-saveperformance="on"
-                        data-title="Digital Agency">
-                        <img src="img/backgrounds/bg-1.jpg" alt="slidebg1" data-bgposition="center top"
-                            data-bgfit="cover" data-bgrepeat="no-repeat">
+            <!-- Features Icon-->
+            <div class="col-md-4">
+                <div class="features-icon-box">
 
-                        <!-- Home Heading -->
-                        <div class="tp-caption sft" data-x="center" data-y="260" data-speed="1200" data-start="1100"
-                            data-easing="Power3.easeInOut" data-splitin="none" data-splitout="none"
-                            data-elementdelay="0.1" data-endelementdelay="0.1" data-endspeed="300"
-                            style="z-index: 4; max-width: auto; max-height: auto; white-space:normal;">
-                            <h2 class="home-heading op-2">A Digital Design Agency</h2>
-                        </div>
-                        <!-- Home Subheading -->
-                        <div class="tp-caption home-subheading sft fadeout" data-x="center" data-y="360"
-                            data-speed="1200" data-start="1350" data-easing="Power3.easeInOut" data-splitin="none"
-                            data-splitout="none" data-elementdelay="0.1" data-endelementdelay="0.1" data-endspeed="300"
-                            style="z-index: 4; max-width: auto; max-height: auto; white-space:normal;">
-                            <div class="op-2">Beautiful & Elegant One page Parallax Template</div>
-                        </div>
-                        <!-- Home Button -->
-                        <div class="tp-caption home-button sft fadeout" data-x="center" data-y="400" data-speed="1200"
-                            data-start="1550" data-easing="Power3.easeInOut" data-splitin="none" data-splitout="none"
-                            data-elementdelay="0.1" data-endelementdelay="0.1" data-endspeed="300"
-                            style="z-index: 4; max-width: auto; max-height: auto; white-space:normal;">
-                            <div class="op-2">
-                                <a href="#about" class="btn btn-primary btn-scroll">
-                                    WHAT WE DO
-                                </a>
-                            </div>
-                        </div>
-                    </li>
+                    <div class="features-icon">
+                        <i class="fa fa-leaf"></i>
+                    </div>
 
-                    <!-- SLIDE 3 -->
-                    <li data-transition="fade" data-slotamount="7" data-masterspeed="2000"
-                        data-thumb="img/backgrounds/bg-2.jpg" data-delay="10000" data-saveperformance="on"
-                        data-title="Creative Coders">
-                        <img src="img/backgrounds/bg-2.jpg" alt="slidebg1" data-bgposition="center top"
-                            data-bgfit="cover" data-bgrepeat="no-repeat">
-
-                        <!-- Home Heading -->
-                        <div class="tp-caption sft" data-x="center" data-y="260" data-speed="1200" data-start="1100"
-                            data-easing="Power3.easeInOut" data-splitin="none" data-splitout="none"
-                            data-elementdelay="0.1" data-endelementdelay="0.1" data-endspeed="300"
-                            style="z-index: 4; max-width: auto; max-height: auto; white-space:normal;">
-                            <h2 class="home-heading op-3">Creative Coders</h2>
-                        </div>
-                        <!-- Home Subheading -->
-                        <div class="tp-caption home-subheading sft fadeout" data-x="center" data-y="360"
-                            data-speed="1200" data-start="1350" data-easing="Power3.easeInOut" data-splitin="none"
-                            data-splitout="none" data-elementdelay="0.1" data-endelementdelay="0.1" data-endspeed="300"
-                            style="z-index: 4; max-width: auto; max-height: auto; white-space:normal;">
-                            <div class="op-3">Beautiful & Elegant One page Parallax Template</div>
-                        </div>
-                        <!-- Home Button -->
-                        <div class="tp-caption home-button sft fadeout" data-x="center" data-y="400" data-speed="1200"
-                            data-start="1550" data-easing="Power3.easeInOut" data-splitin="none" data-splitout="none"
-                            data-elementdelay="0.1" data-endelementdelay="0.1" data-endspeed="300"
-                            style="z-index: 4; max-width: auto; max-height: auto; white-space:normal;">
-                            <div class="op-3">
-                                <a href="#team" class="btn btn-primary btn-scroll">
-                                    MEET THE TEAM
-                                </a>
-                            </div>
-                        </div>
-                    </li>
-                </ul>
-                <div class="tp-bannertimer"></div>
-            </div>
-            <div class="home-bottom">
-                <div class="container text-center">
-                    <div class="move bounce">
-                        <a href="#features" class="ion-ios-arrow-down btn-scroll">
-                        </a>
+                    <div class="features-info">
+                        <h4>Clean & Modern Design</h4>
+                        <p>Lorem ipsum dolor consectetur adipisicing incididunt eiusmod tempor incididunt laboredolore
+                            magna aliqua.</p>
                     </div>
                 </div>
             </div>
+
+            <!-- Features Icon-->
+            <div class="col-md-4">
+                <div class="features-icon-box">
+
+                    <div class="features-icon">
+                        <i class="fa fa-paper-plane"></i>
+                    </div>
+
+                    <div class="features-info">
+                        <h4>Illustration</h4>
+                        <p>Lorem ipsum dolor consectetur adipisicing incididunt eiusmod tempor incididunt laboredolore
+                            magna aliqua.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Features Icon-->
+            <div class="col-md-4">
+                <div class="features-icon-box">
+
+                    <div class="features-icon">
+                        <i class="fa fa-life-saver"></i>
+                    </div>
+
+                    <div class="features-info">
+                        <h4>App Development</h4>
+                        <p>Lorem ipsum dolor consectetur adipisicing incididunt eiusmod tempor incididunt laboredolore
+                            magna aliqua.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Features Icon-->
+            <div class="col-md-4">
+                <div class="features-icon-box">
+
+                    <div class="features-icon">
+                        <i class="fa fa-paint-brush"></i>
+                    </div>
+
+                    <div class="features-info">
+                        <h4>Web Development</h4>
+                        <p>Lorem ipsum dolor consectetur adipisicing incididunt eiusmod tempor incididunt laboredolore
+                            magna aliqua.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Features Icon-->
+            <div class="col-md-4">
+                <div class="features-icon-box">
+
+                    <div class="features-icon">
+                        <i class="fa fa-line-chart"></i>
+                    </div>
+
+                    <div class="features-info">
+                        <h4>Digital Design</h4>
+                        <p>Lorem ipsum dolor consectetur adipisicing incididunt eiusmod tempor incididunt laboredolore
+                            magna aliqua.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Features Icon-->
+            <div class="col-md-4">
+                <div class="features-icon-box">
+
+                    <div class="features-icon">
+                        <i class="fa fa-gift"></i>
+                    </div>
+
+                    <div class="features-info">
+                        <h4>Fully Responsive</h4>
+                        <p>Lorem ipsum dolor consectetur adipisicing incididunt eiusmod tempor incididunt laboredolore
+                            magna aliqua.</p>
+                    </div>
+                </div>
+            </div>
+
+
+        </div> <!-- /.row-->
+    </div> <!-- /.container-->
+</section>
+<!--End Features-->
+
+
+<!-- Start Facts-->
+<section id="facts" class="section parallax">
+    <div class="overlay"></div>
+    <div class="container">
+        <div class="row">
+
+            <!-- Start Item-->
+            <div class="col-md-3 col-sm-6 facts-box margin-bottom-30">
+                <span><i class="icon-happy"></i></span>
+                <h3>841</h3>
+                <span>Happy Clients</span>
+            </div>
+            <!-- End Item-->
+
+            <!-- Start Item-->
+            <div class="col-md-3 col-sm-6 facts-box margin-bottom-30">
+                <span><i class="icon-presentation"></i></span>
+                <h3>800</h3>
+                <span>Projects</span>
+            </div>
+            <!-- End Item-->
+
+            <!-- Start Item-->
+            <div class="col-md-3 col-sm-6 facts-box margin-bottom-30">
+                <span><i class="icon-target"></i></span>
+                <h3>1232</h3>
+                <span>Lines of Code</span>
+            </div>
+            <!-- End Item-->
+
+            <!-- Start Item-->
+            <div class="col-md-3 col-sm-6 facts-box margin-bottom-30">
+                <span><i class="icon-trophy"></i></span>
+                <h3>300</h3>
+                <span>Awards Won</span>
+            </div>
+            <!-- End Item-->
+
+        </div> <!-- /.row -->
+    </div> <!-- /.container -->
+</section>
+<!--End Facts-->
+
+
+<!--Start Section-->
+<section class="section">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="content-tab-1">
+                    <ul class="nav">
+                        <li class="active">
+                            <a aria-expanded="true" href="#tab-content-1" data-toggle="tab">
+                                <i class="fa fa-desktop"></i>
+                                <h4>Responsive</h4>
+                            </a>
+                            <div class="tab-arrow">
+                            </div>
+                        </li>
+
+                        <li>
+                            <a aria-expanded="true" href="#tab-content-2" data-toggle="tab">
+                                <i class="fa fa-cubes"></i>
+                                <h4>Flexible</h4>
+                            </a>
+                            <div class="tab-arrow">
+                            </div>
+                        </li>
+
+                        <li>
+                            <a aria-expanded="true" href="#tab-content-3" data-toggle="tab">
+                                <i class="fa fa-institution"></i>
+                                <h4>Support</h4>
+                            </a>
+                            <div class="tab-arrow">
+                            </div>
+                        </li>
+
+                        <li>
+                            <a aria-expanded="true" href="#tab-content-4" data-toggle="tab">
+                                <i class="fa fa-pagelines"></i>
+                                <h4>Clean Design</h4>
+                            </a>
+                            <div class="tab-arrow">
+                            </div>
+                        </li>
+
+                        <li>
+                            <a aria-expanded="true" href="#tab-content-5" data-toggle="tab">
+                                <i class="fa fa-pie-chart"></i>
+                                <h4>Easy to Use</h4>
+                            </a>
+                            <div class="tab-arrow">
+                            </div>
+                        </li>
+
+                    </ul>
+
+                    <div class="tab-content-main">
+                        <div class="container">
+                            <div class="tab-content">
+                                <div class="tab-pane active in" id="tab-content-1">
+
+                                    <!-- Features Icon-->
+                                    <div class="col-md-6 margin-bottom-30">
+                                        <div class="tab1-features">
+                                            <div class="icon"> <i class="fa fa-star-o"></i> </div>
+                                            <div class="info">
+                                                <h4>Dedicated Support & Updates</h4>
+                                                <p>Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit
+                                                    amet. Et netus et malesuada fames ac turpis egestas tristique
+                                                    senectus. </p>
+                                            </div>
+                                        </div>
+
+                                        <div class="tab1-features">
+                                            <div class="icon"> <i class="fa fa-codepen"></i> </div>
+                                            <div class="info">
+                                                <h4>multipurpose theme</h4>
+                                                <p>Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit
+                                                    amet. Et netus et malesuada fames ac turpis egestas tristique
+                                                    senectus. </p>
+                                            </div>
+                                        </div>
+
+                                        <div class="tab1-features">
+                                            <div class="icon"> <i class="fa fa-heart-o"></i></div>
+                                            <div class="info">
+                                                <h4>Design With Love</h4>
+                                                <p>Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit
+                                                    amet. Et netus et malesuada fames ac turpis egestas tristique
+                                                    senectus. </p>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                    <!--End features Icon-->
+
+
+                                    <!--  Start Carousel-->
+                                    <div class="col-md-6">
+                                        <div class="tab-carousel">
+                                            <div class="item"><img src="images/works/img4.jpg" alt=""></div>
+                                            <div class="item"><img src="images/works/img5.jpg" alt=""></div>
+                                            <div class="item"><img src="images/works/img6.jpg" alt=""></div>
+                                        </div>
+                                    </div>
+                                    <!-- End Carousel-->
+
+                                </div>
+                                <!-- End Tab content 1-->
+
+
+                                <!-- Start Tab content 2-->
+                                <div class="tab-pane" id="tab-content-2">
+
+                                    <div class="col-md-4">
+                                        <div class="tab2-services-box">
+                                            <div class="media">
+                                                <img src="images/services1.jpg" alt="services" />
+                                            </div>
+
+                                            <div class="services-info">
+                                                <h4>Our History</h4>
+                                                <p>It is a long established fact that a reader will be distracted by the
+                                                    readable content of a page when looking at its layout. The point of
+                                                    using Lorem Ipsum is that it has a more-or-less normal.</p>
+                                            </div>
+
+                                        </div>
+                                    </div>
+
+                                    <div class="col-md-4">
+                                        <div class="tab2-services-box">
+                                            <div class="media">
+                                                <img src="images/services2.jpg" alt="services" />
+                                            </div>
+
+                                            <div class="services-info">
+                                                <h4>What We Do</h4>
+                                                <p>It is a long established fact that a reader will be distracted by the
+                                                    readable content of a page when looking at its layout. The point of
+                                                    using Lorem Ipsum is that it has a more-or-less normal.</p>
+                                            </div>
+
+                                        </div>
+                                    </div>
+
+                                    <div class="col-md-4">
+                                        <div class="tab2-services-box">
+                                            <div class="media">
+                                                <img src="images/services3.jpg" alt="services" />
+                                            </div>
+
+                                            <div class="services-info">
+                                                <h4>Our Mission</h4>
+                                                <p>It is a long established fact that a reader will be distracted by the
+                                                    readable content of a page when looking at its layout. The point of
+                                                    using Lorem Ipsum is that it has a more-or-less normal.</p>
+                                            </div>
+
+                                        </div>
+                                    </div>
+
+                                </div>
+
+
+                                <div class="tab-pane" id="tab-content-3">
+
+                                    <div class="features-tab3">
+
+                                        <!--Start Features Left-->
+                                        <div class="col-md-4">
+                                            <div class="features-left m-bot-30">
+                                                <!--Features Item #1-->
+                                                <div class="features-item">
+                                                    <div class="features-icon"> <i class="fa fa-pagelines"></i> </div>
+                                                    <div class="features-info">
+                                                        <h4>Multipurpose & Responsive</h4>
+                                                        <p>Lorem Ipsum is simply dummy text of the printing and
+                                                            typesetting industry Lorem Ipsum.</p>
+                                                    </div>
+                                                </div>
+
+                                                <!--Features Item #2-->
+                                                <div class="features-item">
+                                                    <div class="features-icon"> <i class="fa fa-trophy"></i> </div>
+                                                    <div class="features-info">
+                                                        <h4>Creative Design</h4>
+                                                        <p>Lorem Ipsum is simply dummy text of the printing and
+                                                            typesetting industry Lorem Ipsum.</p>
+                                                    </div>
+                                                </div>
+
+                                                <!--Features Item #3-->
+                                                <div class="features-item">
+                                                    <div class="features-icon"> <i class="fa fa-tag"></i> </div>
+                                                    <div class="features-info">
+                                                        <h4>Awesome Theme</h4>
+                                                        <p>Lorem Ipsum is simply dummy text of the printing and
+                                                            typesetting industry Lorem Ipsum.</p>
+                                                    </div>
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                        <!--End Features Left-->
+
+                                        <!--Start Features Image-->
+                                        <div class="col-md-4 hidden-xs m-bot-30">
+                                            <img src="images/device.png" alt="Features Image" />
+                                        </div>
+                                        <!--End Features Image-->
+
+                                        <!--Start Features Right-->
+                                        <div class="col-md-4">
+                                            <div class="features-right m-bot-30">
+                                                <!--Features Item #1-->
+                                                <div class="features-item">
+                                                    <div class="features-icon"> <i class="fa fa-eyedropper"></i> </div>
+                                                    <div class="features-info">
+                                                        <h4>Strategy Solutions</h4>
+                                                        <p>Lorem Ipsum is simply dummy text of the printing and
+                                                            typesetting industry Lorem Ipsum.</p>
+                                                    </div>
+                                                </div>
+
+                                                <!--Features Item #2-->
+                                                <div class="features-item">
+                                                    <div class="features-icon"> <i class="fa fa-search-plus"></i> </div>
+                                                    <div class="features-info">
+                                                        <h4>App Development</h4>
+                                                        <p>Lorem Ipsum is simply dummy text of the printing and
+                                                            typesetting industry Lorem Ipsum.</p>
+                                                    </div>
+                                                </div>
+
+                                                <!--Features Item #3-->
+                                                <div class="features-item">
+                                                    <div class="features-icon"> <i class="fa fa-send-o"></i> </div>
+                                                    <div class="features-info">
+                                                        <h4>HTML5 & CSS3</h4>
+                                                        <p>Lorem Ipsum is simply dummy text of the printing and
+                                                            typesetting industry Lorem Ipsum.</p>
+                                                    </div>
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                        <!--End Features Right -->
+                                    </div>
+
+                                </div>
+
+                                <div class="tab-pane" id="tab-content-4">
+
+                                    <div class="tab-content-4">
+
+                                        <div class="col-md-3">
+                                            <div class="tab4-services-box">
+                                                <div class="icon"><i class="fa fa-bolt"></i> </div>
+                                                <div class="info">
+                                                    <h4>Simple and Clean Codes</h4>
+                                                    <p>Vivamus a placerat ante. Duis vulputate nibh sit amet augue
+                                                        vehicula, mattis
+                                                        viverra purus tristique.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+
+
+
+                                        <div class="col-md-3">
+                                            <div class="tab4-services-box">
+                                                <div class="icon"><i class="fa fa-fire"></i> </div>
+                                                <div class="info">
+                                                    <h4>Responsive Layout Design</h4>
+                                                    <p>Vivamus a placerat ante. Duis vulputate nibh sit amet augue
+                                                        vehicula, mattis
+                                                        viverra purus tristique.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="col-md-3">
+                                            <div class="tab4-services-box">
+                                                <div class="icon"><i class="fa fa-chain"></i> </div>
+                                                <div class="info">
+                                                    <h4>Unlimited Support</h4>
+                                                    <p>Vivamus a placerat ante. Duis vulputate nibh sit amet augue
+                                                        vehicula, mattis
+                                                        viverra purus tristique.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="col-md-3">
+                                            <div class="tab4-services-box">
+                                                <div class="icon"><i class="fa fa-shopping-cart"></i> </div>
+                                                <div class="info">
+                                                    <h4>multipurpose theme</h4>
+                                                    <p>Vivamus a placerat ante. Duis vulputate nibh sit amet augue
+                                                        vehicula, mattis
+                                                        viverra purus tristique.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                    </div>
+
+                                </div>
+
+
+                                <div class="tab-pane" id="tab-content-5">
+
+                                    <div class="tab-content-5">
+
+                                        <div class="col-md-6">
+                                            <div class="core-features">
+
+                                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur
+                                                    euismod enim a metus adipiscing aliquam. Vestibulum in vestibulum
+                                                    lorem. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                                    Curabitur euismod enim a metus adipiscing aliquam. Vestibulum in
+                                                    vestibulum lorem. Lorem ipsum dolor sit amet, consectetur adipiscing
+                                                    elit. Curabitur euismod enim a metus adipiscing.</p>
+
+                                                <ul class="list">
+                                                    <li>Font-Awesome Integration</li>
+                                                    <li>Multiple unique designs</li>
+                                                    <li>Clean coded, responsive and multipurpose</li>
+                                                    <li>Pages valid on w3c.</li>
+                                                    <li>Well documented.</li>
+                                                    <li>Easy to customization.</li>
+                                                </ul>
+
+                                            </div>
+                                        </div>
+
+
+                                        <div class="col-md-6">
+                                            <div class="devices-image">
+                                                <img src="images/device-desktop.png" alt="" />
+                                            </div>
+                                        </div>
+
+                                    </div>
+
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                    <!--/.tab-content-main-->
+                </div>
+            </div>
+
+        </div>
+        <!--/.row-->
+    </div>
+    <!--/.container-->
+</section>
+<!--End Section-->
+
+
+<!--Start History-->
+<section id="history" class="section parallax">
+    <div class="overlay"></div>
+    <div class="container">
+
+        <div class="title-box text-center white">
+            <h2 class="title">History</h2>
+        </div>
+
+        <!-- History Timeline -->
+        <ul class="timeline list-unstyled">
+
+            <li class="year">2014</li>
+
+            <!--History Item -->
+            <li class="timeline-item">
+                <h4>Lorem ipsum dolor consectetur adipisicing.</h4>
+                <p>Lorem ipsum dolor consectetur adipisicing incididunt eiusmod tempor incididunt laboredolore magna
+                    aliqua.</p>
+                <span> 16 OCT 2014</span>
+            </li>
+            <!-- End Item -->
+
+            <!--History Item -->
+            <li class="timeline-item">
+                <h4>Lorem ipsum dolor consectetur adipisicing.</h4>
+                <p>Lorem ipsum dolor consectetur adipisicing incididunt eiusmod tempor incididunt laboredolore magna
+                    aliqua.</p>
+                <span> 18 OCT 2014</span>
+            </li>
+            <!-- End Item -->
+
+            <!-- History Year -->
+            <li class="year">2015</li>
+
+
+            <!--History Item -->
+            <li class="timeline-item">
+                <h4>Lorem ipsum dolor consectetur adipisicing.</h4>
+                <p>Lorem ipsum dolor consectetur adipisicing incididunt eiusmod tempor incididunt laboredolore magna
+                    aliqua.</p>
+                <span> 10 OCT 2015</span>
+            </li>
+            <!-- End Item -->
+
+            <!--History Item -->
+            <li class="timeline-item">
+                <h4>Lorem ipsum dolor consectetur adipisicing.</h4>
+                <p>Lorem ipsum dolor consectetur adipisicing incididunt eiusmod tempor incididunt laboredolore magna
+                    aliqua.</p>
+                <span> 11 OCT 2014</span>
+            </li>
+            <!-- End Item -->
+
+            <!--History Item -->
+            <li class="timeline-item">
+                <h4>Lorem ipsum dolor consectetur adipisicing.</h4>
+                <p>Lorem ipsum dolor consectetur adipisicing incididunt eiusmod tempor incididunt laboredolore magna
+                    aliqua.</p>
+                <span> 18 OCT 2015</span>
+            </li>
+            <!-- End Item -->
+
+            <li class="clear"></li>
+
+            <li class="end-icon fa fa-bookmark"></li>
+        </ul>
+        <!-- End History Timeline -->
+
+    </div>
+    <!--/.container-->
+</section>
+<!--End History-->
+
+
+<!--Start portfolio-->
+<section id="works" class="section">
+    <!-- Filtering -->
+    <div class="title-box text-center">
+        <h2 class="title">Our Work</h2>
+    </div>
+
+
+    <div class=" col-md-12 text-center">
+        <!-- Filtering -->
+        <ul class="filtering">
+            <li class="filter" data-filter="all">All</li>
+            <li class="filter" data-filter="fashion">Fashion</li>
+            <li class="filter" data-filter="event">Events</li>
+            <li class="filter" data-filter="wedding">Wedding</li>
+            <li class="filter" data-filter="corporate">Corporate</li>
+        </ul>
+    </div>
+
+    <div class="work-main">
+        <!-- Work Grid -->
+        <ul class="work-grid">
+            <!-- Work Item -->
+            <li class="work-item thumnail-img mix corporate">
+                <div class="work-image">
+                    <img src="images/works/img1.jpg" alt="thumbnail">
+
+                    <!--Hover link-->
+                    <div class="hover-link">
+                        <a href="single-work.html">
+                            <i class="fa fa-link"></i>
+                        </a>
+
+                        <a href="images/works/img1.jpg" class="popup-image">
+                            <i class="fa fa-plus"></i>
+                        </a>
+                    </div>
+                    <!--End link-->
+
+                    <!--Hover Caption-->
+                    <div class="work-caption">
+                        <h4>Project Title</h4>
+                        <p>Photography</p>
+                    </div>
+                    <!--End Caption-->
+
+                </div> <!-- /.work-image-->
+            </li>
+            <!--End Work Item -->
+
+            <!-- Work Item -->
+            <li class="work-item thumnail-img mix fashion wedding">
+                <div class="work-image">
+                    <img src="images/works/img2.jpg" alt="thumbnail">
+
+                    <!--Hover link-->
+                    <div class="hover-link">
+                        <a href="single-work.html">
+                            <i class="fa fa-link"></i>
+                        </a>
+
+                        <a href="images/works/img2.jpg" class="popup-image">
+                            <i class="fa fa-plus"></i>
+                        </a>
+                    </div>
+                    <!--End link-->
+
+                    <!--Hover Caption-->
+                    <div class="work-caption">
+                        <h4>Project Title</h4>
+                        <p>Photography</p>
+                    </div>
+                    <!--End Caption-->
+
+                </div> <!-- /.work-image-->
+            </li>
+            <!--End Work Item -->
+
+            <!-- Work Item -->
+            <li class="work-item thumnail-img mix corporate">
+                <div class="work-image">
+                    <img src="images/works/img3.jpg" alt="thumbnail">
+
+                    <!--Hover link-->
+                    <div class="hover-link">
+                        <a href="single-work.html">
+                            <i class="fa fa-link"></i>
+                        </a>
+
+                        <a href="images/works/img3.jpg" class="popup-image">
+                            <i class="fa fa-plus"></i>
+                        </a>
+                    </div>
+                    <!--End link-->
+
+                    <!--Hover Caption-->
+                    <div class="work-caption">
+                        <h4>Project Title</h4>
+                        <p>Photography</p>
+                    </div>
+                    <!--End Caption-->
+
+                </div> <!-- /.work-image-->
+            </li>
+            <!--End Work Item -->
+
+            <!-- Work Item -->
+            <li class="work-item thumnail-img mix corporate">
+                <div class="work-image">
+                    <img src="images/works/img4.jpg" alt="thumbnail">
+
+                    <!--Hover link-->
+                    <div class="hover-link">
+                        <a href="single-work.html">
+                            <i class="fa fa-link"></i>
+                        </a>
+
+                        <a href="images/works/img4.jpg" class="popup-image">
+                            <i class="fa fa-plus"></i>
+                        </a>
+                    </div>
+                    <!--End link-->
+
+                    <!--Hover Caption-->
+                    <div class="work-caption">
+                        <h4>Project Title</h4>
+                        <p>Photography</p>
+                    </div>
+                    <!--End Caption-->
+
+                </div> <!-- /.work-image-->
+            </li>
+            <!--End Work Item -->
+
+            <!-- Work Item -->
+            <li class="work-item thumnail-img mix fashion wedding">
+                <div class="work-image">
+                    <img src="images/works/img5.jpg" alt="thumbnail">
+
+                    <!--Hover link-->
+                    <div class="hover-link">
+                        <a href="single-work.html">
+                            <i class="fa fa-link"></i>
+                        </a>
+
+                        <a href="images/works/img5.jpg" class="popup-image">
+                            <i class="fa fa-plus"></i>
+                        </a>
+                    </div>
+                    <!--End link-->
+
+                    <!--Hover Caption-->
+                    <div class="work-caption">
+                        <h4>Project Title</h4>
+                        <p>Photography</p>
+                    </div>
+                    <!--End Caption-->
+
+                </div> <!-- /.work-image-->
+            </li>
+            <!--End Work Item -->
+
+            <!-- Work Item -->
+            <li class="work-item thumnail-img mix event wedding">
+                <div class="work-image">
+                    <img src="images/works/img6.jpg" alt="thumbnail">
+
+                    <!--Hover link-->
+                    <div class="hover-link">
+                        <a href="single-work.html">
+                            <i class="fa fa-link"></i>
+                        </a>
+
+                        <a href="images/works/img6.jpg" class="popup-image">
+                            <i class="fa fa-plus"></i>
+                        </a>
+                    </div>
+                    <!--End link-->
+
+                    <!--Hover Caption-->
+                    <div class="work-caption">
+                        <h4>Project Title</h4>
+                        <p>Photography</p>
+                    </div>
+                    <!--End Caption-->
+
+                </div> <!-- /.work-image-->
+            </li>
+            <!--End Work Item -->
+
+            <!-- Work Item -->
+            <li class="work-item thumnail-img mix event">
+                <div class="work-image">
+                    <img src="images/works/img7.jpg" alt="thumbnail">
+
+                    <!--Hover link-->
+                    <div class="hover-link">
+                        <a href="single-work.html">
+                            <i class="fa fa-link"></i>
+                        </a>
+
+                        <a href="images/works/img7.jpg" class="popup-image">
+                            <i class="fa fa-plus"></i>
+                        </a>
+                    </div>
+                    <!--End link-->
+
+                    <!--Hover Caption-->
+                    <div class="work-caption">
+                        <h4>Project Title</h4>
+                        <p>Photography</p>
+                    </div>
+                    <!--End Caption-->
+
+                </div> <!-- /.work-image-->
+            </li>
+            <!--End Work Item -->
+
+            <!-- Work Item -->
+            <li class="work-item thumnail-img mix corporate">
+                <div class="work-image">
+                    <img src="images/works/img8.jpg" alt="thumbnail">
+
+                    <!--Hover link-->
+                    <div class="hover-link">
+                        <a href="single-work.html">
+                            <i class="fa fa-link"></i>
+                        </a>
+
+                        <a href="images/works/img8.jpg" class="popup-image">
+                            <i class="fa fa-plus"></i>
+                        </a>
+                    </div>
+                    <!--End link-->
+
+                    <!--Hover Caption-->
+                    <div class="work-caption">
+                        <h4>Project Title</h4>
+                        <p>Photography</p>
+                    </div>
+                    <!--End Caption-->
+
+                </div> <!-- /.work-image-->
+            </li>
+            <!--End Work Item -->
+
+            <!-- Work Item -->
+            <li class="work-item thumnail-img mix event">
+                <div class="work-image">
+                    <img src="images/works/img9.jpg" alt="thumbnail">
+
+                    <!--Hover link-->
+                    <div class="hover-link">
+                        <a href="single-work.html">
+                            <i class="fa fa-link"></i>
+                        </a>
+
+                        <a href="images/works/img9.jpg" class="popup-image">
+                            <i class="fa fa-plus"></i>
+                        </a>
+                    </div>
+                    <!--End link-->
+
+                    <!--Hover Caption-->
+                    <div class="work-caption">
+                        <h4>Project Title</h4>
+                        <p>Photography</p>
+                    </div>
+                    <!--End Caption-->
+
+                </div> <!-- /.work-image-->
+            </li>
+            <!--End Work Item -->
+
+            <!-- Work Item -->
+            <li class="work-item thumnail-img mix wedding">
+                <div class="work-image">
+                    <img src="images/works/img10.jpg" alt="thumbnail">
+
+                    <!--Hover link-->
+                    <div class="hover-link">
+                        <a href="single-work.html">
+                            <i class="fa fa-link"></i>
+                        </a>
+
+                        <a href="images/works/img10.jpg" class="popup-image">
+                            <i class="fa fa-plus"></i>
+                        </a>
+                    </div>
+                    <!--End link-->
+
+                    <!--Hover Caption-->
+                    <div class="work-caption">
+                        <h4>Project Title</h4>
+                        <p>Photography</p>
+                    </div>
+                    <!--End Caption-->
+
+                </div> <!-- /.work-image-->
+            </li>
+            <!--End Work Item -->
+
+            <!-- Work Item -->
+            <li class="work-item thumnail-img mix fashion">
+                <div class="work-image">
+                    <img src="images/works/img11.jpg" alt="thumbnail">
+
+                    <!--Hover link-->
+                    <div class="hover-link">
+                        <a href="single-work.html">
+                            <i class="fa fa-link"></i>
+                        </a>
+
+                        <a href="images/works/img11.jpg" class="popup-image">
+                            <i class="fa fa-plus"></i>
+                        </a>
+                    </div>
+                    <!--End link-->
+
+                    <!--Hover Caption-->
+                    <div class="work-caption">
+                        <h4>Project Title</h4>
+                        <p>Photography</p>
+                    </div>
+                    <!--End Caption-->
+
+                </div> <!-- /.work-image-->
+            </li>
+            <!--End Work Item -->
+
+            <!-- Work Item -->
+            <li class="work-item thumnail-img mix corporate">
+                <div class="work-image">
+                    <img src="images/works/img12.jpg" alt="thumbnail">
+
+                    <!--Hover link-->
+                    <div class="hover-link">
+                        <a href="single-work.html">
+                            <i class="fa fa-link"></i>
+                        </a>
+
+                        <a href="images/works/img12.jpg" class="popup-image">
+                            <i class="fa fa-plus"></i>
+                        </a>
+                    </div>
+                    <!--End link-->
+
+                    <!--Hover Caption-->
+                    <div class="work-caption">
+                        <h4>Project Title</h4>
+                        <p>Photography</p>
+                    </div>
+                    <!--End Caption-->
+
+                </div> <!-- /.work-image-->
+            </li>
+            <!--End Work Item -->
+        </ul>
+
+    </div>
+</section>
+<!--End portfolio-->
+
+
+<!--Start Call To Action-->
+<section id="cta" class="parallax">
+    <div class="overlay"></div>
+    <div class="container">
+        <div class="row text-center">
+            <h2>Are you ready to buy this theme</h2>
+            <a href="#" class="btn btn-green">GET A FREE QUOTE</a>
         </div>
     </div>
 </section>
-<!-- End Home Revolution Slider Parallax Section -->
+<!--End Call To Action-->
 
-<div class="site-wrapper content">
 
-    <!-- Start Features Section -->
-    <section id="features">
-        <div class="container">
-            <div class="col-md-12 text-center wow fadeInUp">
-                <h3 class="section-title">About our Company</h3>
-                <p class="subheading">We are a small<span class="highlight"> creative team</span>, trying to enrich the
-                    lives of others</p>
+
+<!--Start Team-->
+<section id="team" class="section">
+    <div class="container">
+        <div class="row">
+
+            <div class="title-box text-center">
+                <h2 class="title">Team</h2>
             </div>
-            <div class="row features-row wow fadeInUp">
-                <div class="col-md-4 col-sm-12 feature-column">
-                    <div class="feature-icon">
-                        <i class="icon-eyeglasses size-2x highlight"></i>
-                        <i class="icon-eyeglasses back-icon"></i>
-                    </div>
-                    <div class="feature-info">
-                        <h4>Parallax Design</h4>
-                        <p class="feature-description">Vivamus molestie phasellus enim sed orci eu pharetra. Donec
-                            posuere nunc vitae tortor sagittis feugiat in non massa.</p>
-                    </div>
-                </div>
-                <div class="col-md-4 col-sm-12 feature-column">
-                    <div class="feature-icon">
-                        <i class="icon-lock-open size-2x highlight"></i>
-                        <i class="icon-lock-open back-icon"></i>
-                    </div>
-                    <div class="feature-info">
-                        <h4>Fully Responsive</h4>
-                        <p class="feature-description">Vivamus molestie phasellus enim sed orci eu pharetra. Donec
-                            posuere nunc vitae tortor sagittis feugiat in non massa.</p>
-                    </div>
-                </div>
-                <div class="col-md-4 col-sm-12 feature-column">
-                    <div class="feature-icon">
-                        <i class="icon-energy size-2x highlight"></i>
-                        <i class="icon-energy back-icon"></i>
-                    </div>
-                    <div class="feature-info">
-                        <h4>Fast & Smooth</h4>
-                        <p class="feature-description">Vivamus molestie phasellus enim sed orci eu pharetra. Donec
-                            posuere nunc vitae tortor sagittis feugiat in non massa.</p>
-                    </div>
+
+        </div>
+
+        <!-- Team -->
+        <div class="team-items team-carousel">
+            <!-- Team Member #1 -->
+            <div class="item">
+                <img src="images/team/team1.jpg" alt="" />
+                <h4>Jonh Doe</h4>
+                <h5>Photogropher</h5>
+                <p>Lorem ipsum dolor consectetur dolor consectetur adipisicing incididunt eiusmod temporcd incididunt
+                    consectetur laboredolore dolor adipisicing. </p>
+
+                <div class="socials">
+                    <ul>
+                        <li><a class="facebook" href="#"><i class="fa fa-facebook"></i></a></li>
+                        <li><a class="twitter" href="#"><i class="fa fa-twitter"></i></a></li>
+                        <li><a class="linkedin" href="#"><i class="fa fa-linkedin"></i></a></li>
+                        <li><a class="google-plus" href="#"><i class="fa fa-google-plus"></i></a></li>
+                    </ul>
                 </div>
             </div>
-            <div class="row wow fadeInUp">
-                <div class="col-md-4 col-sm-12 feature-column">
-                    <div class="feature-icon">
-                        <i class="icon-settings size-2x highlight"></i>
-                        <i class="icon-settings back-icon"></i>
-                    </div>
-                    <div class="feature-info">
-                        <h4>Seo Optimized </h4>
-                        <p class="feature-description">Vivamus molestie phasellus enim sed orci eu pharetra. Donec
-                            posuere nunc vitae tortor sagittis feugiat in non massa.</p>
+            <!-- End Member -->
+
+            <!-- Team Member #2 -->
+            <div class="item">
+                <img src="images/team/team2.jpg" alt="" />
+                <h4>Jonh Doe</h4>
+                <h5>Web Designer</h5>
+                <p>Lorem ipsum dolor consectetur dolor consectetur adipisicing incididunt eiusmod temporcd incididunt
+                    consectetur laboredolore dolor adipisicing. </p>
+
+                <div class="socials">
+                    <ul>
+                        <li><a class="facebook" href="#"><i class="fa fa-facebook"></i></a></li>
+                        <li><a class="twitter" href="#"><i class="fa fa-twitter"></i></a></li>
+                        <li><a class="linkedin" href="#"><i class="fa fa-linkedin"></i></a></li>
+                        <li><a class="google-plus" href="#"><i class="fa fa-google-plus"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+            <!-- End Member -->
+
+            <!-- Team Member #3 -->
+            <div class="item">
+                <img src="images/team/team3.jpg" alt="" />
+                <h4>Jonh Doe</h4>
+                <h5>Graphic Designer</h5>
+                <p>Lorem ipsum dolor consectetur dolor consectetur adipisicing incididunt eiusmod temporcd incididunt
+                    consectetur laboredolore dolor adipisicing. </p>
+
+                <div class="socials">
+                    <ul>
+                        <li><a class="facebook" href="#"><i class="fa fa-facebook"></i></a></li>
+                        <li><a class="twitter" href="#"><i class="fa fa-twitter"></i></a></li>
+                        <li><a class="linkedin" href="#"><i class="fa fa-linkedin"></i></a></li>
+                        <li><a class="google-plus" href="#"><i class="fa fa-google-plus"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+            <!-- End Member -->
+
+            <!-- Team Member #4 -->
+            <div class="item">
+                <img src="images/team/team4.jpg" alt="" />
+                <h4>Jonh Doe</h4>
+                <h5>Photogropher</h5>
+                <p>Lorem ipsum dolor consectetur dolor consectetur adipisicing incididunt eiusmod temporcd incididunt
+                    consectetur laboredolore dolor adipisicing. </p>
+
+                <div class="socials">
+                    <ul>
+                        <li><a class="facebook" href="#"><i class="fa fa-facebook"></i></a></li>
+                        <li><a class="twitter" href="#"><i class="fa fa-twitter"></i></a></li>
+                        <li><a class="linkedin" href="#"><i class="fa fa-linkedin"></i></a></li>
+                        <li><a class="google-plus" href="#"><i class="fa fa-google-plus"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+            <!-- End Member -->
+
+            <!-- Team Member #5 -->
+            <div class="item">
+                <img src="images/team/team1.jpg" alt="" />
+                <h4>Jonh Doe</h4>
+                <h5>Graphic Designer</h5>
+                <p>Lorem ipsum dolor consectetur dolor consectetur adipisicing incididunt eiusmod temporcd incididunt
+                    consectetur laboredolore dolor adipisicing. </p>
+
+                <div class="socials">
+                    <ul>
+                        <li><a class="facebook" href="#"><i class="fa fa-facebook"></i></a></li>
+                        <li><a class="twitter" href="#"><i class="fa fa-twitter"></i></a></li>
+                        <li><a class="linkedin" href="#"><i class="fa fa-linkedin"></i></a></li>
+                        <li><a class="google-plus" href="#"><i class="fa fa-google-plus"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+            <!-- End Member -->
+
+            <!-- Team Member #6 -->
+            <div class="item">
+                <img src="images/team/team2.jpg" alt="" />
+                <h4>Jonh Doe</h4>
+                <h5>Web Designer</h5>
+                <p>Lorem ipsum dolor consectetur dolor consectetur adipisicing incididunt eiusmod temporcd incididunt
+                    consectetur laboredolore dolor adipisicing. </p>
+
+                <div class="socials">
+                    <ul>
+                        <li><a class="facebook" href="#"><i class="fa fa-facebook"></i></a></li>
+                        <li><a class="twitter" href="#"><i class="fa fa-twitter"></i></a></li>
+                        <li><a class="linkedin" href="#"><i class="fa fa-linkedin"></i></a></li>
+                        <li><a class="google-plus" href="#"><i class="fa fa-google-plus"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+            <!-- End Member -->
+        </div>
+        <!-- End Team -->
+    </div>
+    <!-- End Content -->
+</section>
+<!--End Team-->
+
+
+<!--Start Skills-->
+<section id="skills" class="section parallax">
+    <div class="overlay"></div>
+    <div class="container">
+        <div class="row">
+
+            <div class="title-box text-center white">
+                <h2 class="title">Technical Skills</h2>
+            </div>
+
+            <!--Skill #1-->
+            <div class="col-sm-3 col-md-3 col-lg-3 pie-chart-main">
+                <span class="pie-chart " data-percent="87">
+                    <span class="percent"></span>
+                </span>
+                <h4>Photoshop</h4>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            </div>
+
+            <!--Skill #2-->
+            <div class="col-sm-3 col-md-3 col-lg-3 pie-chart-main">
+                <span class="pie-chart" data-percent="75">
+                    <span class="percent"></span>
+                </span>
+                <h4>Wordpress</h4>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            </div>
+
+            <!--Skill #3-->
+            <div class="col-sm-3 col-md-3 col-lg-3 pie-chart-main">
+                <span class="pie-chart " data-percent="60">
+                    <span class="percent"></span>
+                </span>
+                <h4>Graphic</h4>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            </div>
+
+            <!--Skill #4-->
+            <div class="col-sm-3 col-md-3 col-lg-3 pie-chart-main">
+                <span class="pie-chart" data-percent="95">
+                    <span class="percent"></span>
+                </span>
+                <h4>Development</h4>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            </div>
+
+
+        </div> <!-- /.row-->
+    </div> <!-- /.container-->
+</section>
+<!--End Skills-->
+
+
+<!--Start Services-->
+<section id="services" class="section">
+    <div class="container">
+        <div class="row">
+
+            <div class="title-box text-center">
+                <h2 class="title">Services</h2>
+            </div>
+
+            <!--Services Item-->
+            <div class="col-md-4">
+                <div class="services-box">
+                    <div class="services-icon"> <i class="icon-basket"></i> </div>
+                    <div class="services-desc">
+                        <h4>Development</h4>
+                        <p>Lorem ipsum dolor consectetur dolor consectetur adipisicing incididunt eiusmod tempor
+                            incididunt laboredolore adipisicing. </p>
                     </div>
                 </div>
-                <div class="col-md-4 col-sm-12 feature-column">
-                    <div class="feature-icon">
-                        <i class="icon-book-open size-2x highlight"></i>
-                        <i class="icon-book-open back-icon"></i>
-                    </div>
-                    <div class="feature-info">
-                        <h4>Clean Code</h4>
-                        <p class="feature-description">Vivamus molestie phasellus enim sed orci eu pharetra. Donec
-                            posuere nunc vitae tortor sagittis feugiat in non massa.</p>
+            </div>
+            <!--End services Item-->
+
+            <!--Services Item-->
+            <div class="col-md-4">
+                <div class="services-box">
+                    <div class="services-icon"> <i class="icon-shield"></i> </div>
+                    <div class="services-desc">
+                        <h4>Web Design</h4>
+                        <p>Lorem ipsum dolor consectetur dolor consectetur adipisicing incididunt eiusmod tempor
+                            incididunt laboredolore adipisicing. </p>
                     </div>
                 </div>
-                <div class="col-md-4 col-sm-12 feature-column">
-                    <div class="feature-icon">
-                        <i class="icon-support size-2x highlight"></i>
-                        <i class="icon-support back-icon"></i>
+            </div>
+            <!--End services Item-->
+
+            <!--Services Item-->
+            <div class="col-md-4">
+                <div class="services-box">
+                    <div class="services-icon"> <i class="icon-hotairballoon"></i> </div>
+                    <div class="services-desc">
+                        <h4>SEO</h4>
+                        <p>Lorem ipsum dolor consectetur dolor consectetur adipisicing incididunt eiusmod tempor
+                            incididunt laboredolore adipisicing. </p>
                     </div>
-                    <div class="feature-info">
-                        <h4>Free 24/7 Support</h4>
-                        <p class="feature-description">Vivamus molestie phasellus enim sed orci eu pharetra. Donec
-                            posuere nunc vitae tortor sagittis feugiat in non massa.</p>
+                </div>
+            </div>
+            <!--End services Item-->
+
+            <!--Services Item -->
+            <div class="col-md-4">
+                <div class="services-box">
+                    <div class="services-icon"> <i class="icon-global"></i> </div>
+                    <div class="services-desc">
+                        <h4>Graphic Design</h4>
+                        <p>Lorem ipsum dolor consectetur dolor consectetur adipisicing incididunt eiusmod tempor
+                            incididunt laboredolore adipisicing. </p>
+                    </div>
+                </div>
+            </div>
+            <!--End services Item-->
+
+            <!--Services Item-->
+            <div class="col-md-4">
+                <div class="services-box">
+                    <div class="services-icon"> <i class="icon-target"></i> </div>
+                    <div class="services-desc">
+                        <h4>Content Writing</h4>
+                        <p>Lorem ipsum dolor consectetur dolor consectetur adipisicing incididunt eiusmod tempor
+                            incididunt laboredolore adipisicing. </p>
+                    </div>
+                </div>
+            </div>
+            <!--End services Item-->
+
+            <!--Services Item -->
+            <div class="col-md-4">
+                <div class="services-box">
+                    <div class="services-icon"> <i class="icon-aperture"></i> </div>
+                    <div class="services-desc">
+                        <h4>HTML Basic</h4>
+                        <p>Lorem ipsum dolor consectetur dolor consectetur adipisicing incididunt eiusmod tempor
+                            incididunt laboredolore adipisicing. </p>
+                    </div>
+                </div>
+            </div>
+            <!--End services Item-->
+
+        </div>
+        <!--/.row-->
+    </div>
+    <!--/.container-->
+</section>
+<!--End Services-->
+
+
+<!--Start Why Choose us-->
+<section id="why-choose" class="section">
+    <div class="container">
+        <div class="row">
+
+            <div class="title-box text-center">
+                <h2 class="title">Why Choose us</h2>
+            </div>
+
+            <!--start tabs-->
+            <div class="col-md-6">
+                <div class="tabs tabs-main">
+                    <ul class="nav nav-tabs">
+                        <li class="active"><a href="#one" data-toggle="tab">Design</a></li>
+                        <li><a href="#two" data-toggle="tab">Company</a></li>
+                        <li><a href="#three" data-toggle="tab">Support</a></li>
+                    </ul>
+                    <div class="tab-content">
+
+                        <!--Start Tab Item #1 -->
+                        <div class="tab-pane in active" id="one">
+                            <p>
+                                Lorem ipsum dolor consectetur adipisicing incididunt eiusmod tempor incididunt
+                                laboredolore magna aliqua. Lorem ipsum dolor consectetur adipisicing incididunt eiusmod
+                                tempor incididunt laboredolore magna aliqua. Lorem ipsum dolor consectetur adipisicing
+                                incididunt eiusmod tempor incididunt laboredolore magna aliqua. Lorem ipsum dolor
+                                consectetur adipisicing incididunt eiusmod tempor incididunt laboredolore magna aliqua.
+                            </p>
+                        </div>
+                        <!-- End Tab -->
+
+                        <!--Start Tab Item #2 -->
+                        <div class="tab-pane" id="two">
+                            <p>
+                                Lorem ipsum dolor consectetur adipisicing incididunt eiusmod tempor incididunt
+                                laboredolore magna aliqua. Lorem ipsum dolor consectetur adipisicing incididunt eiusmod
+                                tempor incididunt laboredolore magna aliqua. Lorem ipsum dolor consectetur adipisicing
+                                incididunt eiusmod tempor incididunt laboredolore magna aliqua.
+                            </p>
+                        </div>
+                        <!-- End Tab -->
+
+                        <!--Start Tab Item #3 -->
+                        <div class="tab-pane" id="three">
+                            <p>
+                                Lorem ipsum dolor consectetur adipisicing incididunt eiusmod tempor incididunt
+                                laboredolore magna aliqua. Lorem ipsum dolor consectetur adipisicing incididunt eiusmod
+                                tempor incididunt laboredolore magna aliqua.
+                            </p>
+                        </div>
+                        <!-- End Tab -->
+
+                    </div>
+                </div>
+            </div>
+            <!-- End Tabs-->
+
+            <!--Start Accordion-->
+            <div class="col-md-6">
+                <div class="panel-group accordion-main" id="accordion">
+                    <!--About accordion #1-->
+                    <div class="panel">
+                        <div class="panel-heading collapsed" data-toggle="collapse" data-parent="#accordion"
+                            data-target="#collapseOne">
+                            <h6 class="panel-title accordion-toggle">
+                                Photography
+                            </h6>
+                        </div>
+                        <div id="collapseOne" class="panel-collapse collapse">
+                            <div class="panel-body">
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin non blandit nibh. Sed
+                                    eget tortor tincidunt, auctor sem eget, mollis nisi. Pellentesque ipsum erat,
+                                    facilisis ut venenatis eu, sodales vel dolor fusce diam ornare.
+                                </p>
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <!--About accordion #2-->
+                    <div class="panel">
+                        <div class="panel-heading collapsed" data-toggle="collapse" data-parent="#accordion"
+                            data-target="#collapseTwo">
+                            <h6 class="panel-title accordion-toggle">
+                                Web Designing
+                            </h6>
+                        </div>
+                        <div id="collapseTwo" class="panel-collapse collapse">
+                            <div class="panel-body">
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin non blandit nibh. Sed
+                                    eget tortor tincidunt, auctor sem eget, mollis nisi. Pellentesque ipsum erat,
+                                    facilisis ut venenatis eu, sodales vel dolor fusce diam ornare.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!--About accordion #3-->
+                    <div class="panel">
+                        <div class="panel-heading collapsed" data-toggle="collapse" data-parent="#accordion"
+                            data-target="#collapseThree">
+                            <h6 class="panel-title accordion-toggle">
+                                Web Development
+                            </h6>
+                        </div>
+                        <div id="collapseThree" class="panel-collapse collapse">
+                            <div class="panel-body">
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin non blandit nibh. Sed
+                                    eget tortor tincidunt, auctor sem eget, mollis nisi. Pellentesque ipsum erat,
+                                    facilisis ut venenatis eu, sodales vel dolor fusce diam ornare.
+                                </p>
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <!--About accordion #4-->
+                    <div class="panel">
+                        <div class="panel-heading collapsed" data-toggle="collapse" data-parent="#accordion"
+                            data-target="#collapseFour">
+                            <h6 class="panel-title accordion-toggle">
+                                Responsive Design
+                            </h6>
+                        </div>
+                        <div id="collapseFour" class="panel-collapse collapse">
+                            <div class="panel-body">
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin non blandit nibh. Sed
+                                    eget tortor tincidunt, auctor sem eget, mollis nisi. Pellentesque ipsum erat,
+                                    facilisis ut venenatis eu, sodales vel dolor fusce diam ornare.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--End Accordion-->
+
+        </div>
+        <!--/.row-->
+    </div>
+    <!--/.container-->
+</section>
+<!--End Why Choose us-->
+
+
+<!--Start video-->
+<section id="video" class="section parallax">
+    <div class="overlay"></div>
+    <div class="container">
+        <div class="row">
+
+            <div class="title-box text-center white">
+                <h2 class="title">Video</h2>
+            </div>
+
+            <div class="col-md-6">
+                <div class="video-caption-main">
+                    <!--Video caption #1-->
+                    <div class="video-caption">
+                        <div class="video-icon">
+                            <i class="fa fa-briefcase"></i>
+                        </div>
+                        <div class="video-caption-info">
+                            <h4>Take a look at this video to see how we work.</h4>
+                            <p>Lorem ipsum dolor consectetur adipisicing incididunt eiusmod tempor incididunt
+                                laboredolore magna aliqua.</p>
+                        </div>
+                    </div>
+
+                    <!--Video caption #2-->
+                    <div class="video-caption">
+                        <div class="video-icon">
+                            <i class="fa fa-glass"></i>
+                        </div>
+                        <div class="video-caption-info">
+                            <h4>The programming language of ios apps</h4>
+                            <p>Lorem ipsum dolor consectetur adipisicing incididunt eiusmod tempor incididunt
+                                laboredolore magna aliqua.</p>
+                        </div>
+                    </div>
+
+                    <!--Video caption #3-->
+                    <div class="video-caption">
+                        <div class="video-icon">
+                            <i class="fa fa-rocket "></i>
+                        </div>
+                        <div class="video-caption-info">
+                            <h4>Take a look at this video to see how we work.</h4>
+                            <p>Lorem ipsum dolor consectetur adipisicing incididunt eiusmod tempor incididunt
+                                laboredolore magna aliqua.</p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <!-- End Video caption-->
+
+            <div class="col-md-6">
+                <div class="play-video">
+                    <iframe
+                        src="http://player.vimeo.com/video/115919099?title=0&amp;byline=0&amp;portrait=0&amp;color=fff"
+                        allowfullscreen></iframe>
+                </div>
+            </div>
+
+        </div> <!-- /.row-->
+    </div> <!-- /.container-->
+</section>
+<!--End video-->
+
+
+<!-- Start blog-->
+<section id="blog" class="section">
+    <div class="container">
+        <div class="row">
+
+            <div class="title-box text-center">
+                <h2 class="title">Latest Blog</h2>
+            </div>
+
+            <!-- Start Blog item #1-->
+            <div class="col-md-4">
+                <div class="blog-post">
+                    <div class="post-media">
+                        <img src="images/blog/blog1.jpg" alt="">
+                    </div>
+                    <div class="post-desc">
+                        <h4>consectetur adipisicing Inventore</h4>
+                        <h5>12 May, 2015 / 5 Comments</h5>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore, dolorum, fugiat,
+                            eligendi magni quibusdam iure cupiditate ex voluptas unde</p>
+                        <a href="blog.html" class="btn btn-gray-border">Read More</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Start Blog item #2-->
+            <div class="col-md-4">
+                <div class="blog-post">
+                    <div class="post-media">
+                        <img src="images/blog/blog2.jpg" alt="">
+                    </div>
+                    <div class="post-desc">
+                        <h4>consectetur adipisicing Inventore</h4>
+                        <h5>12 May, 2015 / 3 Comments</h5>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore, dolorum, fugiat,
+                            eligendi magni quibusdam iure cupiditate ex voluptas unde</p>
+                        <a href="blog.html" class="btn btn-gray-border">Read More</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Start Blog item #3-->
+            <div class="col-md-4">
+                <div class="blog-post">
+                    <div class="post-media">
+                        <img src="images/blog/blog3.jpg" alt="">
+                    </div>
+                    <div class="post-desc">
+                        <h4>consectetur adipisicing Inventore</h4>
+                        <h5>12 May, 2015 / 11 Comments</h5>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore, dolorum, fugiat,
+                            eligendi magni quibusdam iure cupiditate ex voluptas unde</p>
+                        <a href="blog.html" class="btn btn-gray-border">Read More</a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <!--/.row-->
+    </div>
+    <!--/.container-->
+</section>
+<!-- End blog-->
+
+
+<!--Start Testimonial-->
+<section id="testimonials" class="section parallax">
+    <div class="overlay"></div>
+    <div class="container">
+        <div class="row">
+
+            <div class="title-box text-center white">
+                <h2 class="title">What clients say.</h2>
+            </div>
+
+
+            <div class="col-md-10 col-md-offset-1">
+                <div class="testimonials-carousel">
+                    <!--Start Testimonial item #1-->
+                    <div class="items">
+                        <div class="desc">habitant morbi tristique senectus et netus et malesuada fames ac turpis
+                            egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec
+                            eu libero sit amet habitant morbi tristique senectus et netus et malesuada fames ac quam
+                            egestas.</div>
+                        <img src="images/testimonial/testimonial-img1.jpg" class="testimonial-pic" alt="testimonials" />
+                        <div class="name">Andrew Doe</div>
+                    </div>
+
+                    <!--Start Testimonial item #2-->
+                    <div class="items">
+                        <div class="desc">habitant morbi tristique senectus et netus et malesuada fames ac turpis
+                            egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec
+                            eu libero sit amet habitant morbi tristique senectus et netus et malesuada fames ac quam
+                            egestas.</div>
+                        <img src="images/testimonial/testimonial-img2.jpg" class="testimonial-pic" alt="testimonials" />
+                        <div class="name">Andrew Doe</div>
+                    </div>
+
+                    <!--Start Testimonial item #3-->
+                    <div class="items">
+                        <div class="desc">habitant morbi tristique senectus et netus et malesuada fames ac turpis
+                            egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec
+                            eu libero sit amet habitant morbi tristique senectus et netus et malesuada fames ac quam
+                            egestas.</div>
+                        <img src="images/testimonial/testimonial-img1.jpg" class="testimonial-pic" alt="testimonials" />
+                        <div class="name">Andrew Doe</div>
                     </div>
                 </div>
             </div>
         </div>
-    </section>
-    <!--End Features Section -->
+        <!--/.row-->
+    </div>
+    <!--/.container-->
+</section>
+<!--Start Testimonial-->
 
-    <!-- Start About Section -->
-    <section id="about">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-6 text-left about-text">
-                    <h3 class="wow fadeInUp">Our Story </h3>
-                    <p class="wow fadeInUp">Fusce faucibus tincidunt nulla, tincidunt sagittis magna venenatis quis.
-                        Proin commodo eu ipsum eu suscipit. In dapibus arcu sit amet imperdiet posuere. Praesent
-                        condimentum nulla at mauris ornare, eget consequat felis euismod. Praesent condimentum nulla at
-                        mauris ornare.</p>
-                    <p class="wow fadeInUp">
-                        <button type="button" class="btn btn-primary btn-md">Get in Touch</button>
-                    </p>
-                </div>
-                <div class="col-md-6 wow fadeInUp about-text">
-                    <!--    <div class="video-container">
-                                <iframe src="http://player.vimeo.com/video/115919099?title=0&amp;byline=0&amp;portrait=0&amp;color=fff" allowfullscreen></iframe>
-                            </div> -->
-                    <h3 class="wow fadeInUp"> The Experiance </h3>
-                    <div class="progress-bars">
-                        <p>Branding</p>
-                        <div class="progress" data-percent="90%">
-                            <div class="progress-bar">
-                                <span class="progress-bar-tooltip">90%</span>
-                            </div>
-                        </div>
-                        <p>User Experiance</p>
-                        <div class="progress" data-percent="80%">
-                            <div class="progress-bar">
-                                <span class="progress-bar-tooltip">80%</span>
-                            </div>
-                        </div>
-                        <p>Web Design</p>
-                        <div class="progress" data-percent="70%">
-                            <div class="progress-bar">
-                                <span class="progress-bar-tooltip">70%</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- End About Section -->
 
-    <!-- Start Fun Facts Section -->
-    <section id="fun-facts" class="parallax-section-5">
-        <div class="container">
-            <div class="col-md-12 text-center white wow fadeInUp">
-                <h3 class="section-title">Some interesting facts about us</h3>
-                <p class="subheading">Interdisciplinary team with <span class="highlight">big ideas</span> and
-                    challenges.</p>
-            </div>
-            <div class="counter-row row text-center wow fadeInUp">
-                <div class="col-md-3 col-sm-6 fact-container">
-                    <div class="fact">
-                        <span class="counter highlight">840</span>
-                        <h4>Happy Customers</h4>
-                    </div>
-                </div>
-                <div class="col-md-3 col-sm-6 fact-container">
-                    <div class="fact">
-                        <span class="counter highlight">385</span>
-                        <h4>Finished Projects</h4>
-                    </div>
-                </div>
-                <div class="col-md-3 col-sm-6 fact-container">
-                    <div class="fact">
-                        <h2 class="counter highlight">65892</h2>
-                        <h4>Lines of codes written</h4>
-                    </div>
-                </div>
-                <div class="col-md-3 col-sm-6 fact-container">
-                    <div class="fact">
-                        <span class="counter highlight">25</span>
-                        <h4>Winning Awards</h4>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- End Fun Facts Section -->
+<!--Start clients-->
+<section id="clients" class="section">
+    <div class="container">
+        <div class="row">
 
-    <!-- Start Team Section -->
-    <section id="team">
-        <div class="container">
-            <div class="col-md-12 text-center wow fadeInUp">
-                <h3 class="section-title">Meet the Crew.</h3>
-                <p class="subheading">Interdisciplinary team with <span class="highlight">big ideas</span> and
-                    challenges.</p>
+            <div class="title-box text-center">
+                <h2 class="title">Our Clients</h2>
             </div>
-            <div class="row">
-                <div class="col-md-3 col-sm-3 team-member">
-                    <div class="effect effects wow fadeInUp">
-                        <div class="img">
-                            <img src="img/team/team-1.jpg" class="img-responsive" alt="" />
-                            <div class="overlay">
-                                <ul class="expand">
-                                    <li class="social-icon">
-                                        <a href="#" onClick="return false;">
-                                            <i class="icon-social-facebook"></i>
-                                        </a>
-                                    </li>
-                                    <li class="social-icon">
-                                        <a href="#" onClick="return false;">
-                                            <i class="icon-social-twitter"></i>
-                                        </a>
-                                    </li>
-                                    <li class="social-icon">
-                                        <a href="#" onClick="return false;">
-                                            <i class=" icon-envelope-open"></i>
-                                        </a>
-                                    </li>
-                                </ul>
-                                <a class="close-overlay hidden">
-                                    x
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="member-info wow fadeInUp">
-                        <h4>John Visual</h4>
-                        <h5 class="highlight">CEO / Founder</h5>
-                        <p>Vivamus motestues phasellus enim sed orci eu pharetra. </p>
-                    </div>
-                </div>
-                <div class="col-md-3 col-sm-3 team-member">
-                    <div class="effect effects wow fadeInUp">
-                        <div class="img">
-                            <img src="img/team/team-2.jpg" class="img-responsive" alt="" />
-                            <div class="overlay">
-                                <ul class="expand">
-                                    <li class="social-icon">
-                                        <a href="#" onClick="return false;">
-                                            <i class="icon-social-facebook"></i>
-                                        </a>
-                                    </li>
-                                    <li class="social-icon">
-                                        <a href="#" onClick="return false;">
-                                            <i class="icon-social-twitter"></i>
-                                        </a>
-                                    </li>
-                                    <li class="social-icon">
-                                        <a href="#" onClick="return false;">
-                                            <i class=" icon-envelope-open"></i>
-                                        </a>
-                                    </li>
-                                </ul>
-                                <a class="close-overlay hidden">
-                                    x
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="member-info wow fadeInUp">
-                        <h4>John Visual</h4>
-                        <h5 class="highlight">CEO / Founder</h5>
-                        <p>Vivamus motestues phasellus enim sed orci eu pharetra.</p>
-                    </div>
-                </div>
-                <div class="col-md-3 col-sm-3 team-member">
-                    <div class="effect effects wow fadeInUp">
-                        <div class="img">
-                            <img src="img/team/team-3.jpg" class="img-responsive" alt="" />
-                            <div class="overlay">
-                                <ul class="expand">
-                                    <li class="social-icon">
-                                        <a href="#" onClick="return false;">
-                                            <i class="icon-social-facebook"></i>
-                                        </a>
-                                    </li>
-                                    <li class="social-icon">
-                                        <a href="#" onClick="return false;">
-                                            <i class="icon-social-twitter"></i>
-                                        </a>
-                                    </li>
-                                    <li class="social-icon">
-                                        <a href="#" onClick="return false;">
-                                            <i class=" icon-envelope-open"></i>
-                                        </a>
-                                    </li>
-                                </ul>
-                                <a class="close-overlay hidden">
-                                    x
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="member-info wow fadeInUp">
-                        <h4>Jane Wunder</h4>
-                        <h5 class="highlight">PR Manager</h5>
-                        <p>Vivamus motestues phasellus enim sed orci eu pharetra.</p>
-                    </div>
-                </div>
-                <div class="col-md-3 col-sm-3 team-member">
-                    <div class="effect effects wow fadeInUp">
-                        <div class="img">
-                            <img src="img/team/team-4.jpg" class="img-responsive" alt="" />
-                            <div class="overlay">
-                                <ul class="expand">
-                                    <li class="social-icon">
-                                        <a href="#" onClick="return false;">
-                                            <i class="icon-social-facebook"></i>
-                                        </a>
-                                    </li>
-                                    <li class="social-icon">
-                                        <a href="#" onClick="return false;">
-                                            <i class="icon-social-twitter"></i>
-                                        </a>
-                                    </li>
-                                    <li class="social-icon">
-                                        <a href="#" onClick="return false;">
-                                            <i class=" icon-envelope-open"></i>
-                                        </a>
-                                    </li>
-                                </ul>
-                                <a class="close-overlay hidden">
-                                    x
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="member-info wow fadeInUp">
-                        <h4>Mike Nicecode</h4>
-                        <h5 class="highlight">Web Developer</h5>
-                        <p>Vivamus motestues phasellus enim sed orci eu pharetra.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- End Team Section -->
 
-    <!-- Start Quote Section -->
-    <section id="quote" class="parallax-section-6">
-        <div class="container">
-            <div class="row wow fadeInUp">
-                <div class="col-lg-12 wow fadeInUp" style="z-index:3">
-                    <div id="quote-slider" class="owl-carousel">
-                        <div>
-                            <blockquote>
-                                <i class="icon-left ion-quote ion-2x highlight"></i>
-                                <span> The Difference between ordinary and extraordinary<br>
-                                    is just that little extra! </span>
-                                <i class="icon-right ion-quote ion-2x highlight"></i>
-                            </blockquote>
-                            <h4 class="quote-author highlight">Visual Team</h4>
-                        </div>
-                        <div>
-                            <blockquote>
-                                <i class="icon-left ion-quote ion-2x highlight"></i>
-                                <span> A Perfect Design is made with Passion, Dedication,<br>
-                                    and a lots of Coffee! </span>
-                                <i class="icon-right ion-quote ion-2x highlight"></i>
-                            </blockquote>
-                            <h4 class="quote-author highlight">Visual Team</h4>
-                        </div>
-                        <div>
-                            <blockquote>
-                                <i class="icon-left ion-quote ion-2x highlight"></i>
-                                <span> What separates design from art is that design is<br>
-                                    meant to be... functional. </span>
-                                <i class="icon-right ion-quote ion-2x highlight"></i>
-                            </blockquote>
-                            <h4 class="quote-author highlight">Visual Team</h4>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- End Quote Section -->
+            <div class="clients-carousel">
 
-    <!-- Start Portfolio Section -->
-    <section id="portfolio" style="position: relative;">
-        <div class="separator"></div>
-        <div class="container-fluid">
-            <div class="col-md-12 text-center">
-                <h3 class="section-title wow fadeInUp">Greatest Works.</h3>
-                <p class="subheading wow fadeInUp">Creating products and services that <span class="highlight">transform
-                        brands</span>.</p>
-            </div>
-            <div id="filters-container-fullwidth" class="cbp-l-filters-alignCenter wow fadeInUp">
-                <div data-filter="*" class="cbp-filter-item-active cbp-filter-item">All
-                    <div class="cbp-filter-counter"></div>
+                <!-- Clients Logo Item-->
+                <div class="item">
+                    <a href="#">
+                        <figure>
+                            <img src="images/clients-logo/client1.png" alt="" />
+                        </figure>
+                    </a>
                 </div>
-                <div data-filter=".identity" class="cbp-filter-item">Identity
-                    <div class="cbp-filter-counter"></div>
-                </div>
-                <div data-filter=".web-design" class="cbp-filter-item">Web Design
-                    <div class="cbp-filter-counter"></div>
-                </div>
-                <div data-filter=".graphic" class="cbp-filter-item">Graphic
-                    <div class="cbp-filter-counter"></div>
-                </div>
-                <div data-filter=".logo" class="cbp-filter-item">Logo
-                    <div class="cbp-filter-counter"></div>
-                </div>
-                <div data-filter=".motion" class="cbp-filter-item">Motion
-                    <div class="cbp-filter-counter"></div>
-                </div>
-            </div>
-            <div id="grid-container-fullwidth" class="cbp-l-grid-fullScreen">
-                <ul>
-                    <li class="cbp-item effect effects identity logo">
-                        <div class="img">
-                            <img src="img/portfolio/1.jpg" class="img-responsive" alt="" />
-                            <div class="overlay">
-                                <ul class="expand">
-                                    <li class="cbp-l-icon">
-                                        <a href="img/portfolio/fullsize/1.jpg" class="cbp-lightbox"
-                                            data-title="Dashboard<br>by Visual">
-                                            <i class="icon-magnifier"></i>
-                                        </a>
-                                    </li>
-                                    <li class="cbp-l-icon">
-                                        <a href="projects/project1.html" class="cbp-singlePage">
-                                            <i class="icon-link"></i>
-                                        </a>
-                                    </li>
-                                    <li class="cbp-l-caption-title">Future Trend</li>
-                                    <li class="cbp-l-caption-desc">by Visual Design</li>
-                                </ul>
-                            </div>
-                        </div>
-                    </li>
-                    <li class="cbp-item effect effects identity logo">
-                        <div class="img">
-                            <img src="img/portfolio/2.jpg" class="img-responsive" alt="" />
-                            <div class="overlay">
-                                <ul class="expand">
-                                    <li class="cbp-l-icon">
-                                        <a href="img/portfolio/fullsize/2.jpg" class="cbp-lightbox"
-                                            data-title="Dashboard<br>by Visual">
-                                            <i class="icon-magnifier"></i>
-                                        </a>
-                                    </li>
-                                    <li class="cbp-l-icon">
-                                        <a href="projects/project2.html" class="cbp-singlePage">
-                                            <i class="icon-link"></i>
-                                        </a>
-                                    </li>
-                                    <li class="cbp-l-caption-title">Pro Bicycle</li>
-                                    <li class="cbp-l-caption-desc">by Visual Design</li>
-                                </ul>
-                            </div>
-                        </div>
-                    </li>
-                    <li class="cbp-item effect effects web-design">
-                        <div class="img">
-                            <img src="img/portfolio/3.jpg" class="img-responsive" alt="" />
-                            <div class="overlay">
-                                <ul class="expand">
-                                    <li class="cbp-l-icon">
-                                        <a href="img/portfolio/fullsize/3.jpg" class="cbp-lightbox"
-                                            data-title="Dashboard<br>by Visual">
-                                            <i class="icon-magnifier"></i>
-                                        </a>
-                                    </li>
-                                    <li class="cbp-l-icon">
-                                        <a href="projects/project3.html" class="cbp-singlePage">
-                                            <i class="icon-link"></i>
-                                        </a>
-                                    </li>
-                                    <li class="cbp-l-caption-title">Door Cover</li>
-                                    <li class="cbp-l-caption-desc">by Visual Design</li>
-                                </ul>
-                            </div>
-                        </div>
-                    </li>
-                    <li class="cbp-item effect effects motion identity">
-                        <div class="img">
-                            <img src="img/portfolio/4.jpg" class="img-responsive" alt="" />
-                            <div class="overlay">
-                                <ul class="expand">
-                                    <li class="cbp-l-icon">
-                                        <a class="cbp-lightbox" href="https://www.youtube.com/watch?v=3wbvpOIIBQA"
-                                            data-title="Dashboard<br>by Visual">
-                                            <i class="icon-magnifier"></i>
-                                        </a>
-                                    </li>
-                                    <li class="cbp-l-icon">
-                                        <a href="projects/project4.html" class="cbp-singlePage">
-                                            <i class="icon-link"></i>
-                                        </a>
-                                    </li>
-                                    <li class="cbp-l-caption-title">Pro Close-up</li>
-                                    <li class="cbp-l-caption-desc">by Visual Design</li>
-                                </ul>
-                            </div>
-                        </div>
-                    </li>
-                    <li class="cbp-item effect effects identity">
-                        <div class="img">
-                            <img src="img/portfolio/5.jpg" class="img-responsive" alt="" />
-                            <div class="overlay">
-                                <ul class="expand">
-                                    <li class="cbp-l-icon">
-                                        <a href="img/portfolio/fullsize/5.jpg" class="cbp-lightbox"
-                                            data-title="Dashboard<br>by Visual">
-                                            <i class="icon-magnifier"></i>
-                                        </a>
-                                    </li>
-                                    <li class="cbp-l-icon">
-                                        <a href="projects/project5.html" class="cbp-singlePage">
-                                            <i class="icon-link"></i>
-                                        </a>
-                                    </li>
-                                    <li class="cbp-l-caption-title">Bohemian Coding</li>
-                                    <li class="cbp-l-caption-desc">by Visual Design</li>
-                                </ul>
-                            </div>
-                        </div>
-                    </li>
-                    <li class="cbp-item effect effects motion logo">
-                        <div class="img">
-                            <img src="img/portfolio/6.jpg" class="img-responsive" alt="" />
-                            <div class="overlay">
-                                <ul class="expand">
-                                    <li class="cbp-l-icon">
-                                        <a href="https://www.youtube.com/watch?v=9No-FiEInLA" class="cbp-lightbox"
-                                            data-title="Dashboard<br>by Visual">
-                                            <i class="icon-magnifier"></i>
-                                        </a>
-                                    </li>
-                                    <li class="cbp-l-icon">
-                                        <a href="projects/project6.html" class="cbp-singlePage">
-                                            <i class="icon-link"></i>
-                                        </a>
-                                    </li>
-                                    <li class="cbp-l-caption-title">Poster Wall</li>
-                                    <li class="cbp-l-caption-desc">by Visual Design</li>
-                                </ul>
-                            </div>
-                        </div>
-                    </li>
-                    <li class="cbp-item effect effects web-design">
-                        <div class="img">
-                            <img src="img/portfolio/7.jpg" class="img-responsive" alt="" />
-                            <div class="overlay">
-                                <ul class="expand">
-                                    <li class="cbp-l-icon">
-                                        <a href="img/portfolio/fullsize/7.jpg" class="cbp-lightbox"
-                                            data-title="Dashboard<br>by Visual">
-                                            <i class="icon-magnifier"></i>
-                                        </a>
-                                    </li>
-                                    <li class="cbp-l-icon">
-                                        <a href="projects/project7.html" class="cbp-singlePage">
-                                            <i class="icon-link"></i>
-                                        </a>
-                                    </li>
-                                    <li class="cbp-l-caption-title">Red Bridge</li>
-                                    <li class="cbp-l-caption-desc">by Visual Design</li>
-                                </ul>
-                            </div>
-                        </div>
-                    </li>
-                    <li class="cbp-item effect effects web-design">
-                        <div class="img">
-                            <img src="img/portfolio/8.jpg" class="img-responsive" alt="" />
-                            <div class="overlay">
-                                <ul class="expand">
-                                    <li class="cbp-l-icon">
-                                        <a href="img/portfolio/fullsize/8.jpg" class="cbp-lightbox"
-                                            data-title="Dashboard<br>by Visual">
-                                            <i class="icon-magnifier"></i>
-                                        </a>
-                                    </li>
-                                    <li class="cbp-l-icon">
-                                        <a href="projects/project8.html" class="cbp-singlePage">
-                                            <i class="icon-link"></i>
-                                        </a>
-                                    </li>
-                                    <li class="cbp-l-caption-title">V8 M52 Engine</li>
-                                    <li class="cbp-l-caption-desc">by Visual Design</li>
-                                </ul>
-                            </div>
-                        </div>
-                    </li>
-                    <li class="cbp-item effect effects identity motion">
-                        <div class="img">
-                            <img src="img/portfolio/9.jpg" class="img-responsive" alt="" />
-                            <div class="overlay">
-                                <ul class="expand">
-                                    <li class="cbp-l-icon">
-                                        <a href="http://vimeo.com/16465813" class="cbp-lightbox"
-                                            data-title="Dashboard<br>by Visual">
-                                            <i class="icon-magnifier"></i>
-                                        </a>
-                                    </li>
-                                    <li class="cbp-l-icon">
-                                        <a href="projects/project9.html" class="cbp-singlePage">
-                                            <i class="icon-link"></i>
-                                        </a>
-                                    </li>
-                                    <li class="cbp-l-caption-title">Ergonomic Pad</li>
-                                    <li class="cbp-l-caption-desc">by Visual Design</li>
-                                </ul>
-                            </div>
-                        </div>
-                    </li>
-                    <li class="cbp-item effect effects web-design graphic">
-                        <div class="img">
-                            <img src="img/portfolio/10.jpg" class="img-responsive" alt="" />
-                            <div class="overlay">
-                                <ul class="expand">
-                                    <li class="cbp-l-icon">
-                                        <a href="img/portfolio/fullsize/10.jpg" class="cbp-lightbox"
-                                            data-title="Dashboard<br>by Visual">
-                                            <i class="icon-magnifier"></i>
-                                        </a>
-                                    </li>
-                                    <li class="cbp-l-icon">
-                                        <a href="projects/project10.html" class="cbp-singlePage">
-                                            <i class="icon-link"></i>
-                                        </a>
-                                    </li>
-                                    <li class="cbp-l-caption-title">Cooling Tower</li>
-                                    <li class="cbp-l-caption-desc">by Visual Design</li>
-                                </ul>
-                            </div>
-                        </div>
-                    </li>
-                    <li class="cbp-item effect effects graphic logo">
-                        <div class="img">
-                            <img src="img/portfolio/11.jpg" class="img-responsive" alt="" />
-                            <div class="overlay">
-                                <ul class="expand">
-                                    <li class="cbp-l-icon">
-                                        <a href="img/portfolio/fullsize/11.jpg" class="cbp-lightbox"
-                                            data-title="Dashboard<br>by Visual">
-                                            <i class="icon-magnifier"></i>
-                                        </a>
-                                    </li>
-                                    <li class="cbp-l-icon">
-                                        <a href="projects/project11.html" class="cbp-singlePage">
-                                            <i class="icon-link"></i>
-                                        </a>
-                                    </li>
-                                    <li class="cbp-l-caption-title">Still Motion</li>
-                                    <li class="cbp-l-caption-desc">by Visual Design</li>
-                                </ul>
-                            </div>
-                        </div>
-                    </li>
-                    <li class="cbp-item effect effects graphic logo">
-                        <div class="img">
-                            <img src="img/portfolio/12.jpg" class="img-responsive" alt="" />
-                            <div class="overlay">
-                                <ul class="expand">
-                                    <li class="cbp-l-icon">
-                                        <a href="img/portfolio/fullsize/12.jpg" class="cbp-lightbox"
-                                            data-title="Dashboard<br>by Visual">
-                                            <i class="icon-magnifier"></i>
-                                        </a>
-                                    </li>
-                                    <li class="cbp-l-icon">
-                                        <a href="projects/project12.html" class="cbp-singlePage">
-                                            <i class="icon-link"></i>
-                                        </a>
-                                    </li>
-                                    <li class="cbp-l-caption-title">Print Design</li>
-                                    <li class="cbp-l-caption-desc">by Visual Design</li>
-                                </ul>
-                            </div>
-                        </div>
-                    </li>
-                </ul>
-            </div>
-            <div class="cbp-l-loadMore-button">
-                <a href="projects/loadMore.html" class="cbp-l-loadMore-button-link wow fadeInUp">
-                    SHOW ME MORE
-                </a>
-                <!-- Portfolio AJAX load more button will be functional only on your server. Upload to your server when testing. -->
-            </div>
-        </div>
-    </section>
-    <!-- End Portfolio Section -->
 
-    <!-- Start Get Connected -->
-    <section id="services" class="parallax-section-9">
-        <div class="container">
-            <div class="col-md-12 text-center">
-                <h3 class="section-title wow fadeInUp">What we do.</h3>
-                <p class="subheading wow fadeInUp">We use <span class="highlight">our expertise</span> to extend your
-                    brand.</p>
-            </div>
-            <div class="row features-row wow fadeInUp">
-                <div class="col-md-4 col-sm-12 feature-column">
-                    <div class="feature-icon">
-                        <i class="icon-eyeglasses size-2x highlight"></i>
-                    </div>
-                    <div class="feature-info">
-                        <h4>Parallax Design</h4>
-                        <p class="feature-description">Vivamus molestie phasellus enim sed orci eu pharetra. Donec
-                            posuere nunc vitae tortor sagittis feugiat in non massa.</p>
-                    </div>
+                <!-- Clients Logo Item-->
+                <div class="item">
+                    <a href="#">
+                        <figure>
+                            <img src="images/clients-logo/client2.png" alt="" />
+                        </figure>
+                    </a>
                 </div>
-                <div class="col-md-4 col-sm-12 white feature-column">
-                    <div class="feature-icon">
-                        <i class="icon-lock-open size-2x highlight"></i>
-                    </div>
-                    <div class="feature-info">
-                        <h4>Fully Responsive</h4>
-                        <p class="feature-description">Vivamus molestie phasellus enim sed orci eu pharetra. Donec
-                            posuere nunc vitae tortor sagittis feugiat in non massa.</p>
-                    </div>
-                </div>
-                <div class="col-md-4 col-sm-12 white feature-column">
-                    <div class="feature-icon">
-                        <i class="icon-energy size-2x highlight"></i>
-                    </div>
-                    <div class="feature-info">
-                        <h4>Fast & Smooth</h4>
-                        <p class="feature-description">Vivamus molestie phasellus enim sed orci eu pharetra. Donec
-                            posuere nunc vitae tortor sagittis feugiat in non massa.</p>
-                    </div>
-                </div>
-            </div>
-            <div class="row features-row wow fadeInUp">
-                <div class="col-md-4 col-sm-12 feature-column">
-                    <div class="feature-icon">
-                        <i class="icon-eyeglasses size-2x highlight"></i>
-                    </div>
-                    <div class="feature-info">
-                        <h4>Parallax Design</h4>
-                        <p class="feature-description">Vivamus molestie phasellus enim sed orci eu pharetra. Donec
-                            posuere nunc vitae tortor sagittis feugiat in non massa.</p>
-                    </div>
-                </div>
-                <div class="col-md-4 col-sm-12 white feature-column">
-                    <div class="feature-icon">
-                        <i class="icon-lock-open size-2x highlight"></i>
-                    </div>
-                    <div class="feature-info">
-                        <h4>Fully Responsive</h4>
-                        <p class="feature-description">Vivamus molestie phasellus enim sed orci eu pharetra. Donec
-                            posuere nunc vitae tortor sagittis feugiat in non massa.</p>
-                    </div>
-                </div>
-                <div class="col-md-4 col-sm-12 white feature-column">
-                    <div class="feature-icon">
-                        <i class="icon-energy size-2x highlight"></i>
-                    </div>
-                    <div class="feature-info">
-                        <h4>Fast & Smooth</h4>
-                        <p class="feature-description">Vivamus molestie phasellus enim sed orci eu pharetra. Donec
-                            posuere nunc vitae tortor sagittis feugiat in non massa.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- End Services Section -->
 
-    <!-- Start Clients Section -->
-    <section id="clients">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-12 text-center">
-                    <h3 class="section-title wow fadeInUp">Recent Clients.</h3>
-                    <p class="subheading wow fadeInUp">Meet our clients, some of the most well known companies.</p>
+                <!-- Clients Logo Item-->
+                <div class="item">
+                    <a href="#">
+                        <figure>
+                            <img src="images/clients-logo/client3.png" alt="" />
+                        </figure>
+                    </a>
                 </div>
-                <div class="clients">
-                    <div id="client-slider" class="owl-carousel">
-                        <div class="item">
-                            <img src="img/clients/logo-1-dark.png" alt="" />
-                        </div>
-                        <div class="item">
-                            <img src="img/clients/logo-2-dark.png" alt="" />
-                        </div>
-                        <div class="item">
-                            <img src="img/clients/logo-3-dark.png" alt="" />
-                        </div>
-                        <div class="item">
-                            <img src="img/clients/logo-4-dark.png" alt="" />
-                        </div>
-                        <div class="item">
-                            <img src="img/clients/logo-5-dark.png" alt="" />
-                        </div>
-                        <div class="item">
-                            <img src="img/clients/logo-6-dark.png" alt="" />
-                        </div>
-                        <div class="item">
-                            <img src="img/clients/logo-7-dark.png" alt="" />
-                        </div>
-                        <div class="item">
-                            <img src="img/clients/logo-8-dark.png" alt="" />
-                        </div>
-                        <div class="item">
-                            <img src="img/clients/logo-9-dark.png" alt="" />
-                        </div>
-                        <div class="item">
-                            <img src="img/clients/logo-10-dark.png" alt="" />
-                        </div>
-                        <div class="item">
-                            <img src="img/clients/logo-11-dark.png" alt="" />
-                        </div>
-                    </div>
+
+                <!-- Clients Logo Item-->
+                <div class="item">
+                    <a href="#">
+                        <figure>
+                            <img src="images/clients-logo/client4.png" alt="" />
+                        </figure>
+                    </a>
                 </div>
-            </div>
-        </div>
-    </section>
-    <!-- End Clients Section -->
 
-    <!-- Start Price List -->
-    <section id="price-list">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-12 text-center">
-                    <h3 class="section-title wow fadeInUp"> Pricing Table </h3>
-                    <p class="subheading wow fadeInUp">Meet our clients, some of the most well known companies.</p>
+                <!-- Clients Logo Item-->
+                <div class="item">
+                    <a href="#">
+                        <figure>
+                            <img src="images/clients-logo/client2.png" alt="" />
+                        </figure>
+                    </a>
                 </div>
-                <div class="pricing_table">
-                    <div class="container">
-                        <div class="col-md-3 col-sm-6">
-                            <div class="planbox">
-                                <div class="title">
-                                    <h4><strong>Starter</strong></h4>
-                                </div>
-                                <div class="prices">
-                                    <strong>$2.99<i>/M</i></strong>
-                                    <b>Regularly <em>$4.99</em></b>
-                                    <a href="#">
-                                        Sign Up
-                                    </a>
-                                </div>
-                                <ul>
-                                    <li><strong>Unlimited</strong> Web Space</li>
-                                    <li><strong>FREE</strong> Site Building Tools</li>
-                                    <li><strong>FREE</strong> Domain Registar</li>
-                                    <li><strong>24/7/365</strong> Support </li>
-                                    <li><strong>FREE</strong> Marketing &amp; SEO Tools</li>
-                                    <li><strong>99.9%</strong> Service Uptime</li>
-                                    <li class="last"><strong>30 Day</strong> Money Back Guarantee</li>
-                                </ul>
-                            </div>
-                        </div>
-                        <!-- end plan -->
 
-                        <div class="col-md-3 col-sm-6">
-                            <div class="planbox highlight">
-                                <div class="title">
-                                    <h4 class="caps"><strong>Business</strong></h4>
-                                </div>
-                                <div class="prices">
-                                    <strong>$9.75<i>/M</i></strong>
-                                    <b>Regularly <em>$16.99</em></b>
-                                    <a href="#">
-                                        Sign Up
-                                    </a>
-                                </div>
-                                <ul>
-                                    <li><strong>Unlimited</strong> Web Space</li>
-                                    <li><strong>FREE</strong> Site Building Tools</li>
-                                    <li><strong>FREE</strong> Domain Registar</li>
-                                    <li><strong>24/7/365</strong> Support </li>
-                                    <li><strong>FREE</strong> Marketing &amp; SEO Tools</li>
-                                    <li><strong>99.9%</strong> Service Uptime</li>
-                                    <li class="last"><strong>30 Day</strong> Money Back Guarantee</li>
-                                </ul>
-                            </div>
-                        </div>
-                        <!-- end plan -->
-
-                        <div class="col-md-3 col-sm-6">
-                            <div class="planbox">
-                                <div class="title">
-                                    <h4 class="caps"><strong>Premium</strong></h4>
-                                </div>
-                                <div class="prices">
-                                    <strong>$45.50<i>/M</i></strong>
-                                    <b>Regularly <em>$90.50</em></b>
-                                    <a href="#">
-                                        Sign Up
-                                    </a>
-                                </div>
-                                <ul>
-                                    <li><strong>Unlimited</strong> Web Space</li>
-                                    <li><strong>FREE</strong> Site Building Tools</li>
-                                    <li><strong>FREE</strong> Domain Registar</li>
-                                    <li><strong>24/7/365</strong> Support </li>
-                                    <li><strong>FREE</strong> Marketing &amp; SEO Tools</li>
-                                    <li><strong>99.9%</strong> Service Uptime</li>
-                                    <li class="last"><strong>30 Day</strong> Money Back Guarantee</li>
-                                </ul>
-                            </div>
-                        </div>
-                        <!-- end plan -->
-
-                        <div class="col-md-3 col-sm-6 last">
-                            <div class="planbox">
-                                <div class="title">
-                                    <h4 class="caps"><strong>Dedicated</strong></h4>
-                                </div>
-                                <div class="prices">
-                                    <strong>$100<i>/M</i></strong>
-                                    <b>Regularly <em>$200</em></b>
-                                    <a href="#">
-                                        Sign Up
-                                    </a>
-                                </div>
-                                <ul>
-                                    <li><strong>Unlimited</strong> Web Space</li>
-                                    <li><strong>FREE</strong> Site Building Tools</li>
-                                    <li><strong>FREE</strong> Domain Registar</li>
-                                    <li><strong>24/7/365</strong> Support </li>
-                                    <li><strong>FREE</strong> Marketing &amp; SEO Tools</li>
-                                    <li><strong>99.9%</strong> Service Uptime</li>
-                                    <li class="last"><strong>30 Day</strong> Money Back Guarantee</li>
-                                </ul>
-                            </div>
-                        </div>
-                        <!-- end plan -->
-
-                    </div>
+                <!-- Clients Logo Item-->
+                <div class="item">
+                    <a href="#">
+                        <figure>
+                            <img src="images/clients-logo/client5.png" alt="" />
+                        </figure>
+                    </a>
                 </div>
-                <!-- end hosting plans -->
-            </div>
-        </div>
-    </section>
-    <!-- End Price List -->
 
-    <!-- Start Call to Action 1 -->
-    <section id="call-to-action-1">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-12 text-center">
-                    <h3 class="wow fadeInUp">FEEL LIKE WORKING WITH US?</h3>
-                    <p class="wow fadeInUp">Vivamus a placerat ante. Duis vulputate nibh sit amet augue vehicula, mattis
-                        ni<br>
-                        viverra purus tristique. Proin commodo eu ipsum. </p>
-                    <a href="#contact" class="btn btn-primary btn-scroll">
-                        Get in Touch
+                <!-- Clients Logo Item-->
+                <div class="item">
+                    <a href="#">
+                        <figure>
+                            <img src="images/clients-logo/client4.png" alt="" />
+                        </figure>
+                    </a>
+                </div>
+
+                <!-- Clients Logo Item-->
+                <div class="item">
+                    <a href="#">
+                        <figure>
+                            <img src="images/clients-logo/client1.png" alt="" />
+                        </figure>
                     </a>
                 </div>
             </div>
         </div>
-    </section>
-    <!-- End Call to Action 1 -->
+        <!--/.row-->
+    </div>
+    <!--/.container-->
+</section>
+<!--End clients-->
 
-    <!-- Start Testimonials Section -->
-    <section id="testimonials" class="parallax-section-4">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-12 text-center">
-                    <h3 class="section-title white wow fadeInUp">What clients say.</h3>
-                    <p class="subheading grey wow fadeInUp">What People Say's About Us</p>
-                </div>
-                <div class="col-md-12 text-center wow fadeInUp">
-                    <div id="owl-testimonials" class="owl-carousel">
-                        <div>
-                            <div class="testimonial">
-                                <i class="icon-left ion-quote ion-2x highlight"></i>
-                                <span> This guys are amazing! They were so quick to respond and let me tell you... they
-                                    are all knowing!<br>
-                                    I highly recommend their themes! They are all about making their clients happy.
-                                </span>
-                                <i class="icon-right ion-quote ion-2x highlight"></i>
-                            </div>
-                            <div class="testimonial-name">
-                                <img src="img/clients/client-1.png" alt="client">
-                                <h4 class="white">Jack Walles</h4>
-                                <a href="#">
-                                    www.google.com
-                                </a>
-                            </div>
-                        </div>
-                        <div>
-                            <div class="testimonial">
-                                <i class="icon-left ion-quote ion-2x highlight"></i>
-                                <span> This one is undoubtedly the best template I ever bought! Easy to edit, nicely
-                                    coded and I highly recommend it.<br>
-                                    It's wonderful design and also very fast and excelent support. </span>
-                                <i class="icon-right ion-quote ion-2x highlight"></i>
-                            </div>
-                            <div class="testimonial-name">
-                                <img src="img/clients/client-2.png" alt="client">
-                                <h4 class="white">Jane Smith</h4>
-                                <a href="#">
-                                    www.facebook.com
-                                </a>
-                            </div>
-                        </div>
-                        <div>
-                            <div class="testimonial">
-                                <i class="icon-left ion-quote ion-2x highlight"></i>
-                                <span> Visual is well documented and well coded, but the best of all is the friendly and
-                                    quick support behind it.<br>
-                                    Visual Design did a great and dedicated job. Thank you for this awesome theme!
-                                </span>
-                                <i class="icon-right ion-quote ion-2x highlight"></i>
-                            </div>
-                            <div class="testimonial-name">
-                                <img src="img/clients/client-3.png" alt="client">
-                                <h4 class="white">jonathan warton</h4>
-                                <a href="#">
-                                    www.msn.com
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+
+<!--Start Contact-->
+<section id="contact" class="section parallax">
+    <div class="overlay"></div>
+    <div class="container">
+        <div class="row">
+
+            <div class="title-box text-center white">
+                <h2 class="title">Contact</h2>
             </div>
         </div>
-    </section>
-    <!-- End Testimonials Section -->
 
-    <!-- Start Contact Form Section -->
-    <section id="contact">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-12 text-center">
-                    <h3 class="section-title wow fadeInUp">Contact us</h3>
-                    <p class="subheading wow fadeInUp"> Let's Work Together. </p>
-                </div>
-                <div class="col-md-7 wow fadeInUp">
-                    <div id="message"></div>
-                    <!-- Contact Form will be functional only on your server. Upload to your server when testing. -->
-                    <form method="post" action="php/contact-form.php.htm" name="contactform" id="contactform">
-                        <fieldset>
-                            <input name="name" type="text" id="name" placeholder="Name" />
-                            <input name="email" type="text" id="email" placeholder="Email" />
-                            <input name="subject" type="text" id="subject" placeholder="Subject" />
-                        </fieldset>
-                        <fieldset>
-                            <textarea name="comments" cols="40" rows="3" id="comments" placeholder="Message"></textarea>
-                        </fieldset>
-                        <input type="submit" class="submit" id="submit" value="Send Message" />
-                    </form>
-                </div>
-                <div class="col-md-5 wow fadeInLeft">
-                    <h4> North America : </h4>
-                    <address>
-                        795 Folsom Ave, Suite 600<br>
-                        San Francisco, CA 94107<br>
-                        <abbr title="Phone">P:</abbr> (123) 456-7890
-                    </address>
-                    <h4> Europe : </h4>
-                    <address>
-                        795 Folsom Ave, Suite 600<br>
-                        San Francisco, CA 94107<br>
-                        <abbr title="Phone">P:</abbr> (123) 456-7890
-                    </address>
-                    <h4> Contact Us : </h4>
-                    <address>
-                        <abbr title="Phone">
-                            <strong> Phone </strong>
-                        </abbr> : (123) 456-7890 <br>
-                        <abbr title="Fax">
-                            <strong>Fax </strong>
-                        </abbr> : (123) 456-7890 <br>
-                        <abbr title="Email">
-                            <strong>Email </strong>
-                        </abbr> : (123) 456-7890
-                    </address>
-                </div>
+        <!--Start contact form-->
+        <div class="col-md-8 col-md-offset-2 contact-form">
+
+            <div class="contact-info text-center">
+                <p>123 4567 890</p>
+                <p>123 lorem ipsum, 4th floor, lorem, ipsum </p>
+                <p>mail@demo.com </p>
             </div>
-        </div>
-    </section>
-    <!-- End Contact Form Section -->
 
-    <!-- Start Google Map Section -->
-    <div id="map"></div>
-    <!-- End Google Map Section -->
-
-    <!-- Start Footer 1 -->
-    <footer id="footer">
-        <!-- End Footer Widgets -->
-
-        <div class="footer-copyright">
-            <div class="container">
+            <form method="post">
                 <div class="row">
-                    <div class="col-md-12 text-center">
-                        <h3 class="section-title wow fadeInUp">Visual</h3>
-                        <p class="wow fadeInUp"> All Rights Reserved. Copyright © 2016
-                            <a href="http://templatestock.co" target="_blank">Template Stock</a>
-                        </p>
-                        <ul class="social-icons subheading">
-                            <li>
-                                <a href="#">
-                                    <i class="icon ion-social-twitter"></i>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#">
-                                    <i class="icon ion-social-facebook"></i>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#">
-                                    <i class="icon ion-social-googleplus"></i>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#">
-                                    <i class="icon ion-social-instagram-outline"></i>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#">
-                                    <i class="icon ion-social-pinterest"></i>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#">
-                                    <i class="icon ion-social-skype"></i>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#">
-                                    <i class="icon ion-social-linkedin"></i>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#">
-                                    <i class="icon ion-social-dropbox"></i>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#">
-                                    <i class="icon ion-social-vimeo"></i>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#">
-                                    <i class="icon ion-social-youtube"></i>
-                                </a>
-                            </li>
-                        </ul>
+                    <div class="col-md-4">
+                        <input class="form-control" id="name" placeholder="Full Name" type="text">
+                    </div>
+                    <div class="col-md-4">
+                        <input class="form-control" id="email" placeholder="Your Email" type="email">
+                    </div>
+                    <div class="col-md-4">
+                        <input class="form-control" id="subject" placeholder="Subject" type="text">
+                    </div>
+                    <div class="col-md-12">
+                        <textarea class="form-control" id="message" rows="7" placeholder="Your Message"></textarea>
+                    </div>
+                    <div class="col-md-12 text-right">
+                        <button type="submit" class="btn btn-green">SEND MESSAGE</button>
                     </div>
                 </div>
-            </div>
+            </form>
         </div>
-        <!-- End Footer Copyright -->
+        <!--End contact form-->
 
-    </footer>
-    <!-- End Footer 1 -->
+    </div> <!-- /.container-->
+</section>
+<!--End Contact-->
 
-    <!-- Start Back To Top -->
-    <a id="back-to-top">
-        <i class="icon ion-chevron-up"></i>
-    </a>
-    <!-- End Back To Top -->
-
-</div>
-<!-- End Site Wrapper -->
 
 @endsection
 
 @section ('stylejs')
 
-<!-- Start Homepage js -->
-<script type="text/javascript" src="{{ asset('assets/js/js-page/plugins/jquery.min.js') }}"></script>
-<script type="text/javascript" src="{{ asset('assets/js/js-page/plugins/moderniz.min.js') }}"></script>
-<script type="text/javascript" src="{{ asset('assets/js/js-page/plugins/smoothscroll.min.js') }}"></script>
-<script type="text/javascript" src="{{ asset('assets/js/js-page/no-ui-slider/jquery.nouislider.all.min.js') }}">
-</script>
-<script type="text/javascript" src="{{ asset('assets/js/js-page/plugins/revslider.min.js') }}"></script>
-<script type="text/javascript" src="{{ asset('assets/js/js-page/plugins/waypoints.min.js') }}"></script>
-<script type="text/javascript" src="{{ asset('assets/js/js-page/plugins/parallax.min.js') }}"></script>
-<script type="text/javascript" src="{{ asset('assets/js/js-page/plugins/easign1.3.min.js') }}"></script>
-<script type="text/javascript" src="{{ asset('assets/js/js-page/plugins/cubeportfolio.min.js') }}"></script>
-<script type="text/javascript" src="{{ asset('assets/js/js-page/plugins/tweetie.min.js') }}"></script>
-<script type="text/javascript" src="http://maps.googleapis.com/maps/api/js"></script>
-<script type="text/javascript" src="{{ asset('assets/js/js-page/plugins/gmap3.min.js') }}"></script>
-<script type="text/javascript" src="{{ asset('assets/js/js-page/plugins/wow.min.js') }}"></script>
-<script type="text/javascript" src="{{ asset('assets/js/js-page/plugins/counterup.min.js') }}"></script>
-<script type="text/javascript" src="{{ asset('assets/js/js-page/scripts-page.js') }}"></script>
+<!-- JS Start Here -->
+
 @endsection
