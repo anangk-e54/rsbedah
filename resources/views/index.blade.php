@@ -4,7 +4,7 @@
 @section ('content')
 
 <!-- Banner Carusel start here -->
-<div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+<div id="carouselExampleIndicators" class="carousel carousel-banner slide" data-ride="carousel">
     <ol class="carousel-indicators">
         <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
         <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
@@ -31,6 +31,8 @@
     </a>
 </div>
 <!-- Banner Carusel end here -->
+
+
 
 <!-- Top Menu start here -->
 <div class="container-fluid">
@@ -149,7 +151,7 @@
 <!-- Profile end here -->
 
 <!-- Tim Dokter Start here -->
-<div class="bg-rsb-blue mt-5">
+<div class="parallax mt-5 mb-3">
     <div class="container">
         <div class="row">
             <div class="col-md-6 mt-5 text-white">
@@ -159,43 +161,33 @@
                 <a href="{{ url('/tim-dokter')}}" class="btn btn-xs btn-outline-info">Lihat semua dokter</a>
             </div>
         </div>
-        <div class="row">
-            <div class="row mt-5 mb-5 ml-3">
-                <div class="col-sm-3">
-                    <div class="card bg-light">
-                        <img src="{{asset('assets/images/team/anang.jpg')}}" class="card-img-top" alt="...">
-                        <div class="card-body  text-center">
-                            <h5>Bidang Spesialis</h5>
-                            <p class="card-text">dr. Dewa Arimasen</p>
-                        </div>
-                    </div>
+        <div class="testimonial-carousel owl-carousel">
+            <div class="card bg-light">
+                <img src="{{asset('assets/images/team/anang.jpg')}}" class="card-img-top" alt="...">
+                <div class="card-body  text-center">
+                    <h5>Bidang Spesialis</h5>
+                    <p class="card-text">dr. Dewa Arimasen</p>
                 </div>
-                <div class="col-sm-3">
-                    <div class="card bg-light">
-                        <img src="{{asset('assets/images/team/doctor-man.jpg')}}" class="card-img-top" alt="...">
-                        <div class="card-body text-center">
-                            <h5>Bidang Spesialis</h5>
-                            <p class="card-text">dr. Fulana Ikimasho</p>
-                        </div>
-                    </div>
+            </div>
+            <div class="card bg-light">
+                <img src="{{asset('assets/images/team/doctor-man.jpg')}}" class="card-img-top" alt="...">
+                <div class="card-body text-center">
+                    <h5>Bidang Spesialis</h5>
+                    <p class="card-text">dr. Fulana Ikimasho</p>
                 </div>
-                <div class="col-sm-3">
-                    <div class="card bg-light">
-                        <img src="{{asset('assets/images/team/anang.jpg')}}" class="card-img-top" alt="...">
-                        <div class="card-body  text-center">
-                            <h5>Bidang Spesialis</h5>
-                            <p class="card-text">dr. Dewa Arimasen</p>
-                        </div>
-                    </div>
+            </div>
+            <div class="card bg-light">
+                <img src="{{asset('assets/images/team/anang.jpg')}}" class="card-img-top" alt="...">
+                <div class="card-body  text-center">
+                    <h5>Bidang Spesialis</h5>
+                    <p class="card-text">dr. Dewa Arimasen</p>
                 </div>
-                <div class="col-sm-3">
-                    <div class="card bg-light">
-                        <img src="{{asset('assets/images/team/doctor-woman.jpg')}}" class="card-img-top" alt="...">
-                        <div class="card-body text-center">
-                            <h5>Bidang Spesialis</h5>
-                            <p class="card-text">dr. Fulana Ikimasho</p>
-                        </div>
-                    </div>
+            </div>
+            <div class="card bg-light">
+                <img src="{{asset('assets/images/team/doctor-woman.jpg')}}" class="card-img-top" alt="...">
+                <div class="card-body text-center">
+                    <h5>Bidang Spesialis</h5>
+                    <p class="card-text">dr. Fulana Ikimasho</p>
                 </div>
             </div>
             <!-- <canvas id="seolinechart1" height="50"></canvas> -->
@@ -230,7 +222,62 @@
 </section>
 <!-- Youtube  End Here-->
 
-<section class="">
+
+<!-- Article area start -->
+<div class="col-xl-12 col-lg-12 mt-5">
+    <div class="card">
+        <div class="card-body bg-rsb-blue">
+            <h4 class="header-title text-white text-lg-center ">Artikel</h4>
+            <div class="testimonial-carousel owl-carousel">
+                <div class="article-preview-item">
+                    <div class="article-preview-img">
+                        <img src="{{ asset('assets/images/bg/IMG_7788.jpg') }}" alt="author image">
+                    </div>
+                    <div class="article-preview-content ">
+                        <h4 class="article-preview-name">Abel 1 Franecki</h4>
+                        <span class="article-title">Designer</span>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae laborum ut
+                            nihil numquam a
+                            aliquam alias necessitatibus ipsa soluta quam!</p>
+                    </div>
+                </div>
+                <div class="article-preview-item">
+                    <div class="article-preview-img">
+                        <img src="assets/images/team/team-author2.jpg" alt="author image">
+                    </div>
+                    <div class="article-preview-content">
+                        <h4 class="article-preview-name">Abel 2 Franecki</h4>
+                        <span class="article-title">Designer</span>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae laborum ut nihil numquam a
+                            aliquam alias necessitatibus ipsa soluta quam!</p>
+                    </div>
+                </div>
+                <div class="article-preview-item">
+                    <div class="article-preview-img">
+                        <img src="assets/images/team/team-author3.jpg" alt="author image">
+                    </div>
+                    <div class="article-preview-content  headline-article ">
+                        <h4 class="article-preview-name">Abel 3 Franecki</h4>
+                        <span class="article-title">Designer</span>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae
+                            laborum ut nihil numquam a
+                            aliquam alias necessitatibus ipsa soluta quam! nksgojg sv sho hso sosish osho hso s
+                            ohsohsohpsh oiso s Hi. Can anyone tell me how its possible to limit the amount of text
+                            characters in a div. I want to be able to limit to say 200 characters, then display a 'read
+                            more' link, when clicked it slides down the rest of the text. Hi. Can anyone tell me how its
+                            possible to limit the amount of text characters in a div. I want to be able to limit to say
+                            200 characters, then display a 'read more' link, when clicked it slides down thides down the
+                            rest of the text.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Article area end -->
+
+<section class=" ">
     <!-- Maps & Information Start Here -->
     <div class="container">
         <div class="row">

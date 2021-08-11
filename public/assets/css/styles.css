@@ -89,6 +89,71 @@ btn-tranparent {
     max-height: 72px;
 }
 
+.carousel-banner {
+    margin-top: -100px;
+
+}
+
+/* Article preview */
+.article-preview-img {
+    width: 100%;
+    max-height: 240px;
+    border-radius: 3%;
+    overflow: hidden;
+    float: inline-start;
+    margin-right: 20px;
+}
+
+.article-preview-content {
+    overflow: hidden;
+}
+
+.article-preview-name {
+    font-size: 20px;
+    color: #fff;
+    letter-spacing: 0;
+}
+
+.article-title {
+    display: block;
+    font-size: 16px;
+    color: #fff;
+    letter-spacing: 0.02em;
+    margin-bottom: 15px;
+}
+
+.article-preview-item p {
+    color: #fff;
+}
+
+.headline-article {
+    color: white;
+}
+
+.hidden {
+    display: none;
+}
+
+.readmore {
+    margin: 0 5px;
+    color: #FFFFFF;
+}
+
+/* Paralax */
+.parallax {
+    /* The image used */
+    background-image: url(../images/bg/IMG_7788.jpg);
+
+    /* Set a specific height */
+    min-height: 500px;
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
 /* Navbar Custom from Bootstrap */
 @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
 
@@ -444,7 +509,7 @@ btn-tranparent {
 /* mobile menu */
 
 .slicknav_menu {
-    background: #8255f7;
+    background: #005963;
     padding: 0;
     margin-top: 20px;
 }
@@ -497,7 +562,17 @@ btn-tranparent {
 .header-area {
     padding: 15px 30px;
     /* background: #fff; */
-    background: #005963;
+    background: rgba(0, 89, 99, 0.09);
+}
+
+.header-area-horizontal {
+    padding: 15px 30px;
+    /* background: #fff; */
+    background: rgba(0, 89, 99, 0.01);
+}
+
+.header-area-horizontal.alt-nav {
+    background-color: #005963;
     border-bottom: 1px solid #64C9CF;
 }
 
@@ -1637,6 +1712,7 @@ table.dbkit-table tr td {
 
 .testimonial-carousel {
     margin: 60px 0 28px;
+    padding-bottom: 50px;
 }
 
 .tstu-img {

@@ -58,7 +58,6 @@
                 </div>
             </div>
             @endforeach
-            <!-- <canvas id="seolinechart1" height="50"></canvas> -->
 </div>
 </div>
 </div> -->

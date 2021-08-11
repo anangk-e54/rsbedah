@@ -21,7 +21,7 @@
                         <a href="#works" class="middle btn btn-white">VIEW PORTFOLIO</a>
                     </div>
                 </div>
-                <img src="images/slider/1.jpg" alt="">
+                <img src="{{ asset('assets/images/bg/IMG_7788.jpg') }}" alt="">
             </li>
 
             <li class="secondary">
@@ -32,7 +32,7 @@
                         <a href="#works" class=" middle btn btn-white">VIEW PORTFOLIO</a>
                     </div>
                 </div>
-                <img src="images/slider/2.jpg" alt="">
+                <img src="{{ asset('assets/images/bg/IMG_7786.jpg') }}" alt="">
             </li>
 
             <li class="third">
@@ -43,7 +43,7 @@
                         <a href="#works" class="middle btn btn-white">VIEW PORTFOLIO</a>
                     </div>
                 </div>
-                <img src="images/slider/3.jpg" alt="">
+                <img src="{{ asset('assets/images/bg/IMG_7788.jpg') }}" alt="">
             </li>
         </ul>
     </div>

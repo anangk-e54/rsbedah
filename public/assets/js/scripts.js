@@ -147,7 +147,7 @@
         var owl = $('.testimonial-carousel').owlCarousel({
             margin: 50,
             loop: true,
-            autoplay: false,
+            autoplay: true,
             nav: false,
             dots: true,
             responsive: {
@@ -161,13 +161,13 @@
                     items: 2
                 },
                 1000: {
-                    items: 2
+                    items: 4
                 },
-                1360: {
-                    items: 1
+                1440: {
+                    items: 4
                 },
-                1600: {
-                    items: 2
+                1920: {
+                    items: 4
                 }
             }
         });
@@ -223,6 +223,42 @@
             $('body').removeClass('expanded');
         });
     }
+
+    // ===================== Custom by AanangK =========================
+    
+   /*================================
+   Character limit + read more button
+    ==================================*/
+    $(function() {
+
+        var maxL = 200;
+
+        $('.article-preview-item p').each(function() {
+
+            var text = $(this).text();
+            if (text.length > maxL) {
+
+                var begin = text.substr(0, maxL),
+                    end = text.substr(maxL);
+
+                $(this).html(begin)
+                    .append($('<a class="readmore"/>').html('...'))
+                    .append($('<div class="hidden" />').html(end));
+
+
+            }
+
+
+        });
+
+        $(document).on('click', '.readmore', function() {
+            // $(this).next('.readmore').fadeOut("400");
+            $(this).next('.hidden').slideToggle(400);
+        })
+
+
+    })
+    
 
 })(jQuery);
 

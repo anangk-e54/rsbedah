@@ -62,7 +62,7 @@
         </div>
         <!-- main header area end -->
         <!-- header area start -->
-        <div class="header-area header-bottom sticky-top">
+        <div class="header-area-horizontal header-bottom sticky-top">
             <div class="container">
                 <div class="row align-items-center">
                     <!-- nav and search button -->
@@ -418,6 +418,19 @@
     <!-- others plugins -->
     <script src="{{ asset('assets/js/plugins.js') }}"></script>
     <script src="{{ asset('assets/js/scripts.js') }}"></script>
+
+    <script>
+    $(document).ready(function() {
+        $(window).scroll(function() {
+            var scroll = $(window).scrollTop();
+            if (scroll > 50) {
+                $(".header-area-horizontal").addClass("alt-nav");
+            } else {
+                $(".header-area-horizontal").removeClass("alt-nav");
+            }
+        })
+    });
+    </script>
 </body>
 
 </html>
