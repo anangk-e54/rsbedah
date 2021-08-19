@@ -197,8 +197,8 @@
 <!-- Tim Dokter End Here-->
 
 <!-- Youtube Start Here -->
-<section>
-    <div class="container">
+<section class="bg-rsb-blue">
+    <div class="container bg-rsb-blue">
         <div class="row">
             <div class="col-md-12 mt-md-5 mb-3">
                 <div class="card">
@@ -219,63 +219,68 @@
             </div>
         </div>
     </div>
-</section>
-<!-- Youtube  End Here-->
+
+    <!-- Youtube  End Here-->
 
 
-<!-- Article area start -->
-<div class="col-xl-12 col-lg-12 mt-5">
-    <div class="card">
-        <div class="card-body bg-rsb-blue">
-            <h4 class="header-title text-white text-lg-center ">Artikel</h4>
-            <div class="testimonial-carousel owl-carousel">
-                <div class="article-preview-item">
-                    <div class="article-preview-img">
-                        <img src="{{ asset('assets/images/bg/IMG_7788.jpg') }}" alt="author image">
+    <!-- Article area start -->
+    <div class="col-xl-12 col-lg-12 mt-5">
+        <div class="card">
+            <div class="card-body bg-rsb-blue">
+                <h4 class="header-title text-white text-lg-center ">Artikel</h4>
+                <div class="testimonial-carousel owl-carousel">
+                    <div class="article-preview-item">
+                        <div class="article-preview-img">
+                            <img src="{{ asset('assets/images/bg/IMG_7788.jpg') }}" alt="author image">
+                        </div>
+                        <div class="article-preview-content ">
+                            <h4 class="article-preview-name">Abel 1 Franecki</h4>
+                            <span class="article-title">Designer</span>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae laborum ut
+                                nihil numquam a
+                                aliquam alias necessitatibus ipsa soluta quam!</p>
+                        </div>
                     </div>
-                    <div class="article-preview-content ">
-                        <h4 class="article-preview-name">Abel 1 Franecki</h4>
-                        <span class="article-title">Designer</span>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae laborum ut
-                            nihil numquam a
-                            aliquam alias necessitatibus ipsa soluta quam!</p>
+                    <div class="article-preview-item">
+                        <div class="article-preview-img">
+                            <img src="assets/images/team/team-author2.jpg" alt="author image">
+                        </div>
+                        <div class="article-preview-content">
+                            <h4 class="article-preview-name">Abel 2 Franecki</h4>
+                            <span class="article-title">Designer</span>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae laborum ut nihil numquam a
+                                aliquam alias necessitatibus ipsa soluta quam!</p>
+                        </div>
                     </div>
-                </div>
-                <div class="article-preview-item">
-                    <div class="article-preview-img">
-                        <img src="assets/images/team/team-author2.jpg" alt="author image">
-                    </div>
-                    <div class="article-preview-content">
-                        <h4 class="article-preview-name">Abel 2 Franecki</h4>
-                        <span class="article-title">Designer</span>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae laborum ut nihil numquam a
-                            aliquam alias necessitatibus ipsa soluta quam!</p>
-                    </div>
-                </div>
-                <div class="article-preview-item">
-                    <div class="article-preview-img">
-                        <img src="assets/images/team/team-author3.jpg" alt="author image">
-                    </div>
-                    <div class="article-preview-content  headline-article ">
-                        <h4 class="article-preview-name">Abel 3 Franecki</h4>
-                        <span class="article-title">Designer</span>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae
-                            laborum ut nihil numquam a
-                            aliquam alias necessitatibus ipsa soluta quam! nksgojg sv sho hso sosish osho hso s
-                            ohsohsohpsh oiso s Hi. Can anyone tell me how its possible to limit the amount of text
-                            characters in a div. I want to be able to limit to say 200 characters, then display a 'read
-                            more' link, when clicked it slides down the rest of the text. Hi. Can anyone tell me how its
-                            possible to limit the amount of text characters in a div. I want to be able to limit to say
-                            200 characters, then display a 'read more' link, when clicked it slides down thides down the
-                            rest of the text.
-                        </p>
+                    <div class="article-preview-item">
+                        <div class="article-preview-img">
+                            <img src="assets/images/team/team-author3.jpg" alt="author image">
+                        </div>
+                        <div class="article-preview-content  headline-article ">
+                            <h4 class="article-preview-name">Abel 3 Franecki</h4>
+                            <span class="article-title">Designer</span>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae
+                                laborum ut nihil numquam a
+                                aliquam alias necessitatibus ipsa soluta quam! nksgojg sv sho hso sosish osho hso s
+                                ohsohsohpsh oiso s Hi. Can anyone tell me how its possible to limit the amount of text
+                                characters in a div. I want to be able to limit to say 200 characters, then display a
+                                'read
+                                more' link, when clicked it slides down the rest of the text. Hi. Can anyone tell me how
+                                its
+                                possible to limit the amount of text characters in a div. I want to be able to limit to
+                                say
+                                200 characters, then display a 'read more' link, when clicked it slides down thides down
+                                the
+                                rest of the text.
+                            </p>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-</div>
-<!-- Article area end -->
+    <!-- Article area end -->
+</section>
 
 <section class=" ">
     <!-- Maps & Information Start Here -->

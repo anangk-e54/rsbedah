@@ -3,212 +3,217 @@
 @section('tittle', 'RSB Mitra Sehat lamongan')
 @section ('content')
 
-<!-- Banner Carusel start here -->
-<div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
-    <ol class="carousel-indicators">
-        <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-        <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-        <!-- <li data-target="#carouselExampleIndicators" data-slide-to="2"></li> -->
-    </ol>
-    <div class="carousel-inner" style="height:960px;">
-        <div class="carousel-item active">
-            <img src="{{ asset('assets/images/bg/IMG_7788.jpg') }}" class="d-block w-100" alt="...">
-        </div>
-        <div class="carousel-item">
-            <img src="{{ asset('assets/images/bg/IMG_7786.jpg') }}" class="d-block w-100" alt="...">
-        </div>
-        <!-- <div class="carousel-item">
+
+<section class="bg-white">
+    <!-- Banner Carusel start here -->
+    <div id="carouselExampleIndicators" class="carousel carousel-banner slide" data-ride="carousel">
+        <ol class="carousel-indicators">
+            <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+            <!-- <li data-target="#carouselExampleIndicators" data-slide-to="2"></li> -->
+        </ol>
+        <div class="carousel-inner" style="height:960px;">
+            <div class="carousel-item active">
+                <img src="{{ asset('assets/images/bg/IMG_7788.jpg') }}" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+                <img src="{{ asset('assets/images/bg/IMG_7786.jpg') }}" class="d-block w-100" alt="...">
+            </div>
+            <!-- <div class="carousel-item">
             <img src="{{ asset('assets/images/bg/bg-medical.jpg') }}" class="d-block w-100" alt="...">
         </div> -->
+        </div>
+        <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+        </a>
     </div>
-    <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
-        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-        <span class="sr-only">Previous</span>
-    </a>
-    <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
-        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-        <span class="sr-only">Next</span>
-    </a>
-</div>
-<!-- Banner Carusel end here -->
+    <!-- Banner Carusel end here -->
 
 
-<!-- Profile start here -->
-<div class="container">
-    <div class="card  mt-5">
-        <h3 class="card-title text-center">IDENTITAS PEMRAKARSA RUMAH SAKIT BEDAH MITRA SEHAT LAMONGAN </h3>
-        <div class="row">
-            <div class="col-sm-6 mt-5">
-                <div class="card text-center bg-dark text-white">
-                    <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
-                        <ol class="carousel-indicators">
-                            <li data-target="#carouselDescriptionIndicators" data-slide-to="0" class="active"></li>
-                            <li data-target="#carouselDescriptionIndicators" data-slide-to="1"></li>
-                            <!-- <li data-target="#carouselDescriptionIndicators" data-slide-to="2"></li> -->
-                        </ol>
-                        <div class="carousel-inner">
-                            <div class="carousel-item active">
-                                <img src="{{ asset('assets/images/bg/IMG_7788.jpg') }}" class="d-block w-100" alt="...">
-                            </div>
-                            <div class="carousel-item">
-                                <img src="{{ asset('assets/images/bg/IMG_7786.jpg') }}" class="d-block w-100" alt="...">
-                            </div>
-                            <!-- <div class="carousel-item">
+    <!-- Profile start here -->
+    <div class="container">
+        <div class="card  mt-5">
+            <h3 class="card-title text-center">IDENTITAS PEMRAKARSA RUMAH SAKIT BEDAH MITRA SEHAT LAMONGAN </h3>
+            <div class="row">
+                <div class="col-sm-6 mt-5">
+                    <div class="card text-center bg-dark text-white">
+                        <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+                            <ol class="carousel-indicators">
+                                <li data-target="#carouselDescriptionIndicators" data-slide-to="0" class="active"></li>
+                                <li data-target="#carouselDescriptionIndicators" data-slide-to="1"></li>
+                                <!-- <li data-target="#carouselDescriptionIndicators" data-slide-to="2"></li> -->
+                            </ol>
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <img src="{{ asset('assets/images/bg/IMG_7788.jpg') }}" class="d-block w-100"
+                                        alt="...">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="{{ asset('assets/images/bg/IMG_7786.jpg') }}" class="d-block w-100"
+                                        alt="...">
+                                </div>
+                                <!-- <div class="carousel-item">
                                 <img src="{{ asset('assets/images/bg/bg-medical.jpg') }}" class="d-block w-100"
                                     alt="...">
                             </div> -->
+                            </div>
+                            <a class="carousel-control-prev" href="#carouselDescriptionIndicators" role="button"
+                                data-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="sr-only">Previous</span>
+                            </a>
+                            <a class="carousel-control-next" href="#carouselDescriptionIndicators" role="button"
+                                data-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="sr-only">Next</span>
+                            </a>
                         </div>
-                        <a class="carousel-control-prev" href="#carouselDescriptionIndicators" role="button"
-                            data-slide="prev">
-                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                            <span class="sr-only">Previous</span>
-                        </a>
-                        <a class="carousel-control-next" href="#carouselDescriptionIndicators" role="button"
-                            data-slide="next">
-                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                            <span class="sr-only">Next</span>
-                        </a>
-                    </div>
-                    <div class="card-img-overlay">
-                        <!-- <h5 class="card-title">Layanan 1</h5>
+                        <div class="card-img-overlay">
+                            <!-- <h5 class="card-title">Layanan 1</h5>
                         <p class="card-text">Deskripsi </p> -->
+                        </div>
                     </div>
                 </div>
-            </div>
-            <!-- Identitas Rumah Sakit Start Here -->
-            <div class="col-sm-6">
-                <div class="card-body">
-                    <div class="row">
-                        <div class="col-sm-4">
-                            <p class="card-text text-justify"> Nama Rumah Sakit </p>
+                <!-- Identitas Rumah Sakit Start Here -->
+                <div class="col-sm-6">
+                    <div class="card-body">
+                        <div class="row">
+                            <div class="col-sm-4">
+                                <p class="card-text text-justify"> Nama Rumah Sakit </p>
+                            </div>
+                            <div class="col-sm-8">
+                                <p class="card-text text-justify"> : Rumah Sakit Bedah Mitra Sehat Lamongan </p>
+                            </div>
                         </div>
-                        <div class="col-sm-8">
-                            <p class="card-text text-justify"> : Rumah Sakit Bedah Mitra Sehat Lamongan </p>
+                        <div class="row">
+                            <div class="col-sm-4">
+                                <p class="card-text text-justify">Alamat </p>
+                            </div>
+                            <div class="col-sm-8">
+                                <p class="card-text text-justify"> : Jalan Raya Lamongan-Babat Km. 5 Desa Karanglangit
+                                    Kabupaten Lamongan 62251 </p>
+                            </div>
                         </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-sm-4">
-                            <p class="card-text text-justify">Alamat </p>
+                        <div class="row">
+                            <div class="col-sm-4">
+                                <p class="card-text text-justify"> Telepon/Fax </p>
+                            </div>
+                            <div class="col-sm-8">
+                                <p class="card-text text-justify"> : (0322) 317997, Fax. (0322) 317998 </p>
+                            </div>
                         </div>
-                        <div class="col-sm-8">
-                            <p class="card-text text-justify"> : Jalan Raya Lamongan-Babat Km. 5 Desa Karanglangit
-                                Kabupaten Lamongan 62251 </p>
+                        <div class="row">
+                            <div class="col-sm-4">
+                                <p class="card-text text-justify"> Email </p>
+                            </div>
+                            <div class="col-sm-8">
+                                <p class="card-text text-justify"> : rsbms_lamongan@yahoo.co.id </p>
+                            </div>
                         </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-sm-4">
-                            <p class="card-text text-justify"> Telepon/Fax </p>
+                        <div class="row">
+                            <div class="col-sm-4">
+                                <p class="card-text text-justify"> Tanggal Pendirian </p>
+                            </div>
+                            <div class="col-sm-8">
+                                <p class="card-text text-justify"> : 25 Mei 2012 </p>
+                            </div>
                         </div>
-                        <div class="col-sm-8">
-                            <p class="card-text text-justify"> : (0322) 317997, Fax. (0322) 317998 </p>
+                        <div class="row">
+                            <div class="col-sm-4">
+                                <p class="card-text text-justify"> Status Kepemilikan </p>
+                            </div>
+                            <div class="col-sm-8">
+                                <p class="card-text text-justify"> : Yayasan Mitra Sehat Lamongan </p>
+                            </div>
                         </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-sm-4">
-                            <p class="card-text text-justify"> Email </p>
+                        <div class="row">
+                            <div class="col-sm-4">
+                                <p class="card-text text-justify"> Nama Pemilik </p>
+                            </div>
+                            <div class="col-sm-8">
+                                <p class="card-text text-justify"> : Trilina Kadarwati, MM.Kes. </p>
+                            </div>
                         </div>
-                        <div class="col-sm-8">
-                            <p class="card-text text-justify"> : rsbms_lamongan@yahoo.co.id </p>
+                        <div class="row">
+                            <div class="col-sm-4">
+                                <p class="card-text text-justify"> Nama Direktur </p>
+                            </div>
+                            <div class="col-sm-8">
+                                <p class="card-text text-justify"> :dr. Bambang Pramono, MM. </p>
+                            </div>
                         </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-sm-4">
-                            <p class="card-text text-justify"> Tanggal Pendirian </p>
+                        <div class="row">
+                            <div class="col-sm-4">
+                                <p class="card-text text-justify"> Nomor Registrasi RS </p>
+                            </div>
+                            <div class="col-sm-8">
+                                <p class="card-text text-justify"> : 3524043 </p>
+                            </div>
                         </div>
-                        <div class="col-sm-8">
-                            <p class="card-text text-justify"> : 25 Mei 2012 </p>
+                        <div class="row">
+                            <div class="col-sm-4">
+                                <p class="card-text text-justify"> No. &Tgl. Ijin Operasional RS </p>
+                            </div>
+                            <div class="col-sm-8">
+                                <p class="card-text text-justify"> : 445/1437/RS/413.111/2020 </p>
+                            </div>
                         </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-sm-4">
-                            <p class="card-text text-justify"> Status Kepemilikan </p>
+                        <div class="row">
+                            <div class="col-sm-4">
+                                <p class="card-text text-justify"> Masa Berlaku </p>
+                            </div>
+                            <div class="col-sm-8">
+                                <p class="card-text text-justify"> : 25 Juli 2025 </p>
+                            </div>
                         </div>
-                        <div class="col-sm-8">
-                            <p class="card-text text-justify"> : Yayasan Mitra Sehat Lamongan </p>
+                        <div class="row">
+                            <div class="col-sm-4">
+                                <p class="card-text text-justify"> Akreditasi </p>
+                            </div>
+                            <div class="col-sm-8">
+                                <p class="card-text text-justify"> : Lulus Tingkat PERDANA </p>
+                            </div>
                         </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-sm-4">
-                            <p class="card-text text-justify"> Nama Pemilik </p>
+                        <div class="row">
+                            <div class="col-sm-4">
+                                <p class="card-text text-justify"> Nomor Akreditasi </p>
+                            </div>
+                            <div class="col-sm-8">
+                                <p class="card-text text-justify"> : KARS-SERT/1009/VII/2020 </p>
+                            </div>
                         </div>
-                        <div class="col-sm-8">
-                            <p class="card-text text-justify"> : Trilina Kadarwati, MM.Kes. </p>
+                        <div class="row">
+                            <div class="col-sm-4">
+                                <p class="card-text text-justify"> Luas Lahan </p>
+                            </div>
+                            <div class="col-sm-8">
+                                <p class="card-text text-justify"> : 2.245 m2 </p>
+                            </div>
                         </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-sm-4">
-                            <p class="card-text text-justify"> Nama Direktur </p>
-                        </div>
-                        <div class="col-sm-8">
-                            <p class="card-text text-justify"> :dr. Bambang Pramono, MM. </p>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-sm-4">
-                            <p class="card-text text-justify"> Nomor Registrasi RS </p>
-                        </div>
-                        <div class="col-sm-8">
-                            <p class="card-text text-justify"> : 3524043 </p>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-sm-4">
-                            <p class="card-text text-justify"> No. &Tgl. Ijin Operasional RS </p>
-                        </div>
-                        <div class="col-sm-8">
-                            <p class="card-text text-justify"> : 445/1437/RS/413.111/2020 </p>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-sm-4">
-                            <p class="card-text text-justify"> Masa Berlaku </p>
-                        </div>
-                        <div class="col-sm-8">
-                            <p class="card-text text-justify"> : 25 Juli 2025 </p>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-sm-4">
-                            <p class="card-text text-justify"> Akreditasi </p>
-                        </div>
-                        <div class="col-sm-8">
-                            <p class="card-text text-justify"> : Lulus Tingkat PERDANA </p>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-sm-4">
-                            <p class="card-text text-justify"> Nomor Akreditasi </p>
-                        </div>
-                        <div class="col-sm-8">
-                            <p class="card-text text-justify"> : KARS-SERT/1009/VII/2020 </p>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-sm-4">
-                            <p class="card-text text-justify"> Luas Lahan </p>
-                        </div>
-                        <div class="col-sm-8">
-                            <p class="card-text text-justify"> : 2.245 m2 </p>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-sm-4">
-                            <p class="card-text text-justify"> Luas Bangunan </p>
-                        </div>
-                        <div class="col-sm-8">
-                            <p class="card-text text-justify"> : 4200 m2 <br> &nbsp; Lantai 1 : 2100 m2
-                                m2 <br> &nbsp; Lantai 2 : 2100 m2</p>
+                        <div class="row">
+                            <div class="col-sm-4">
+                                <p class="card-text text-justify"> Luas Bangunan </p>
+                            </div>
+                            <div class="col-sm-8">
+                                <p class="card-text text-justify"> : 4200 m2 <br> &nbsp; Lantai 1 : 2100 m2
+                                    m2 <br> &nbsp; Lantai 2 : 2100 m2</p>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-</div>
-<!-- Profile end here -->
+    <!-- Profile end here -->
+</section>
 
 <!-- Sejarah Start here -->
-<div class="bg-rsb-blue mt-5">
+<div class=" mt-5">
     <div class="container">
         <div class="row ml-3">
             <!-- Sejarah Start Here -->

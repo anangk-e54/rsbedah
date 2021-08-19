@@ -142,7 +142,7 @@ btn-tranparent {
 /* Paralax */
 .parallax {
     /* The image used */
-    background-image: url(../images/bg/IMG_7788.jpg);
+    background-image: url(../images/bg/night-sky.jpeg);
 
     /* Set a specific height */
     min-height: 500px;
@@ -394,7 +394,12 @@ btn-tranparent {
 
 .body-bg {
     /* background: #F3F8FB; */
-    background: #FFFFFF;
+    /* background: #FFFFFF; */
+    background-image: url(../images/bg/night-sky.jpeg);
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .horizontal-main-wrapper {
