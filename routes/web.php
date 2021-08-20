@@ -5,6 +5,7 @@ use App\Http\Controllers\PagesController;
 use App\Http\Controllers\DoctorsController;
 use App\Http\Controllers\SchedulesController;
 use App\Http\Controllers\ArticlesController;
+use App\Http\Controllers\AuthController;
 
 /*
 |--------------------------------------------------------------------------
@@ -21,6 +22,10 @@ use App\Http\Controllers\ArticlesController;
 //     return view('welcome');
 // });
 
+Route::get('/login',[AuthController::class, 'login'])->name('login');
+Route ::post('/postlogin',[AuthController::class, 'postlogin']);
+Route ::get('/logout',[AuthController::class,'logout']);
+
 Route::get('/',[PagesController::class, 'index']);
 
 Route::view('/jadwaldokter','jadwal-dokter/index');
@@ -32,6 +37,7 @@ Route::get('/artikel-berita/{article}',[ArticlesController::class, 'show']);
 
 Route::get('/layanan',[PagesController::class, 'layanan']);
 
+Route::middleware('auth')->group(function () {
 Route::get('/doctor',[DoctorsController::class, 'index'])->name('doctorlist');
 Route::get('/tim-dokter',[DoctorsController::class, 'view']);
 Route::get('/doctor/create',[DoctorsController::class, 'create']);
@@ -52,5 +58,8 @@ Route::post('/article/store',[ArticlesController::class, 'store']);
 Route::get('/article/{article}',[ArticlesController::class, 'edit'])->name('editarticle');
 Route::post('/article/{article}',[ArticlesController::class, 'update']);
 Route::delete('/article/{article}',[ArticlesController::class, 'destroy']);
+
+});
+
 
 Route::view('/count','count');

@@ -130,6 +130,10 @@ btn-tranparent {
     color: white;
 }
 
+.article-preview-item-large p {
+    color: #fff;
+}
+
 .hidden {
     display: none;
 }

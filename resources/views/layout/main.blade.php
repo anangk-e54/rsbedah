@@ -71,7 +71,7 @@
                             <li><a href="{{ url('/doctor')}}"><i class="ti-user"></i><span>Doctor</span></a>
                             </li>
                             <li><a href="{{ url('/article')}}"><i class="ti-write"></i><span>Article</span></a></li>
-                            <li class="">
+                            <!-- <li class="">
                                 <a href="javascript:void(0)" aria-expanded="true"><i
                                         class="ti-truck"></i><span>Maintenance</span></a>
                                 <ul class="collapse">
@@ -86,7 +86,7 @@
                                     <li class=""><a href="{{ url('/journals')}}">Journal</a></li>
                                     <li><a href="{{ url('/cashes')}}">Cash/Bank</a></li>
                                 </ul>
-                            </li>
+                            </li> -->
                             <li class="">
                                 <a href="javascript:void(0)" aria-expanded="true"><i class="ti-user "></i><span>User
                                         Management</span></a>
