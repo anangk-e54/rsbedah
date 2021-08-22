@@ -91,7 +91,7 @@
                                             </li>
                                         </ul>
                                     </li>
-                                    <li class="mega-menu">
+                                    <!-- <li class="mega-menu">
                                         <a href="javascript:void(0)"><i class="ti-support"></i><span>
                                                 Layanan</span></a>
                                         <ul class="submenu text-left">
@@ -113,7 +113,7 @@
                                             <li><a href="form.html">Layanan 16</a></li>
                                             <li><a href="grid.html">Layanan 17</a></li>
                                         </ul>
-                                    </li>
+                                    </li> -->
                                     <li><a href="/jadwal-dokter"><i class="ti-agenda"></i> <span>Jadwal
                                                 Dokter</span></a>
                                     </li>

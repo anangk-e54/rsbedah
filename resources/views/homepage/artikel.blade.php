@@ -67,7 +67,7 @@
 
     @foreach( $articles as $article)
     <div class="row">
-        <div class="col-lg-6 mt-5">
+        <div class="col-lg-12 mt-5">
             <div class="card">
                 <div class="card-body">
                     <div class="media mb-5">
@@ -88,33 +88,36 @@
         </div>
     </div>
     @endforeach
-</div>
 
 
-<!-- Article area start -->
-<div class="row">
-    @foreach( $articles as $article)
-    <div class="col-xl-4 col-lg-4 mt-5">
-        <div class="card">
-            <div class="card-body bg-rsb-blue">
-                <div class="">
-                    <div class="article-preview-item-large">
-                        <div class="article-preview-img">
-                            <img src="{{  $article->getHeadline() }}" alt="author image">
-                        </div>
-                        <div class="article-preview-content ">
-                            <h4 class="article-preview-name mt-3">{{ $article->tittle }}</h4>
-                            <p>Author : {{ $article->author }} &nbsp; Editor : {{ $article->editor }} &nbsp;
-                                {{ $article->created_at }}</p>
-                            <p class="max-headline mt-3">{{ $article->headline }}</p>
+
+    <!-- Article area start -->
+    <div class="row">
+        @foreach( $articles as $article)
+        <div class="col-xl-12 col-lg-12 mt-5">
+            <div class="card">
+                <div class="card-body ">
+                    <div class="">
+                        <div class="article-preview-large-item-large">
+                            <div class="article-preview-large-img">
+                                <img src="{{  $article->getHeadline() }}" alt="author image">
+                            </div>
+                            <div class="article-preview-large-content ">
+                                <h4 class="article-preview-large-name mt-3">{{ $article->tittle }}</h4>
+                                <p>Author : {{ $article->author }} &nbsp; Editor : {{ $article->editor }} &nbsp;
+                                    {{ $article->created_at }}</p>
+                                <p class="max-headline mt-3">{{ $article->headline }}</p>
+                                <a href="/artikel-berita/{{ $article->id }}" class="btn btn-xs btn-primary mt-3">Lihat
+                                    selengkapnya ...</a>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
+        @endforeach
     </div>
-    @endforeach
-</div>
-<!-- Article area end -->
+    <!-- Article area end -->
 
+</div>
 @endsection

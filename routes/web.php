@@ -30,6 +30,7 @@ Route::get('/',[PagesController::class, 'index']);
 
 Route::view('/jadwaldokter','jadwal-dokter/index');
 Route::view('/profil','homepage/profil');
+Route::get('/tim-dokter',[DoctorsController::class, 'view']);
 Route::get('/profil-dokter/{doctor}',[DoctorsController::class, 'detail'])->name('detaildokter');
 Route::get('/jadwal-dokter',[SchedulesController::class, 'index']);
 Route::get('/artikel',[ArticlesController::class, 'view']);
@@ -39,7 +40,6 @@ Route::get('/layanan',[PagesController::class, 'layanan']);
 
 Route::middleware('auth')->group(function () {
 Route::get('/doctor',[DoctorsController::class, 'index'])->name('doctorlist');
-Route::get('/tim-dokter',[DoctorsController::class, 'view']);
 Route::get('/doctor/create',[DoctorsController::class, 'create']);
 Route::post('/doctor/store',[DoctorsController::class, 'store']);
 Route::get('/doctor/{doctor}',[DoctorsController::class, 'show'])->name('doctorshow');

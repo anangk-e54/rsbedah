@@ -75,7 +75,7 @@
     text-align: right;
 }
 
-btn-tranparent {
+.btn-tranparent {
     background-color: transparent;
 }
 
@@ -133,6 +133,47 @@ btn-tranparent {
 .article-preview-item-large p {
     color: #fff;
 }
+
+/* Article Preview Large */
+.article-preview-large-img {
+    width: 240px;
+    max-height: 240px;
+    border-radius: 3%;
+    overflow: hidden;
+    float: left;
+    margin-right: 20px;
+}
+
+.article-preview-large-content {
+    overflow: hidden;
+}
+
+.article-preview-large-name {
+    font-size: 20px;
+    color: #000000;
+    letter-spacing: 0;
+}
+
+.articlepreview-large-title {
+    display: block;
+    font-size: 16px;
+    color: #000000;
+    letter-spacing: 0.02em;
+    margin-bottom: 15px;
+}
+
+.article-preview-large-item p {
+    color: #000000;
+}
+
+.max-headline {
+    color: #000000;
+}
+
+.article-preview-large-item-large p {
+    color: #000000;
+}
+
 
 .hidden {
     display: none;

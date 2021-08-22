@@ -12,7 +12,7 @@
     </ol>
     <div class="carousel-inner" style="height:960px;">
         <div class="carousel-item active">
-            <img src="{{ asset('assets/images/bg/IMG_7788.jpg') }}" class="d-block w-100" alt="...">
+            <img src="{{ asset('assets/images/bg/bg-rsb-front.jpg') }}" class="d-block w-100" alt="...">
         </div>
         <div class="carousel-item">
             <img src="{{ asset('assets/images/bg/IMG_7786.jpg') }}" class="d-block w-100" alt="...">

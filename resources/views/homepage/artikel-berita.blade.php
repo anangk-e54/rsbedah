@@ -5,10 +5,11 @@
 
 <!-- Banner Jumbotron start here -->
 <!-- <div class="container py-5"> -->
-<div class="jumbotron text-white jumbotron-image shadow" style="background-image: url({{  $article->getHeadline() }});">
-    <h2 class="mb-4 text-center">
+<div class="jumbotron text-white jumbotron-image carousel-banner shadow"
+    style="background-image: url({{  $article->getHeadline() }});">
+    <!-- <h2 class="mb-4 text-center">
         {{ $article->tittle }}
-    </h2>
+    </h2> -->
     <!-- <p class="mb-4">
         Hey, check this out.
     </p>
