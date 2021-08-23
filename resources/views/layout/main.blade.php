@@ -149,13 +149,13 @@
                     <div class="col-md-2 col-sm-2 clearfix">
                         <div class="clearfix d-md-inline-block d-block">
                             <div class="user-profile ">
-                                <img class="avatar user-thumb" src="{{ asset('assets/images/author/gpt.png') }}"
+                                <img class="avatar user-thumb" src="{{ asset('assets/images/team/doctor-man.jpg') }}"
                                     alt="avatar">
                                 <h4 class="user-name dropdown-toggle" data-toggle="dropdown"><i
                                         class="fa fa-angle-down"></i></h4>
                                 <div class="dropdown-menu">
-                                    <a class="dropdown-item" href="#">Profile</a>
-                                    <a class="dropdown-item" href="#">Settings</a>
+                                    <!-- <a class="dropdown-item" href="#">Profile</a>
+                                    <a class="dropdown-item" href="#">Settings</a> -->
                                     <a class="dropdown-item" href="/logout">Log Out</a>
                                 </div>
                             </div>

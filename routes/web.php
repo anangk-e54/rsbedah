@@ -59,6 +59,9 @@ Route::get('/article/{article}',[ArticlesController::class, 'edit'])->name('edit
 Route::post('/article/{article}',[ArticlesController::class, 'update']);
 Route::delete('/article/{article}',[ArticlesController::class, 'destroy']);
 
+
+Route::view('/contact','/contact');
+
 });
 
 
