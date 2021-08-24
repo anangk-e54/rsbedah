@@ -32,7 +32,11 @@ Route::view('/jadwaldokter','jadwal-dokter/index');
 Route::view('/profil','homepage/profil');
 Route::get('/tim-dokter',[DoctorsController::class, 'view']);
 Route::get('/profil-dokter/{doctor}',[DoctorsController::class, 'detail'])->name('detaildokter');
+
+Route::view('/fasilitas','/homepage/fasilitas');
+
 Route::get('/jadwal-dokter',[SchedulesController::class, 'index']);
+
 Route::get('/artikel',[ArticlesController::class, 'view']);
 Route::get('/artikel-berita/{article}',[ArticlesController::class, 'show']);
 
