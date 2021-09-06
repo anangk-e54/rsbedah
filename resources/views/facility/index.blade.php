@@ -34,7 +34,7 @@
                         </div>
                         <div class="col-4">
                             <div class="pull-right">
-                                <a class="btn btn-outline-primary btn-sm mb-3" href="/article/create"><i
+                                <a class="btn btn-outline-primary btn-sm mb-3" href="/facility/create"><i
                                         class="ti-plus">&nbsp; New Facility</i></a>
                                 @if (session('status'))
                                 <div class="alert alert-success">
@@ -49,27 +49,25 @@
                             <thead class="bg-light text-capitalize">
                                 <tr>
                                     <th scope="col">#</th>
-                                    <th scope="col">Tittle</th>
-                                    <th scope="col">Author</th>
-                                    <th scope="col">Editor</th>
-                                    <th scope="col">Date</th>
+                                    <th scope="col">Name</th>
+                                    <th scope="col">Description</th>
+                                    <th scope="col">Image</th>
                                     <th scope="col"></th>
                                 </tr>
                             </thead>
                             <tbody>
-                                @foreach( $articles as $article)
+                                @foreach( $facilities as $facility)
                                 <tr>
                                     <th scope="row">{{ $loop->iteration}}</th>
-                                    <td>{{ $article->tittle }}</td>
-                                    <td>{{ $article->author }}</td>
-                                    <td>{{ $article->editor}}</td>
-                                    <td>{{ $article->created_at }}</td>
+                                    <td>{{ $facility->facility_name }}</td>
+                                    <td>{{ $facility->description}}</td>
+                                    <td>{{ $facility->facility_img }}</td>
                                     <td class=>
-                                        <a href="/article/{{ $article->id }}"
+                                        <a href="/facility/{{ $facility->id }}"
                                             class="btn btn-rounded btn-primary btn-xs "><i
                                                 class="ti-flickr-alt"><span>&nbsp;View</span></i></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                                        <!-- <a href="/articles/{{ $article->id }}/edit" class="btn btn-rounded btn-warning btn-xs " ><i class="ti-pencil-alt"><span>&nbsp;Edit</span></i></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; -->
-                                        <form action="/article/{{ $article->id }}" method="post" class="d-inline">
+                                        <!-- <a href="/facilities/{{ $facility->id }}/edit" class="btn btn-rounded btn-warning btn-xs " ><i class="ti-pencil-alt"><span>&nbsp;Edit</span></i></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; -->
+                                        <form action="/facility/{{ $facility->id }}" method="post" class="d-inline">
                                             @method('delete')
                                             @csrf
                                             <button type="submit" class="btn btn-rounded btn-danger btn-xs"

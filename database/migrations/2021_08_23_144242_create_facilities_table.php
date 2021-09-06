@@ -15,7 +15,7 @@ class CreateFacilitiesTable extends Migration
     {
         Schema::create('facilities', function (Blueprint $table) {
             $table->bigIncrements('id');
-            $table->string('name');
+            $table->string('facility_name');
             $table->text('description')->nullable();
             $table->string('facility_img')->nullable();
 

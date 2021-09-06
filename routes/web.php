@@ -5,6 +5,7 @@ use App\Http\Controllers\PagesController;
 use App\Http\Controllers\DoctorsController;
 use App\Http\Controllers\SchedulesController;
 use App\Http\Controllers\ArticlesController;
+use App\Http\Controllers\FacilitiesController;
 use App\Http\Controllers\AuthController;
 
 /*
@@ -62,6 +63,10 @@ Route::post('/article/store',[ArticlesController::class, 'store']);
 Route::get('/article/{article}',[ArticlesController::class, 'edit'])->name('editarticle');
 Route::post('/article/{article}',[ArticlesController::class, 'update']);
 Route::delete('/article/{article}',[ArticlesController::class, 'destroy']);
+
+Route::get('/facility',[FacilitiesController::class, 'index'])->name('facilitylist');
+Route::get('/facility/create',[FacilitiesController::class, 'create']);
+Route::post('/facility/store',[FacilitiesController::class, 'store']);
 
 
 Route::view('/contact','/contact');
