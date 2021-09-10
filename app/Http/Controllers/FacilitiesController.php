@@ -71,7 +71,8 @@ class FacilitiesController extends Controller
      */
     public function edit(Facility $facility)
     {
-        //
+        // return $facility;
+        return view('facility.edit', compact('facility'));
     }
 
     /**
@@ -83,7 +84,28 @@ class FacilitiesController extends Controller
      */
     public function update(Request $request, Facility $facility)
     {
-        //
+        $datas = [
+            
+            'facility_name' => $facility->facility_name,
+            'description' => $request->description,
+            'facility_img' => $facility->facility_img
+           ];
+           $datas2 = [
+               
+            'facility_name' => $facility->facility_name,
+            'description' => $request->description
+              ];
+   
+           $facility::where('id', $facility->id)
+              ->update(
+              $request->hasFile('facility_img')?  $datas : $datas2
+           );
+           if($request->hasFile('facility_img')){
+               $request->file('facility_img')->move('assets/images/team/',$request->file('facility_img')->getClientOriginalName());
+               $facility->facility_img = $request->file('facility_img')->getClientOriginalName();
+               $facility->save();
+           }
+        return redirect()->route('facilitylist', [$facility->id]);
     }
 
     /**
@@ -94,6 +116,7 @@ class FacilitiesController extends Controller
      */
     public function destroy(Facility $facility)
     {
-        //
+        Facility::destroy($facility->id);
+        return redirect()->route('facilitylist');
     }
 }

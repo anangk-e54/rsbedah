@@ -67,6 +67,9 @@ Route::delete('/article/{article}',[ArticlesController::class, 'destroy']);
 Route::get('/facility',[FacilitiesController::class, 'index'])->name('facilitylist');
 Route::get('/facility/create',[FacilitiesController::class, 'create']);
 Route::post('/facility/store',[FacilitiesController::class, 'store']);
+Route::get('/facility/{facility}',[FacilitiesController::class, 'edit'])->name('editfacility');
+Route::post('/facility/{facility}',[FacilitiesController::class, 'update']);
+Route::delete('/facility/{facility}',[FacilitiesController::class, 'destroy']);
 
 
 Route::view('/contact','/contact');

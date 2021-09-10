@@ -79,6 +79,13 @@
     background-color: transparent;
 }
 
+/* Image */
+.use-image-crop-400 {
+    height: 480px;
+    /* height of container */
+    overflow: hidden;
+}
+
 /* icon */
 .icon-form {
     max-height: 10vh;
