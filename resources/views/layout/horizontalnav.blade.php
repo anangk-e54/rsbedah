@@ -88,7 +88,8 @@
                                             </li>
                                             <li><a href="{{ url('/fasilitas')}}"><i class="ti-layers-alt"></i>Fasilitas
                                                     RS</a></li>
-                                            <li><a href="index3.html"><i class="ti-location-pin"></i>Lokasi</a>
+                                            <li><a href="{{ url('/layanan')}}"><i
+                                                        class="ti-location-pin"></i>Layanan</a>
                                             </li>
                                         </ul>
                                     </li>

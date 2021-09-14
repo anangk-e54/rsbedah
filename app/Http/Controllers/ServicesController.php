@@ -14,7 +14,15 @@ class ServicesController extends Controller
      */
     public function index()
     {
-        //
+        $services = Service::all();
+        return view('service/index', compact('services'));
+    }
+
+    public function view()
+    {
+        $services = Service::all();
+        return $services;
+        return view('homepage/layanan', compact('services'));
     }
 
     /**
@@ -24,7 +32,7 @@ class ServicesController extends Controller
      */
     public function create()
     {
-        //
+        return view('service/create');
     }
 
     /**
@@ -35,7 +43,20 @@ class ServicesController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        $service = new Service;
+        $service->service_name = $request->service_name;
+        $service->description = $request->description;
+        $service->service_img = $request->service_img;
+
+        if($request->hasFile('service_img')){
+            $request->file('service_img')->move('assets/images/team/',$request->file('service_img')->getClientOriginalName());
+            $service->service_img = $request->file('service_img')->getClientOriginalName();
+            $service->save();
+        }
+        
+        $service->save();
+
+        return redirect()->route('servicelist');
     }
 
     /**
@@ -57,7 +78,8 @@ class ServicesController extends Controller
      */
     public function edit(Service $service)
     {
-        //
+        // return $service;
+        return view('service.edit', compact('service'));
     }
 
     /**
@@ -69,7 +91,28 @@ class ServicesController extends Controller
      */
     public function update(Request $request, Service $service)
     {
-        //
+        $datas = [
+            
+            'service_name' => $service->service_name,
+            'description' => $request->description,
+            'service_img' => $service->service_img
+           ];
+           $datas2 = [
+               
+            'service_name' => $service->service_name,
+            'description' => $request->description
+              ];
+   
+           $service::where('id', $service->id)
+              ->update(
+              $request->hasFile('service_img')?  $datas : $datas2
+           );
+           if($request->hasFile('service_img')){
+               $request->file('service_img')->move('assets/images/team/',$request->file('service_img')->getClientOriginalName());
+               $service->service_img = $request->file('service_img')->getClientOriginalName();
+               $service->save();
+           }
+        return redirect()->route('servicelist', [$service->id]);
     }
 
     /**
@@ -80,6 +123,7 @@ class ServicesController extends Controller
      */
     public function destroy(Service $service)
     {
-        //
+        Service::destroy($service->id);
+        return redirect()->route('servicelist');
     }
 }

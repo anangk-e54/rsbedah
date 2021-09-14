@@ -6,6 +6,7 @@ use App\Http\Controllers\DoctorsController;
 use App\Http\Controllers\SchedulesController;
 use App\Http\Controllers\ArticlesController;
 use App\Http\Controllers\FacilitiesController;
+use App\Http\Controllers\ServicesController;
 use App\Http\Controllers\AuthController;
 
 /*
@@ -34,7 +35,9 @@ Route::view('/profil','homepage/profil');
 Route::get('/tim-dokter',[DoctorsController::class, 'view']);
 Route::get('/profil-dokter/{doctor}',[DoctorsController::class, 'detail'])->name('detaildokter');
 
-Route::view('/fasilitas','/homepage/fasilitas');
+Route::get('/fasilitas',[FacilitiesController::class, 'view']);
+
+Route::get('/layanan',[ServicesController::class, 'view']);
 
 Route::get('/jadwal-dokter',[SchedulesController::class, 'index']);
 
@@ -71,6 +74,12 @@ Route::get('/facility/{facility}',[FacilitiesController::class, 'edit'])->name('
 Route::post('/facility/{facility}',[FacilitiesController::class, 'update']);
 Route::delete('/facility/{facility}',[FacilitiesController::class, 'destroy']);
 
+Route::get('/service',[ServicesController::class, 'index'])->name('servicelist');
+Route::get('/service/create',[ServicesController::class, 'create']);
+Route::post('/service/store',[ServicesController::class, 'store']);
+Route::get('/service/{service}',[ServicesController::class, 'edit'])->name('editservice');
+Route::post('/service/{service}',[ServicesController::class, 'update']);
+Route::delete('/service/{service}',[ServicesController::class, 'destroy']);
 
 Route::view('/contact','/contact');
 

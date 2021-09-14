@@ -3,6 +3,7 @@
 @section('tittle', 'RSB Mitra Sehat lamongan')
 @section ('content')
 
+
 <!-- Banner Carusel start here -->
 <div id="carouselExampleIndicators" class="carousel carousel-banner slide" data-ride="carousel">
     <ol class="carousel-indicators">
@@ -32,7 +33,28 @@
 </div>
 <!-- Banner Carusel end here -->
 
+<!-- Card Fasilitas -->
+<div class="card-area">
+    <div class="row">
 
+        @foreach( $facilities as $facility)
+        <div class="col-lg-4 col-md-6 mt-5">
+            <div class="card card-bordered">
+                <div class="use-image-crop-400">
+                    <img class="card-img-top img-fluid" src="{{  $facility->getFacility_img() }}" alt="image">
+                </div>
+                <div class="card-body">
+                    <h5 class="title">{{ $facility->facility_name}}</h5>
+                    <p class="card-text">{{ $facility->description }}
+                    </p>
+                    <!-- <a href="#" class="btn btn-primary">Go More....</a> -->
+                </div>
+            </div>
+        </div>
+        @endforeach
+    </div>
+</div>
+<!-- End Card Fasilitas -->
 
 <!-- Top Menu start here -->
 <div class="container-fluid">

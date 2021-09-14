@@ -72,6 +72,7 @@
                             </li>
                             <li><a href="{{ url('/article')}}"><i class="ti-write"></i><span>Article</span></a></li>
                             <li><a href="{{ url('/facility')}}"><i class="ti-wallet"></i><span>Facility</span></a></li>
+                            <li><a href="{{ url('/service')}}"><i class="ti-wallet"></i><span>Service</span></a></li>
                             <!-- <li class="">
                                 <a href="javascript:void(0)" aria-expanded="true"><i
                                         class="ti-truck"></i><span>Maintenance</span></a>

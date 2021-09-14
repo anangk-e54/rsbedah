@@ -18,6 +18,12 @@ class FacilitiesController extends Controller
         return view('facility/index', compact('facilities'));
     }
 
+    public function view()
+    {
+        $facilities = Facility::all();
+        return view('homepage/fasilitas', compact('facilities'));
+    }
+
     /**
      * Show the form for creating a new resource.
      *
