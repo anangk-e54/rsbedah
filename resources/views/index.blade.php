@@ -8,18 +8,18 @@
     <ol class="carousel-indicators">
         <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
         <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-        <!-- <li data-target="#carouselExampleIndicators" data-slide-to="2"></li> -->
+        <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
     </ol>
     <div class="carousel-inner" style="height:960px;">
         <div class="carousel-item active">
+            <img src="{{ asset('assets/images/bg/medical1.jpg') }}" class="d-block w-100" alt="...">
+        </div>
+        <div class="carousel-item">
             <img src="{{ asset('assets/images/bg/bg-rsb-front.jpg') }}" class="d-block w-100" alt="...">
         </div>
         <div class="carousel-item">
             <img src="{{ asset('assets/images/bg/IMG_7786.jpg') }}" class="d-block w-100" alt="...">
         </div>
-        <!-- <div class="carousel-item">
-            <img src="{{ asset('assets/images/bg/bg-medical.jpg') }}" class="d-block w-100" alt="...">
-        </div> -->
     </div>
     <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
         <span class="carousel-control-prev-icon" aria-hidden="true"></span>
@@ -39,16 +39,16 @@
     <div class="row mt-5">
         <div class="col-sm-3">
             <div class="card text-center bg-dark text-black">
-                <img src="{{ asset('assets/images/card/card-img1.jpg') }}" class="card-img" alt="...">
+                <img src="{{ asset('assets/images/card/doctor-hand.jpg') }}" class="card-img" alt="...">
                 <div class="card-img-overlay">
                     <h5 class="card-title">Dokter Spesialis</h5>
-                    <a href="{{ url('/jadwaldokter')}}" class="btn btn-primary">Lihat Jadwal Dokter</a>
+                    <a href="{{ url('/tim-dokter')}}" class="btn btn-primary">Lihat Semua Dokter</a>
                 </div>
             </div>
         </div>
         <div class="col-sm-3">
             <div class="card text-center bg-dark text-black">
-                <img src="{{ asset('assets/images/card/card-img1.jpg') }}" class="card-img" alt="...">
+                <img src="{{ asset('assets/images/card/igd-banner.jpg') }}" class="card-img" alt="...">
                 <div class="card-img-overlay">
                     <h5 class="card-title">Instalasi Gawat Darurat</h5>
                     <p class="card-text"></p>
@@ -57,7 +57,7 @@
         </div>
         <div class="col-sm-3">
             <div class="card text-center bg-dark text-black">
-                <img src="{{ asset('assets/images/card/card-img1.jpg') }}" class="card-img" alt="...">
+                <img src="{{ asset('assets/images/card/consultation.jpg') }}" class="card-img" alt="...">
                 <div class="card-img-overlay">
                     <h5 class="card-title">Konsultasi Medis</h5>
                     <a href="{{ url('/jadwaldokter')}}" class="btn btn-primary">Lihat Jadwal Dokter</a>
@@ -66,7 +66,7 @@
         </div>
         <div class="col-sm-3">
             <div class="card text-center bg-dark text-black">
-                <img src="{{ asset('assets/images/card/card-img1.jpg') }}" class="card-img" alt="...">
+                <img src="{{ asset('assets/images/card/service-hour.jpg') }}" class="card-img" alt="...">
                 <div class="card-img-overlay">
                     <h5 class="card-title">Layanan 24/7</h5>
                     <p class="card-text"></p>
@@ -95,7 +95,7 @@
                         <ol class="carousel-indicators">
                             <li data-target="#carouselDescriptionIndicators" data-slide-to="0" class="active"></li>
                             <li data-target="#carouselDescriptionIndicators" data-slide-to="1"></li>
-                            <!-- <li data-target="#carouselDescriptionIndicators" data-slide-to="2"></li> -->
+                            <li data-target="#carouselDescriptionIndicators" data-slide-to="2"></li>
                         </ol>
                         <div class="carousel-inner">
                             <div class="carousel-item active">
@@ -104,10 +104,9 @@
                             <div class="carousel-item">
                                 <img src="{{ asset('assets/images/bg/IMG_7786.jpg') }}" class="d-block w-100" alt="...">
                             </div>
-                            <!-- <div class="carousel-item">
-                                <img src="{{ asset('assets/images/bg/bg-medical.jpg') }}" class="d-block w-100"
-                                    alt="...">
-                            </div> -->
+                            <div class="carousel-item">
+                                <img src="{{ asset('assets/images/bg/medical1.jpg') }}" class="d-block w-100" alt="...">
+                            </div>
                         </div>
                         <a class="carousel-control-prev" href="#carouselDescriptionIndicators" role="button"
                             data-slide="prev">
@@ -197,8 +196,8 @@
 <!-- Tim Dokter End Here-->
 
 <!-- Youtube Start Here -->
-<section class="bg-rsb-blue">
-    <div class="container bg-rsb-blue">
+<section class="bg-white">
+    <div class="container bg-white">
         <div class="row">
             <div class="col-md-12 mt-md-5 mb-3">
                 <div class="card">
@@ -224,9 +223,9 @@
 
 
     <!-- Article area start -->
-    <div class="col-xl-12 col-lg-12 mt-5">
+    <!-- <div class="col-xl-12 col-lg-12 mt-5">
         <div class="card">
-            <div class="card-body bg-rsb-blue">
+            <div class="card-body parallax">
                 <h4 class="header-title text-white text-lg-center ">Artikel</h4>
                 <div class="testimonial-carousel owl-carousel">
                     <div class="article-preview-item">
@@ -278,7 +277,7 @@
                 </div>
             </div>
         </div>
-    </div>
+    </div> -->
     <!-- Article area end -->
 </section>
 

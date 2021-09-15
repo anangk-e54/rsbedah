@@ -9,18 +9,18 @@
     <ol class="carousel-indicators">
         <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
         <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-        <!-- <li data-target="#carouselExampleIndicators" data-slide-to="2"></li> -->
+        <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
     </ol>
     <div class="carousel-inner" style="height:960px;">
         <div class="carousel-item active">
+            <img src="{{ asset('assets/images/bg/medical1.jpg') }}" class="d-block w-100" alt="...">
+        </div>
+        <div class="carousel-item">
             <img src="{{ asset('assets/images/bg/bg-rsb-front.jpg') }}" class="d-block w-100" alt="...">
         </div>
         <div class="carousel-item">
             <img src="{{ asset('assets/images/bg/IMG_7786.jpg') }}" class="d-block w-100" alt="...">
         </div>
-        <!-- <div class="carousel-item">
-            <img src="{{ asset('assets/images/bg/bg-medical.jpg') }}" class="d-block w-100" alt="...">
-        </div> -->
     </div>
     <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
         <span class="carousel-control-prev-icon" aria-hidden="true"></span>

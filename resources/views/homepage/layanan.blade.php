@@ -9,18 +9,18 @@
     <ol class="carousel-indicators">
         <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
         <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-        <!-- <li data-target="#carouselExampleIndicators" data-slide-to="2"></li> -->
+        <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
     </ol>
     <div class="carousel-inner" style="height:960px;">
         <div class="carousel-item active">
-            <img src="{{ asset('assets/images/bg/bg-rsb-front.jpg') }}" class="d-block w-100" alt="...">
+            <img src="{{ asset('assets/images/bg/medical1.jpg') }}" class="d-block w-100" alt="...">
         </div>
         <div class="carousel-item">
             <img src="{{ asset('assets/images/bg/IMG_7786.jpg') }}" class="d-block w-100" alt="...">
         </div>
-        <!-- <div class="carousel-item">
-            <img src="{{ asset('assets/images/bg/bg-medical.jpg') }}" class="d-block w-100" alt="...">
-        </div> -->
+        <div class="carousel-item">
+            <img src="{{ asset('assets/images/bg/bg-rsb-front.jpg') }}" class="d-block w-100" alt="...">
+        </div>
     </div>
     <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
         <span class="carousel-control-prev-icon" aria-hidden="true"></span>
@@ -34,24 +34,26 @@
 <!-- Banner Carusel end here -->
 
 <!-- Card Fasilitas -->
-<div class="card-area">
-    <div class="row">
+<div class="container">
+    <div class="card-area">
+        <div class="row">
 
-        @foreach( $services as $service )
-        <div class="col-lg-4 col-md-6 mt-5">
-            <div class="card card-bordered">
-                <div class="use-image-crop-400">
-                    <img class="card-img-top img-fluid" src="{{  $service->getService_img() }}" alt="image">
-                </div>
-                <div class="card-body">
-                    <h5 class="title">{{ $service->service_name}}</h5>
-                    <p class="card-text">{{ $service->description }}
-                    </p>
-                    <!-- <a href="#" class="btn btn-primary">Go More....</a> -->
+            @foreach( $services as $service )
+            <div class="col-lg-4 col-md-6 mt-5">
+                <div class="card card-bordered">
+                    <div class="use-image-crop-400">
+                        <img class="card-img-top img-fluid" src="{{  $service->getService_img() }}" alt="image">
+                    </div>
+                    <div class="card-body">
+                        <h5 class="title">{{ $service->service_name}}</h5>
+                        <p class="card-text">{{ $service->description }}
+                        </p>
+                        <!-- <a href="#" class="btn btn-primary">Go More....</a> -->
+                    </div>
                 </div>
             </div>
+            @endforeach
         </div>
-        @endforeach
     </div>
 </div>
 <!-- End Card Fasilitas -->

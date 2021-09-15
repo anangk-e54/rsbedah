@@ -194,7 +194,7 @@
 /* Paralax */
 .parallax {
     /* The image used */
-    background-image: url(../images/bg/night-sky.jpeg);
+    background-image: url(../images/bg/medical2.jpg);
 
     /* Set a specific height */
     min-height: 500px;
@@ -446,8 +446,8 @@
 
 .body-bg {
     /* background: #F3F8FB; */
-    /* background: #FFFFFF; */
-    background-image: url(../images/bg/night-sky.jpeg);
+    background: #FFFFFF;
+    /* background-image: url(../images/bg/night-sky.jpeg); */
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;

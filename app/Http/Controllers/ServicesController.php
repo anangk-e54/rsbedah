@@ -21,7 +21,7 @@ class ServicesController extends Controller
     public function view()
     {
         $services = Service::all();
-        return $services;
+        // return $services;
         return view('homepage/layanan', compact('services'));
     }
 

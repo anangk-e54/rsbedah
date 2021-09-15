@@ -44,8 +44,6 @@ Route::get('/jadwal-dokter',[SchedulesController::class, 'index']);
 Route::get('/artikel',[ArticlesController::class, 'view']);
 Route::get('/artikel-berita/{article}',[ArticlesController::class, 'show']);
 
-Route::get('/layanan',[PagesController::class, 'layanan']);
-
 Route::middleware('auth')->group(function () {
 Route::get('/doctor',[DoctorsController::class, 'index'])->name('doctorlist');
 Route::get('/doctor/create',[DoctorsController::class, 'create']);
