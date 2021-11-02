@@ -288,6 +288,41 @@
 
 
     })
+
+     /*================================
+   Character limit + read more button for facilities
+    ==================================*/
+    
+    $(function() {
+
+        var maxchar = 150;
+
+        $('.max-description').each(function() {
+
+            var text = $(this).text();
+            if (text.length > maxchar) {
+
+                var begin = text.substr(0, maxchar),
+                    end = text.substr(maxchar);
+
+                $(this).html(begin)
+                    .append($('<a class="readmore"/>').html('...'))
+                    .append($('<div class="hidden" />').html(end));
+
+
+            }
+
+
+        });
+
+        $(document).on('click', '.readmore', function() {
+            // $(this).next('.readmore').fadeOut("400");
+            $(this).next('.hidden').slideToggle(400);
+        })
+
+
+    })
+ 
     
 
 })(jQuery);

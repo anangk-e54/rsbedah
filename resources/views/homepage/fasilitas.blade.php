@@ -34,37 +34,41 @@
 <!-- Banner Carusel end here -->
 
 <!-- Card Fasilitas -->
-<div class="card-area">
-    <div class="row">
+<div class="container">
+    <div class="card-area">
+        <div class="row">
 
-        @foreach( $facilities as $facility)
-        <div class="col-lg-4 col-md-6 mt-5">
-            <div class="card card-bordered">
-                <div class="use-image-crop-400">
-                    <img class="card-img-top img-fluid" src="{{  $facility->getFacility_img() }}" alt="image">
-                </div>
-                <div class="card-body">
-                    <h5 class="title">{{ $facility->facility_name}}</h5>
-                    <p class="card-text">{{ $facility->description }}
-                    </p>
-                    <!-- <a href="#" class="btn btn-primary">Go More....</a> -->
+            @foreach( $facilities as $facility)
+            <div class="col-lg-4 col-md-6 mt-5">
+                <div class="card card-bordered">
+                    <div class="use-image-crop-400">
+                        <img class="card-img-top img-fluid" src="{{  $facility->getFacility_img() }}" alt="image">
+                    </div>
+                    <div class="card-body">
+                        <h5 class="title">{{ $facility->facility_name}}</h5>
+                        <p class="card-text max-description">{{ $facility->description }}
+                        </p>
+                        <a class="text-primary" data-toggle="modal" data-target=".readmodal">Read More....</a>
+                    </div>
                 </div>
             </div>
+            @endforeach
         </div>
-        @endforeach
     </div>
 </div>
 <!-- End Card Fasilitas -->
 
+
 <!-- Top Menu start here -->
-<div class="container-fluid">
+<div class=" container-fluid">
     <div class="row mt-5 mb-5">
-        <div class="col-sm-3">
+        <!-- <div class="col-sm-3">
             <div class="card text-center bg-dark text-black">
                 <img src="{{ asset('assets/images/card/card-img1.jpg') }}" class="card-img" alt="...">
                 <div class="card-img-overlay">
                     <h5 class="card-title">Dokter Spesialis</h5>
-                    <a href="{{ url('/jadwaldokter')}}" class="btn btn-primary">Lihat Jadwal Dokter</a>
+                    <a href="{{ url('/jadwaldokter')}}" class="btn btn-primary">Lihat Jadwal
+                        Dokter</a>
                 </div>
             </div>
         </div>
@@ -82,7 +86,8 @@
                 <img src="{{ asset('assets/images/card/card-img1.jpg') }}" class="card-img" alt="...">
                 <div class="card-img-overlay">
                     <h5 class="card-title">Konsultasi Medis</h5>
-                    <a href="{{ url('/jadwaldokter')}}" class="btn btn-primary">Lihat Jadwal Dokter</a>
+                    <a href="{{ url('/jadwaldokter')}}" class="btn btn-primary">Lihat Jadwal
+                        Dokter</a>
                 </div>
             </div>
         </div>
@@ -94,19 +99,24 @@
                     <p class="card-text"></p>
                 </div>
             </div>
-        </div>
+        </div> -->
         <!-- card style -->
-        <div class="col-sm-3 mt-3">
+        <!-- <div class="col-sm-3 mt-3">
             <div class="card text-center">
                 <img src="{{ asset('assets/images/bg/bg-rsb-front.jpg') }}" class="card-img" alt="...">
                 <div class="card-body">
                     <h5 class="card-title">Nama Fasilitas</h5>
-                    <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                        incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
-                        ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit
-                        in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
-                        cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-                    <!-- <a href="#" class="btn btn-primary">Go somewhere</a> -->
+                    <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                        sed do eiusmod tempor
+                        incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
+                        nostrud exercitation
+                        ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure
+                        dolor in reprehenderit
+                        in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur
+                        sint occaecat
+                        cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id
+                        est laborum.</p>
+                    <a href="#" class="btn btn-primary">Go somewhere</a>
                 </div>
             </div>
         </div>
@@ -115,12 +125,17 @@
                 <img src="{{ asset('assets/images/bg/bg-rsb-front.jpg') }}" class="card-img" alt="...">
                 <div class="card-body">
                     <h5 class="card-title">Nama Fasilitas</h5>
-                    <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                        incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
-                        ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit
-                        in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
-                        cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-                    <!-- <a href="#" class="btn btn-primary">Go somewhere</a> -->
+                    <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                        sed do eiusmod tempor
+                        incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
+                        nostrud exercitation
+                        ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure
+                        dolor in reprehenderit
+                        in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur
+                        sint occaecat
+                        cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id
+                        est laborum.</p>
+                    <a href="#" class="btn btn-primary">Go somewhere</a>
                 </div>
             </div>
         </div>
@@ -129,12 +144,17 @@
                 <img src="{{ asset('assets/images/bg/bg-rsb-front.jpg') }}" class="card-img" alt="...">
                 <div class="card-body">
                     <h5 class="card-title">Nama Fasilitas</h5>
-                    <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                        incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
-                        ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit
-                        in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
-                        cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-                    <!-- <a href="#" class="btn btn-primary">Go somewhere</a> -->
+                    <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                        sed do eiusmod tempor
+                        incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
+                        nostrud exercitation
+                        ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure
+                        dolor in reprehenderit
+                        in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur
+                        sint occaecat
+                        cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id
+                        est laborum.</p>
+                    <a href="#" class="btn btn-primary">Go somewhere</a>
                 </div>
             </div>
         </div>
@@ -143,15 +163,20 @@
                 <img src="{{ asset('assets/images/bg/bg-rsb-front.jpg') }}" class="card-img" alt="...">
                 <div class="card-body">
                     <h5 class="card-title">Nama Fasilitas</h5>
-                    <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                        incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
-                        ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit
-                        in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
-                        cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-                    <!-- <a href="#" class="btn btn-primary">Go somewhere</a> -->
+                    <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                        sed do eiusmod tempor
+                        incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
+                        nostrud exercitation
+                        ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure
+                        dolor in reprehenderit
+                        in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur
+                        sint occaecat
+                        cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id
+                        est laborum.</p>
+                    <a href="#" class="btn btn-primary">Go somewhere</a>
                 </div>
             </div>
-        </div>
+        </div> -->
         <!-- end card style -->
     </div>
 </div>
@@ -269,5 +294,31 @@
     </section>
 
 
+    <!-- Large modal -->
+    <div class="modal fade readmodal">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">{{ $facility->facility_name}} Eror Modal</h5>
+                    <button type="button" class="close" data-dismiss="modal"><span>&times;</span></button>
+                </div>
+                <div class="modal-body">
+
+                    <div class="">
+                        <img class="card-img-top img-fluid" src="{{  $facility->getFacility_img() }}" alt="image">
+                    </div>
+                    <div class="card-body">
+                        <p class="card-text max-description">{{ $facility->description }}
+                        </p>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Tutup</button>
+                </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <!-- Large Modal End here -->
 
     @endsection

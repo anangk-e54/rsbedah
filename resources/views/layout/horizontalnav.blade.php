@@ -6,7 +6,7 @@
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <title>@yield('tittle')</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="shortcut icon" type="image/png" href="assets/images/icon/favicon.ico">
+    <link rel="shortcut icon" type="image/jpg" href="assets/images/author/logo.jpg">
     <link rel="stylesheet" href="{{ asset('assets/css/bootstrap.min.css') }}">
     <link rel="stylesheet" href="{{ asset('assets/css/font-awesome.min.css') }}">
     <link rel="stylesheet" href="{{ asset('assets/css/themify-icons.css') }}">
@@ -46,7 +46,7 @@
                     <div class="col-md-3">
                         <div class="logo">
                             <!-- <a href="index.html"><img src="assets/images/icon/logo2.png" alt="logo"></a> -->
-                            <p>Highlight
+                            <p>RSB MITRA SEHAT
                             <p>
                         </div>
                     </div>
@@ -69,7 +69,8 @@
                     <div class="col-lg-3 clearfix">
 
                         <div class="logo">
-                            <a href="{{ url('/')}}"><img src="assets/images/icon/logo2.png" alt="logo"></a>
+                            <a href="{{ url('/')}}"><img src="{{ asset('assets/images/author/logo.jpg') }}"
+                                    alt="logo"></a>
                         </div>
                     </div>
                     <div class="col-lg-9  d-none d-lg-block text-right">

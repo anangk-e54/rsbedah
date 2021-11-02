@@ -15,11 +15,26 @@
 @endsection
 
 @section ('content')
+
+<!-- Banner Carusel start here -->
+<div id="carouselExampleIndicators" class="carousel carousel-banner slide" data-ride="carousel">
+    <ol class="carousel-indicators">
+        <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+    </ol>
+    <div class="carousel-inner" style="height:960px;">
+        <div class="carousel-item active">
+            <img src="{{ asset('assets/images/bg/medical1.jpg') }}" class="d-block w-100" alt="...">
+        </div>
+    </div>
+</div>
+<!-- Banner Carusel end here -->
+
+
 <!-- data table start -->
 <div class="col-12 mt-5">
     <div class="card">
         <div class="card-body">
-            <h4 class="header-title">Data Table Default</h4>
+            <h4 class="header-title">Jadwal Praktek Dokter</h4>
             <div class="data-tables">
                 <table id="dataTable" class="text-center">
                     <thead class="bg-light text-capitalize">

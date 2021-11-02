@@ -7,31 +7,14 @@
 <div id="carouselExampleIndicators" class="carousel carousel-banner slide" data-ride="carousel">
     <ol class="carousel-indicators">
         <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-        <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-        <!-- <li data-target="#carouselExampleIndicators" data-slide-to="2"></li> -->
     </ol>
     <div class="carousel-inner" style="height:960px;">
         <div class="carousel-item active">
-            <img src="{{ asset('assets/images/bg/IMG_7788.jpg') }}" class="d-block w-100" alt="...">
+            <img src="{{ asset('assets/images/bg/medical1.jpg') }}" class="d-block w-100" alt="...">
         </div>
-        <div class="carousel-item">
-            <img src="{{ asset('assets/images/bg/IMG_7786.jpg') }}" class="d-block w-100" alt="...">
-        </div>
-        <!-- <div class="carousel-item">
-            <img src="{{ asset('assets/images/bg/bg-medical.jpg') }}" class="d-block w-100" alt="...">
-        </div> -->
     </div>
-    <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
-        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-        <span class="sr-only">Previous</span>
-    </a>
-    <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
-        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-        <span class="sr-only">Next</span>
-    </a>
 </div>
 <!-- Banner Carusel end here -->
-
 
 <!-- Tim Dokter Start here -->
 <!-- <div class="bg-rsb-blue mt-5">
@@ -92,7 +75,7 @@
 
 
     <!-- Article area start -->
-    <div class="row">
+    <!-- <div class="row">
         @foreach( $articles as $article)
         <div class="col-xl-12 col-lg-12 mt-5">
             <div class="card">
@@ -116,7 +99,7 @@
             </div>
         </div>
         @endforeach
-    </div>
+    </div> -->
     <!-- Article area end -->
 
 </div>

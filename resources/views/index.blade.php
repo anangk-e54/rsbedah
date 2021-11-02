@@ -162,28 +162,84 @@
         </div>
         <div class="testimonial-carousel owl-carousel">
             <div class="card bg-light">
-                <img src="{{asset('assets/images/team/anang.jpg')}}" class="card-img-top" alt="...">
+                <img src="{{asset('assets/images/team/1.jpg')}}" class="card-img-top" alt="...">
                 <div class="card-body  text-center">
                     <h5>Bidang Spesialis</h5>
                     <p class="card-text">dr. Dewa Arimasen</p>
                 </div>
             </div>
             <div class="card bg-light">
-                <img src="{{asset('assets/images/team/doctor-man.jpg')}}" class="card-img-top" alt="...">
+                <img src="{{asset('assets/images/team/2.jpg')}}" class="card-img-top" alt="...">
+                <div class="card-body  text-center">
+                    <h5>Bidang Spesialis</h5>
+                    <p class="card-text">dr. Dewa Arimasen</p>
+                </div>
+            </div>
+            <div class="card bg-light">
+                <img src="{{asset('assets/images/team/3.jpg')}}" class="card-img-top" alt="...">
+                <div class="card-body  text-center">
+                    <h5>Bidang Spesialis</h5>
+                    <p class="card-text">dr. Dewa Arimasen</p>
+                </div>
+            </div>
+            <div class="card bg-light">
+                <img src="{{asset('assets/images/team/4.jpg')}}" class="card-img-top" alt="...">
+                <div class="card-body  text-center">
+                    <h5>Bidang Spesialis</h5>
+                    <p class="card-text">dr. Dewa Arimasen</p>
+                </div>
+            </div>
+            <div class="card bg-light">
+                <img src="{{asset('assets/images/team/5.jpg')}}" class="card-img-top" alt="...">
+                <div class="card-body  text-center">
+                    <h5>Bidang Spesialis</h5>
+                    <p class="card-text">dr. Dewa Arimasen</p>
+                </div>
+            </div>
+            <div class="card bg-light">
+                <img src="{{asset('assets/images/team/6.jpg')}}" class="card-img-top" alt="...">
                 <div class="card-body text-center">
                     <h5>Bidang Spesialis</h5>
                     <p class="card-text">dr. Fulana Ikimasho</p>
                 </div>
             </div>
             <div class="card bg-light">
-                <img src="{{asset('assets/images/team/anang.jpg')}}" class="card-img-top" alt="...">
+                <img src="{{asset('assets/images/team/7.jpg')}}" class="card-img-top" alt="...">
                 <div class="card-body  text-center">
                     <h5>Bidang Spesialis</h5>
                     <p class="card-text">dr. Dewa Arimasen</p>
                 </div>
             </div>
             <div class="card bg-light">
-                <img src="{{asset('assets/images/team/doctor-woman.jpg')}}" class="card-img-top" alt="...">
+                <img src="{{asset('assets/images/team/8.jpg')}}" class="card-img-top" alt="...">
+                <div class="card-body text-center">
+                    <h5>Bidang Spesialis</h5>
+                    <p class="card-text">dr. Fulana Ikimasho</p>
+                </div>
+            </div>
+            <div class="card bg-light">
+                <img src="{{asset('assets/images/team/9.jpg')}}" class="card-img-top" alt="...">
+                <div class="card-body text-center">
+                    <h5>Bidang Spesialis</h5>
+                    <p class="card-text">dr. Fulana Ikimasho</p>
+                </div>
+            </div>
+            <div class="card bg-light">
+                <img src="{{asset('assets/images/team/10.jpg')}}" class="card-img-top" alt="...">
+                <div class="card-body text-center">
+                    <h5>Bidang Spesialis</h5>
+                    <p class="card-text">dr. Fulana Ikimasho</p>
+                </div>
+            </div>
+            <div class="card bg-light">
+                <img src="{{asset('assets/images/team/11.jpg')}}" class="card-img-top" alt="...">
+                <div class="card-body text-center">
+                    <h5>Bidang Spesialis</h5>
+                    <p class="card-text">dr. Fulana Ikimasho</p>
+                </div>
+            </div>
+            <div class="card bg-light">
+                <img src="{{asset('assets/images/team/12.jpg')}}" class="card-img-top" alt="...">
                 <div class="card-body text-center">
                     <h5>Bidang Spesialis</h5>
                     <p class="card-text">dr. Fulana Ikimasho</p>
