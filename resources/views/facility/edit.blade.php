@@ -8,8 +8,8 @@
             <div class="card">
                 <div class="card-body">
                     <div class="invoice-head">
-                        <h4 class="header-tittle">New Article</h4>
-                        <p cals="text-muted font-14 mb-3"> Please write headline max 225 character </p>
+                        <h4 class="header-tittle">Edit Facility</h4>
+                        <!-- <p cals="text-muted font-14 mb-3"> Please write headline max 225 character </p> -->
                     </div>
                     <form method="post" action="/facility/{{$facility->id}}" enctype="multipart/form-data">
                         @csrf

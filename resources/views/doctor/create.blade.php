@@ -75,7 +75,7 @@
                                             </div>
                                             <div class="row  mt-2">
                                                 <div class="col-xs-4 col-md-2 ">
-                                                    <label for="doctorspecialist" class="">Email</label>
+                                                    <label for="doctorspecialist" class="">Bidang Spesialis</label>
                                                 </div>
                                                 <div class="col-xs-4 col-md-9">
                                                     <input type="text" name="doctorspecialist"

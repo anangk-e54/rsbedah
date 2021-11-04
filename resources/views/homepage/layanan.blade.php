@@ -46,8 +46,10 @@
                     </div>
                     <div class="card-body">
                         <h5 class="title">{{ $service->service_name}}</h5>
-                        <p class="card-text">{{ $service->description }}
+                        <p class="card-text max-description">{{ $service->description }}
                         </p>
+                        <a href="/layanan-lihat/{{ $service->id }}" class="btn btn-xs btn-primary mt-3">Lihat
+                            selengkapnya ...</a>
                         <!-- <a href="#" class="btn btn-primary">Go More....</a> -->
                     </div>
                 </div>

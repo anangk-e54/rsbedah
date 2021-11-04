@@ -33,8 +33,9 @@
                             <div class="row">
                                 <div class="text-center col-11">
                                     <span>RS. Bedah Mitra Sehat Lamongan</span>
-                                    <p>JL. IKAN MUNGSING VI-A NO.14, SURABAYA</p>
-                                    <p>082131971851 / 082234691117 </p>
+                                    <p>Jalan Raya Lamongan-Babat Km. 5 Desa Karanglangit Kabupaten Lamongan 62251</p>
+                                    <p>Telp : (0322) 317997 | Fax : (0322) 317998 | email : rsbms_lamongan@yahoo.co.id
+                                    </p>
                                 </div>
                                 <div class="iv-right col-1 text-md-right">
                                     <br><br>
@@ -53,7 +54,7 @@
                                 <div class="invoice-address">
                                     <h3>{{ $doctor->doctorname}}</h3>
                                     <h5>{{ $doctor->doctorspecialist}}</h5>
-                                    <p>NIK &nbsp; &nbsp; &nbsp; : {{ $doctor->doctornik }}</p>
+                                    <p>ID &nbsp; &nbsp; &nbsp; : {{ $doctor->doctornik }}</p>
                                     <p>Telp. &nbsp; &nbsp; : {{ $doctor->doctorphone }}</p>
                                     <p>Email &nbsp; : {{ $doctor->doctoremail }}</p>
                                 </div>
@@ -116,7 +117,7 @@
 
                         <div class="data-tables mt-5">
                             <table id="dataTable" class="text-center">
-                                <h5>Data Ritase Armada</h5>
+                                <h5>Jadwal Praktek Dokter</h5>
                                 <button type="button" class="btn btn-outline-info btn-xs" data-toggle="modal"
                                     data-target=".addmaintenance">
                                     <i class="ti-plus"> Tambah Hari </i></button>
@@ -168,8 +169,8 @@
                                                     class="btn btn-primary form-control">Update</button></td>
                                         </form>
                                         <td class="">
-                                            <a href="/schedule/edit" class="btn btn-outline-warning btn-xs "><i
-                                                    class="ti-pencil-alt"></i></a>
+                                            <!-- <a href="/schedule/edit" class="btn btn-outline-warning btn-xs "><i
+                                                    class="ti-pencil-alt"></i></a> -->
                                             <form action="/schedule/{{ $schedule->id }}" method="post" class="d-inline">
                                                 @method('delete')
                                                 @csrf
@@ -193,11 +194,11 @@
                         </div>
                     </div>
 
-                    <div class="invoice-buttons text-right">
+                    <!-- <div class="invoice-buttons text-right">
                         <a href="/transports/{{ $doctor->id }}/cetak_pdf" class="invoice-btn" target="_blank">print
                             ritase</a>
                         <a href="{{ url('/transports')}}" class="invoice-btn">Lihat semua armada</a>
-                    </div>
+                    </div> -->
                 </div>
             </div>
         </div>

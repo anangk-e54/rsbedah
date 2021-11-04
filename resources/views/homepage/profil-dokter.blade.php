@@ -2,6 +2,18 @@
 
 @section ('content')
 
+<!-- Banner Carusel start here -->
+<div id="carouselExampleIndicators" class="carousel carousel-banner slide" data-ride="carousel">
+    <ol class="carousel-indicators">
+        <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+    </ol>
+    <div class="carousel-inner" style="height:960px;">
+        <div class="carousel-item active">
+            <img src="{{  $doctor->getDoctorphoto() }}" class="d-block w-100" alt="...">
+        </div>
+    </div>
+</div>
+<!-- Banner Carusel end here -->
 
 <div class="container mb-5">
     <div class="row">
@@ -20,7 +32,7 @@
                                 <div class="invoice-address">
                                     <h3>{{ $doctor->doctorname}}</h3>
                                     <h5>{{ $doctor->doctorspecialist}}</h5>
-                                    <p>NIK &nbsp; &nbsp; &nbsp; : {{ $doctor->doctornik }}</p>
+                                    <!-- <p>NIK &nbsp; &nbsp; &nbsp; : {{ $doctor->doctornik }}</p> -->
                                     <p>Telp. &nbsp; &nbsp; : {{ $doctor->doctorphone }}</p>
                                     <p>Email &nbsp; : {{ $doctor->doctoremail }}</p>
                                 </div>

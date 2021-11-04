@@ -12,7 +12,7 @@
 
     <title>@yield('tittle')</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="shortcut icon" type="image/png" href="{{ asset('assets/images/icon/favicon.ico') }}">
+    <link rel="shortcut icon" type="image/jpg" href="{{ asset('assets/images/author/logo.jpg') }}">
     <link rel="stylesheet" href="{{ asset('assets/css/bootstrap.min.css') }}">
     <link rel="stylesheet" href="{{ asset('assets/css/font-awesome.min.css') }}">
     <link rel="stylesheet" href="{{ asset('assets/css/themify-icons.css') }}">
@@ -51,8 +51,7 @@
         <div class="sidebar-menu">
             <div class="sidebar-header">
                 <div class="logo">
-                    <a href="#"><img src="{{ asset('assets/images/icon/logo.png') }}" alt="logo"></a>
-                    <p>RSB Mitra Sehat Lamongan</p>
+                    <a href="#"><img src="{{ asset('assets/images/author/logo.jpg') }}" alt="logo"></a>
                 </div>
             </div>
             <div class="main-menu">
@@ -63,7 +62,7 @@
                                 <a href="javascript:void(0)" aria-expanded="true"><i
                                         class="ti-palette"></i><span>Dashboard</span></a>
                                 <ul class="collapse">
-                                    <li class=""><a href="{{ url('/')}}">Introduction</a></li>
+                                    <li class=""><a href="{{ url('/')}}" target="_blank">Homepage</a></li>
                                     <li><a href="{{ url('/tutorials')}}">Tutorial</a></li>
                                     <li><a href="{{ url('/profiles')}}">Profile Author</a></li>
                                 </ul>

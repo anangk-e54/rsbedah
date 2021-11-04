@@ -117,12 +117,13 @@
                                             <li><a href="grid.html">Layanan 17</a></li>
                                         </ul>
                                     </li> -->
-                                    <li><a href="/jadwal-dokter"><i class="ti-agenda"></i> <span>Jadwal
+                                    <li><a href="{{ url('/jadwal-dokter')}}"><i class="ti-agenda"></i> <span>Jadwal
                                                 Dokter</span></a>
                                     </li>
-                                    <li><a href="/artikel"><i class="ti-comment-alt"></i> <span>Artikel</span></a>
+                                    <li><a href="{{ url('/artikel')}}"><i class="ti-comment-alt"></i>
+                                            <span>Artikel</span></a>
                                     </li>
-                                    <li><a href="login"><i class="ti-user"></i> <span>login</span></a>
+                                    <li><a href="{{ url('/login')}}"><i class="ti-user"></i> <span>login</span></a>
                                         <!-- </li>
                                     <li class="active">
                                         <a href="javascript:void(0)"><i class="ti-bookmark-alt"></i><span>Sidebar

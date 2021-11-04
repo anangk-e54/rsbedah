@@ -66,7 +66,7 @@ class FacilitiesController extends Controller
      */
     public function show(Facility $facility)
     {
-        //
+        return view('homepage/fasilitas-lihat', compact('facility'));
     }
 
     /**

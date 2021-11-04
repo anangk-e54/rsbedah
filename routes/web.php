@@ -36,8 +36,10 @@ Route::get('/tim-dokter',[DoctorsController::class, 'view']);
 Route::get('/profil-dokter/{doctor}',[DoctorsController::class, 'detail'])->name('detaildokter');
 
 Route::get('/fasilitas',[FacilitiesController::class, 'view']);
+Route::get('/fasilitas-lihat/{facility}',[FacilitiesController::class, 'show']);
 
 Route::get('/layanan',[ServicesController::class, 'view']);
+Route::get('/layanan-lihat/{service}',[ServicesController::class, 'show']);
 
 Route::get('/jadwal-dokter',[SchedulesController::class, 'index']);
 

@@ -60,7 +60,7 @@
                 <img src="{{ asset('assets/images/card/consultation.jpg') }}" class="card-img" alt="...">
                 <div class="card-img-overlay">
                     <h5 class="card-title">Konsultasi Medis</h5>
-                    <a href="{{ url('/jadwaldokter')}}" class="btn btn-primary">Lihat Jadwal Dokter</a>
+                    <a href="{{ url('/tim-dokter')}}" class="btn btn-primary">Lihat Jadwal Dokter</a>
                 </div>
             </div>
         </div>
@@ -140,7 +140,7 @@
                             tanggal 24 Agustus 2019 yang di sahkan oleh Notaris di Lamongan, Guntur Mahdar, SE, SH, MKn.
                             Rumah Sakit Bedah Mitra Sehat Lamongan mulai berdiri dan beroperasi pada tanggal 25 Mei
                             2012. </p>
-                        <a href="#Sejarah" class="btn btn-primary">Baca selengkapnya...</a>
+                        <a href="/profil" class="btn btn-primary">Baca selengkapnya...</a>
                     </div>
                 </div>
             </div>
